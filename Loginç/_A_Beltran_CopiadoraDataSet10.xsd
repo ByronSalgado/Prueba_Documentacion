@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_A_Beltran_CopiadoraDataSet10" targetNamespace="http://tempuri.org/_A_Beltran_CopiadoraDataSet10.xsd" xmlns:mstns="http://tempuri.org/_A_Beltran_CopiadoraDataSet10.xsd" xmlns="http://tempuri.org/_A_Beltran_CopiadoraDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="A_Beltran_CopiadoraConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="A_Beltran_CopiadoraConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Loginç.Properties.Settings.GlobalReference.Default.A_Beltran_CopiadoraConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="facTableAdapter" GeneratorDataComponentClassName="facTableAdapter" Name="fac" UserDataComponentName="facTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="A_Beltran_CopiadoraConnectionString (Settings)" DbObjectName="[A.Beltran.Copiadora].dbo.fac" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nombre_Usuario, Nombre_Cliente, ID_Arqueo, Descripcion_Tipo_Pago, ID_CAI, Fecha_Factura, Impuesto FROM dbo.fac</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nombre_Usuario" DataSetColumn="Nombre_Usuario" />
+              <Mapping SourceColumn="Nombre_Cliente" DataSetColumn="Nombre_Cliente" />
+              <Mapping SourceColumn="ID_Arqueo" DataSetColumn="ID_Arqueo" />
+              <Mapping SourceColumn="Descripcion_Tipo_Pago" DataSetColumn="Descripcion_Tipo_Pago" />
+              <Mapping SourceColumn="ID_CAI" DataSetColumn="ID_CAI" />
+              <Mapping SourceColumn="Fecha_Factura" DataSetColumn="Fecha_Factura" />
+              <Mapping SourceColumn="Impuesto" DataSetColumn="Impuesto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_A_Beltran_CopiadoraDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_A_Beltran_CopiadoraDataSet10" msprop:Generator_UserDSName="_A_Beltran_CopiadoraDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="fac" msprop:Generator_TableClassName="facDataTable" msprop:Generator_TableVarName="tablefac" msprop:Generator_TablePropName="fac" msprop:Generator_RowDeletingName="facRowDeleting" msprop:Generator_RowChangingName="facRowChanging" msprop:Generator_RowEvHandlerName="facRowChangeEventHandler" msprop:Generator_RowDeletedName="facRowDeleted" msprop:Generator_UserTableName="fac" msprop:Generator_RowChangedName="facRowChanged" msprop:Generator_RowEvArgName="facRowChangeEvent" msprop:Generator_RowClassName="facRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre_Usuario" msprop:Generator_ColumnVarNameInTable="columnNombre_Usuario" msprop:Generator_ColumnPropNameInRow="Nombre_Usuario" msprop:Generator_ColumnPropNameInTable="Nombre_UsuarioColumn" msprop:Generator_UserColumnName="Nombre_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Cliente" msprop:Generator_ColumnVarNameInTable="columnNombre_Cliente" msprop:Generator_ColumnPropNameInRow="Nombre_Cliente" msprop:Generator_ColumnPropNameInTable="Nombre_ClienteColumn" msprop:Generator_UserColumnName="Nombre_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Arqueo" msprop:Generator_ColumnVarNameInTable="columnID_Arqueo" msprop:Generator_ColumnPropNameInRow="ID_Arqueo" msprop:Generator_ColumnPropNameInTable="ID_ArqueoColumn" msprop:Generator_UserColumnName="ID_Arqueo" type="xs:int" />
+              <xs:element name="Descripcion_Tipo_Pago" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Tipo_Pago" msprop:Generator_ColumnPropNameInRow="Descripcion_Tipo_Pago" msprop:Generator_ColumnPropNameInTable="Descripcion_Tipo_PagoColumn" msprop:Generator_UserColumnName="Descripcion_Tipo_Pago">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_CAI" msprop:Generator_ColumnVarNameInTable="columnID_CAI" msprop:Generator_ColumnPropNameInRow="ID_CAI" msprop:Generator_ColumnPropNameInTable="ID_CAIColumn" msprop:Generator_UserColumnName="ID_CAI" type="xs:int" />
+              <xs:element name="Fecha_Factura" msprop:Generator_ColumnVarNameInTable="columnFecha_Factura" msprop:Generator_ColumnPropNameInRow="Fecha_Factura" msprop:Generator_ColumnPropNameInTable="Fecha_FacturaColumn" msprop:Generator_UserColumnName="Fecha_Factura" type="xs:dateTime" />
+              <xs:element name="Impuesto" msprop:Generator_ColumnVarNameInTable="columnImpuesto" msprop:Generator_ColumnPropNameInRow="Impuesto" msprop:Generator_ColumnPropNameInTable="ImpuestoColumn" msprop:Generator_UserColumnName="Impuesto" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

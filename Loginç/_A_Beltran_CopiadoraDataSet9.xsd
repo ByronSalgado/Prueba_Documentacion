@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_A_Beltran_CopiadoraDataSet9" targetNamespace="http://tempuri.org/_A_Beltran_CopiadoraDataSet9.xsd" xmlns:mstns="http://tempuri.org/_A_Beltran_CopiadoraDataSet9.xsd" xmlns="http://tempuri.org/_A_Beltran_CopiadoraDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="A_Beltran_CopiadoraConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="A_Beltran_CopiadoraConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Loginç.Properties.Settings.GlobalReference.Default.A_Beltran_CopiadoraConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CliTableAdapter" GeneratorDataComponentClassName="CliTableAdapter" Name="Cli" UserDataComponentName="CliTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="A_Beltran_CopiadoraConnectionString (Settings)" DbObjectName="[A.Beltran.Copiadora].dbo.Cli" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Cliente, Descripcion_Estado, Descripcion_Identificacion, Nombre_Cliente, Telefono_Cliente, Direccion_Cliente, Correo_Cliente, RTN, Identificacion FROM dbo.Cli</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Cliente" DataSetColumn="ID_Cliente" />
+              <Mapping SourceColumn="Descripcion_Estado" DataSetColumn="Descripcion_Estado" />
+              <Mapping SourceColumn="Descripcion_Identificacion" DataSetColumn="Descripcion_Identificacion" />
+              <Mapping SourceColumn="Nombre_Cliente" DataSetColumn="Nombre_Cliente" />
+              <Mapping SourceColumn="Telefono_Cliente" DataSetColumn="Telefono_Cliente" />
+              <Mapping SourceColumn="Direccion_Cliente" DataSetColumn="Direccion_Cliente" />
+              <Mapping SourceColumn="Correo_Cliente" DataSetColumn="Correo_Cliente" />
+              <Mapping SourceColumn="RTN" DataSetColumn="RTN" />
+              <Mapping SourceColumn="Identificacion" DataSetColumn="Identificacion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_A_Beltran_CopiadoraDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_A_Beltran_CopiadoraDataSet9" msprop:Generator_UserDSName="_A_Beltran_CopiadoraDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cli" msprop:Generator_TableClassName="CliDataTable" msprop:Generator_TableVarName="tableCli" msprop:Generator_TablePropName="Cli" msprop:Generator_RowDeletingName="CliRowDeleting" msprop:Generator_RowChangingName="CliRowChanging" msprop:Generator_RowEvHandlerName="CliRowChangeEventHandler" msprop:Generator_RowDeletedName="CliRowDeleted" msprop:Generator_UserTableName="Cli" msprop:Generator_RowChangedName="CliRowChanged" msprop:Generator_RowEvArgName="CliRowChangeEvent" msprop:Generator_RowClassName="CliRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Cliente" msprop:Generator_ColumnVarNameInTable="columnID_Cliente" msprop:Generator_ColumnPropNameInRow="ID_Cliente" msprop:Generator_ColumnPropNameInTable="ID_ClienteColumn" msprop:Generator_UserColumnName="ID_Cliente" type="xs:int" />
+              <xs:element name="Descripcion_Estado" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Estado" msprop:Generator_ColumnPropNameInRow="Descripcion_Estado" msprop:Generator_ColumnPropNameInTable="Descripcion_EstadoColumn" msprop:Generator_UserColumnName="Descripcion_Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion_Identificacion" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Identificacion" msprop:Generator_ColumnPropNameInRow="Descripcion_Identificacion" msprop:Generator_ColumnPropNameInTable="Descripcion_IdentificacionColumn" msprop:Generator_UserColumnName="Descripcion_Identificacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Cliente" msprop:Generator_ColumnVarNameInTable="columnNombre_Cliente" msprop:Generator_ColumnPropNameInRow="Nombre_Cliente" msprop:Generator_ColumnPropNameInTable="Nombre_ClienteColumn" msprop:Generator_UserColumnName="Nombre_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono_Cliente" msprop:Generator_ColumnVarNameInTable="columnTelefono_Cliente" msprop:Generator_ColumnPropNameInRow="Telefono_Cliente" msprop:Generator_ColumnPropNameInTable="Telefono_ClienteColumn" msprop:Generator_UserColumnName="Telefono_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion_Cliente" msprop:Generator_ColumnVarNameInTable="columnDireccion_Cliente" msprop:Generator_ColumnPropNameInRow="Direccion_Cliente" msprop:Generator_ColumnPropNameInTable="Direccion_ClienteColumn" msprop:Generator_UserColumnName="Direccion_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Correo_Cliente" msprop:Generator_ColumnVarNameInTable="columnCorreo_Cliente" msprop:Generator_ColumnPropNameInRow="Correo_Cliente" msprop:Generator_ColumnPropNameInTable="Correo_ClienteColumn" msprop:Generator_UserColumnName="Correo_Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RTN" msprop:Generator_ColumnVarNameInTable="columnRTN" msprop:Generator_ColumnPropNameInRow="RTN" msprop:Generator_ColumnPropNameInTable="RTNColumn" msprop:Generator_UserColumnName="RTN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Identificacion" msprop:Generator_ColumnVarNameInTable="columnIdentificacion" msprop:Generator_ColumnPropNameInRow="Identificacion" msprop:Generator_ColumnPropNameInTable="IdentificacionColumn" msprop:Generator_UserColumnName="Identificacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cli" />
+      <xs:field xpath="mstns:ID_Cliente" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

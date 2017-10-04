@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_A_Beltran_CopiadoraDataSet16" targetNamespace="http://tempuri.org/_A_Beltran_CopiadoraDataSet16.xsd" xmlns:mstns="http://tempuri.org/_A_Beltran_CopiadoraDataSet16.xsd" xmlns="http://tempuri.org/_A_Beltran_CopiadoraDataSet16.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="A_Beltran_CopiadoraConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="A_Beltran_CopiadoraConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Loginç.Properties.Settings.GlobalReference.Default.A_Beltran_CopiadoraConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_3TableAdapter" GeneratorDataComponentClassName="View_3TableAdapter" Name="View_3" UserDataComponentName="View_3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="A_Beltran_CopiadoraConnectionString (Settings)" DbObjectName="[A.Beltran.Copiadora].dbo.View_3" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Usuario, Usuario, Nombre_Usuario, Descripcion_Estado, Descripcion_Rol, Identificacion_Usuario, Telefono, Direccion, Correo, Sexo FROM dbo.View_3</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Usuario" DataSetColumn="ID_Usuario" />
+              <Mapping SourceColumn="Usuario" DataSetColumn="Usuario" />
+              <Mapping SourceColumn="Nombre_Usuario" DataSetColumn="Nombre_Usuario" />
+              <Mapping SourceColumn="Descripcion_Estado" DataSetColumn="Descripcion_Estado" />
+              <Mapping SourceColumn="Descripcion_Rol" DataSetColumn="Descripcion_Rol" />
+              <Mapping SourceColumn="Identificacion_Usuario" DataSetColumn="Identificacion_Usuario" />
+              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
+              <Mapping SourceColumn="Direccion" DataSetColumn="Direccion" />
+              <Mapping SourceColumn="Correo" DataSetColumn="Correo" />
+              <Mapping SourceColumn="Sexo" DataSetColumn="Sexo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_A_Beltran_CopiadoraDataSet16" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_A_Beltran_CopiadoraDataSet16" msprop:Generator_UserDSName="_A_Beltran_CopiadoraDataSet16">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_3" msprop:Generator_TableClassName="View_3DataTable" msprop:Generator_TableVarName="tableView_3" msprop:Generator_TablePropName="View_3" msprop:Generator_RowDeletingName="View_3RowDeleting" msprop:Generator_RowChangingName="View_3RowChanging" msprop:Generator_RowEvHandlerName="View_3RowChangeEventHandler" msprop:Generator_RowDeletedName="View_3RowDeleted" msprop:Generator_UserTableName="View_3" msprop:Generator_RowChangedName="View_3RowChanged" msprop:Generator_RowEvArgName="View_3RowChangeEvent" msprop:Generator_RowClassName="View_3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" msprop:Generator_ColumnVarNameInTable="columnID_Usuario" msprop:Generator_ColumnPropNameInRow="ID_Usuario" msprop:Generator_ColumnPropNameInTable="ID_UsuarioColumn" msprop:Generator_UserColumnName="ID_Usuario" type="xs:int" />
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Usuario" msprop:Generator_ColumnVarNameInTable="columnNombre_Usuario" msprop:Generator_ColumnPropNameInRow="Nombre_Usuario" msprop:Generator_ColumnPropNameInTable="Nombre_UsuarioColumn" msprop:Generator_UserColumnName="Nombre_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion_Estado" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Estado" msprop:Generator_ColumnPropNameInRow="Descripcion_Estado" msprop:Generator_ColumnPropNameInTable="Descripcion_EstadoColumn" msprop:Generator_UserColumnName="Descripcion_Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion_Rol" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Rol" msprop:Generator_ColumnPropNameInRow="Descripcion_Rol" msprop:Generator_ColumnPropNameInTable="Descripcion_RolColumn" msprop:Generator_UserColumnName="Descripcion_Rol">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Identificacion_Usuario" msprop:Generator_ColumnVarNameInTable="columnIdentificacion_Usuario" msprop:Generator_ColumnPropNameInRow="Identificacion_Usuario" msprop:Generator_ColumnPropNameInTable="Identificacion_UsuarioColumn" msprop:Generator_UserColumnName="Identificacion_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Correo" msprop:Generator_ColumnVarNameInTable="columnCorreo" msprop:Generator_ColumnPropNameInRow="Correo" msprop:Generator_ColumnPropNameInTable="CorreoColumn" msprop:Generator_UserColumnName="Correo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_3" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

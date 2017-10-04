@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_A_Beltran_CopiadoraDataSet8" targetNamespace="http://tempuri.org/_A_Beltran_CopiadoraDataSet8.xsd" xmlns:mstns="http://tempuri.org/_A_Beltran_CopiadoraDataSet8.xsd" xmlns="http://tempuri.org/_A_Beltran_CopiadoraDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="A_Beltran_CopiadoraConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="A_Beltran_CopiadoraConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Loginç.Properties.Settings.GlobalReference.Default.A_Beltran_CopiadoraConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_4TableAdapter" GeneratorDataComponentClassName="View_4TableAdapter" Name="View_4" UserDataComponentName="View_4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="A_Beltran_CopiadoraConnectionString (Settings)" DbObjectName="[A.Beltran.Copiadora].dbo.View_4" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Descripcion_Estado, Fecha_Inicial, Fecha_Final, Monto_Inicial, Monto_Final FROM dbo.View_4</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Descripcion_Estado" DataSetColumn="Descripcion_Estado" />
+              <Mapping SourceColumn="Fecha_Inicial" DataSetColumn="Fecha_Inicial" />
+              <Mapping SourceColumn="Fecha_Final" DataSetColumn="Fecha_Final" />
+              <Mapping SourceColumn="Monto_Inicial" DataSetColumn="Monto_Inicial" />
+              <Mapping SourceColumn="Monto_Final" DataSetColumn="Monto_Final" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_A_Beltran_CopiadoraDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_A_Beltran_CopiadoraDataSet8" msprop:Generator_UserDSName="_A_Beltran_CopiadoraDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_4" msprop:Generator_TableClassName="View_4DataTable" msprop:Generator_TableVarName="tableView_4" msprop:Generator_TablePropName="View_4" msprop:Generator_RowDeletingName="View_4RowDeleting" msprop:Generator_RowChangingName="View_4RowChanging" msprop:Generator_RowEvHandlerName="View_4RowChangeEventHandler" msprop:Generator_RowDeletedName="View_4RowDeleted" msprop:Generator_UserTableName="View_4" msprop:Generator_RowChangedName="View_4RowChanged" msprop:Generator_RowEvArgName="View_4RowChangeEvent" msprop:Generator_RowClassName="View_4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Descripcion_Estado" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Estado" msprop:Generator_ColumnPropNameInRow="Descripcion_Estado" msprop:Generator_ColumnPropNameInTable="Descripcion_EstadoColumn" msprop:Generator_UserColumnName="Descripcion_Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_Inicial" msprop:Generator_ColumnVarNameInTable="columnFecha_Inicial" msprop:Generator_ColumnPropNameInRow="Fecha_Inicial" msprop:Generator_ColumnPropNameInTable="Fecha_InicialColumn" msprop:Generator_UserColumnName="Fecha_Inicial" type="xs:dateTime" />
+              <xs:element name="Fecha_Final" msprop:Generator_ColumnVarNameInTable="columnFecha_Final" msprop:Generator_ColumnPropNameInRow="Fecha_Final" msprop:Generator_ColumnPropNameInTable="Fecha_FinalColumn" msprop:Generator_UserColumnName="Fecha_Final" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Monto_Inicial" msprop:Generator_ColumnVarNameInTable="columnMonto_Inicial" msprop:Generator_ColumnPropNameInRow="Monto_Inicial" msprop:Generator_ColumnPropNameInTable="Monto_InicialColumn" msprop:Generator_UserColumnName="Monto_Inicial" type="xs:float" />
+              <xs:element name="Monto_Final" msprop:Generator_ColumnVarNameInTable="columnMonto_Final" msprop:Generator_ColumnPropNameInRow="Monto_Final" msprop:Generator_ColumnPropNameInTable="Monto_FinalColumn" msprop:Generator_UserColumnName="Monto_Final" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
