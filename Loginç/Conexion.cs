@@ -13,20 +13,18 @@ namespace Loginç
 {
     class Conexion
     {
+ 
         public string SQLServer;
         public SqlConnection CONECTARSQL;
         public SqlCommand COMANDOSQL;
         public SqlDataReader dr;
-        public string user;
-
 
         public Conexion()
         {
             try
             {
-
                 this.SQLServer = (@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
-                this.CONECTARSQL = new SqlConnection(this.SQLServer);
+                CONECTARSQL = new SqlConnection(this.SQLServer);
                 CONECTARSQL.Open();
 
                 // MessageBox.Show("Conectado a la base de datos", "Mensaje");
@@ -35,6 +33,7 @@ namespace Loginç
             catch (Exception ex)
             {
                 MessageBox.Show("\a Error,no conectado a la base de datos: " + "\n " + ex.ToString(), "Mensaje");
+
             }
         }
 
@@ -396,14 +395,12 @@ namespace Loginç
         {
             IngresoModificacionProducto ingreso = new IngresoModificacionProducto();
 
-            string salida = "";
             string valor;
 
             try
             {
                 COMANDOSQL = new SqlCommand("select top 1 [ID_Producto] from [dbo].[Producto] order by [ID_Producto] desc ", CONECTARSQL);
                 valor = Convert.ToString(COMANDOSQL.ExecuteNonQuery());
-                salida = "Ingresado";
             }
 
             catch (Exception ex)

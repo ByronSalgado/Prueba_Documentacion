@@ -14,7 +14,7 @@ namespace Loginç
 {
     public partial class Cajero : Form
     {
-        Conexion cnx = new Conexion();
+        Conexion conex = new Conexion();
         public Cajero()
         {
             InitializeComponent();
@@ -60,23 +60,18 @@ namespace Loginç
             }
             else
             {
-                SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
 
-                conex.Open();
-
-                SqlCommand cmd = conex.CreateCommand();
+                SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
                 if (rdb_ID.Checked == true)
                 {
                     cmd.CommandText = "SELECT dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado FROM dbo.Cliente INNER JOIN dbo.Estado ON dbo.Cliente.ID_Estado = dbo.Estado.ID_Estado WHERE dbo.Cliente.ID_Cliente like ('%" + txtfiltro.Text + "%') GROUP BY dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado;";
-                    //select* from[dbo].[Usuario]
                 }
                 else
                 {
                     cmd.CommandText = "SELECT dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado FROM dbo.Cliente INNER JOIN dbo.Estado ON dbo.Cliente.ID_Estado = dbo.Estado.ID_Estado WHERE dbo.Cliente.Nombre_Cliente like ('%" + txtfiltro.Text + "%') GROUP BY dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado;";
-                    //select * from [dbo].[Usuario] 
                 }
 
                 cmd.ExecuteNonQuery();
@@ -87,7 +82,6 @@ namespace Loginç
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
 
-                conex.Close();
             }
             
         }

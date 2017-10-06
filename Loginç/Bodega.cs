@@ -14,8 +14,9 @@ namespace Loginç
 {
     public partial class Bodega : Form
     {
+        Conexion conex = new Conexion();
 
-        SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integrated Security=True");
+       // SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integrated Security=True");
         public Bodega()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace Loginç
             IngresoModificacionProducto In = new IngresoModificacionProducto();
 
             In.Show();
-            this.Hide();
+            this.Close();
             In.button1.Visible = true;
             In.button3.Visible = false;
             In.Visible = true;
@@ -50,26 +51,17 @@ namespace Loginç
 
                 radioButton1.Checked = true;
 
-                conex.Open();
-
-                SqlCommand cmd = conex.CreateCommand();
+                SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
                 if (radioButton1.Checked == true)
                 {
-                    cmd.CommandText = "select * from [dbo].[View_2] ";                    
-                    comboBox1.Items.Remove("Categoria");
-                    comboBox1.Items.Remove("Codigo");
-                    comboBox1.Items.Remove("Nombre");
-                    comboBox1.Items.Remove("Descripcion");
-                    comboBox1.Items.Remove("Categoria");
-                    comboBox1.Items.Remove("Presio");//
-                    comboBox1.Items.Remove("Estado");
-                    comboBox1.Items.Remove("Cantidad");
-                    comboBox1.Items.Remove("Codigo de Barra");
-                    comboBox1.Items.Remove("Codigo");
-                    comboBox1.Items.Remove("Numero de Serie");
+                    cmd.CommandText = "select * from [dbo].[View_2] ";  
+                    for(int i=0; i<11; i++)
+                    {
+                        comboBox1.Items.Clear();
+                    }                
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
                     button2.Visible = false;
@@ -91,7 +83,8 @@ namespace Loginç
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
 
-                conex.Close();
+                conex.CONECTARSQL.Close();
+                //conex.Close();
                 comboBox1.SelectedIndex = 1;
             }
             catch
@@ -103,25 +96,21 @@ namespace Loginç
 
             try
             {
-                conex.Open();
+                //conex.Open();
 
-                SqlCommand cmd = conex.CreateCommand();
+                SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
+                //SqlCommand cmd = conex.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
                 if (radioButton1.Checked == true)
                 {
                     
-                    cmd.CommandText = "select * from [dbo].[View_2] ";                
-                    comboBox1.Items.Remove("Codigo");
-                    comboBox1.Items.Remove("Nombre");
-                    comboBox1.Items.Remove("Descripcion");
-                    comboBox1.Items.Remove("Categoria");
-                    comboBox1.Items.Remove("Presio");//
-                    comboBox1.Items.Remove("Estado");
-                    comboBox1.Items.Remove("Cantidad");
-                    comboBox1.Items.Remove("Codigo de Barra");
-                    comboBox1.Items.Remove("Numero de Serie");
+                    cmd.CommandText = "select * from [dbo].[View_2] ";
+                    for (int i = 0; i < 11; i++)
+                    {
+                        comboBox1.Items.Clear();
+                    }
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
                     button2.Visible = false;
@@ -141,7 +130,8 @@ namespace Loginç
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
 
-                conex.Close();
+                conex.CONECTARSQL.Close();
+                //conex.Close();
             }
             catch
             {
@@ -155,10 +145,11 @@ namespace Loginç
             
             try
             {
+                conex.CONECTARSQL.Open();
+                //conex.Open();
 
-                conex.Open();
-
-                SqlCommand cmd = conex.CreateCommand();
+                SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
+                //SqlCommand cmd = conex.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
@@ -170,7 +161,7 @@ namespace Loginç
                     comboBox1.Items.Add("Nombre");
                     comboBox1.Items.Add("Descripcion");
                     comboBox1.Items.Add("Categoria");
-                    comboBox1.Items.Add("Presio");//
+                    comboBox1.Items.Add("Precio");//
                     comboBox1.Items.Add("Estado");
                     comboBox1.Items.Add("Cantidad");
                     comboBox1.Items.Add("Codigo de Barra");                   
@@ -186,15 +177,10 @@ namespace Loginç
                    
                     cmd.CommandText = "select * from [dbo].[View_2] ";
 
-                    comboBox1.Items.Remove("Codigo");
-                    comboBox1.Items.Remove("Nombre");
-                    comboBox1.Items.Remove("Descripcion");
-                    comboBox1.Items.Remove("Categoria");
-                    comboBox1.Items.Remove("Presio");//
-                    comboBox1.Items.Remove("Estado");
-                    comboBox1.Items.Remove("Cantidad");
-                    comboBox1.Items.Remove("Codigo de Barra");
-                    comboBox1.Items.Remove("Numero de Serie");
+                    for (int i = 0; i < 11; i++)
+                    {
+                        comboBox1.Items.Clear();
+                    }
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
                     button2.Visible = false;
@@ -210,7 +196,8 @@ namespace Loginç
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
 
-                conex.Close();
+                conex.CONECTARSQL.Close();
+                //conex.Close();
             }
             catch
             {
@@ -223,19 +210,17 @@ namespace Loginç
         {
             try
             {
-
-
-
+                conex.CONECTARSQL.Open();
                 if (String.IsNullOrEmpty(textBox1.Text))
                 {
                     MessageBox.Show("Falta llenar ciertos campos", "Mensaje");
                 }
                 else
                 {
+                    //conex.Open();
 
-                    conex.Open();
-
-                    SqlCommand cmd = conex.CreateCommand();
+                    SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
+                    //SqlCommand cmd = conex.CreateCommand();
 
                     cmd.CommandType = CommandType.Text;
 
@@ -339,7 +324,8 @@ namespace Loginç
                     da.Fill(dt);
                     dataGridView1.DataSource = dt;
 
-                    conex.Close();
+                    conex.CONECTARSQL.Close();
+                    //conex.Close();
                 }
             }
             catch
