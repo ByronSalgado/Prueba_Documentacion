@@ -16,7 +16,6 @@ namespace Loginç
     {
         Conexion conex = new Conexion();
 
-       // SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integrated Security=True");
         public Bodega()
         {
             InitializeComponent();
@@ -28,7 +27,7 @@ namespace Loginç
             link lk = new link();
 
             lk.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,14 +57,11 @@ namespace Loginç
                 if (radioButton1.Checked == true)
                 {
                     cmd.CommandText = "select * from [dbo].[View_2] ";  
-                    for(int i=0; i<11; i++)
-                    {
-                        comboBox1.Items.Clear();
-                    }                
+                    comboBox1.Items.Clear();        
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
-                    button2.Visible = false;
-                    button1.Visible = false;
+                    btnBuscar.Visible = false;
+                    btnNuevo.Visible = false;
 
                 }
                 else
@@ -84,7 +80,6 @@ namespace Loginç
                 dataGridView1.DataSource = dt;
 
                 conex.CONECTARSQL.Close();
-                //conex.Close();
                 comboBox1.SelectedIndex = 1;
             }
             catch
@@ -96,10 +91,8 @@ namespace Loginç
 
             try
             {
-                //conex.Open();
 
                 SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-                //SqlCommand cmd = conex.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
@@ -107,14 +100,11 @@ namespace Loginç
                 {
                     
                     cmd.CommandText = "select * from [dbo].[View_2] ";
-                    for (int i = 0; i < 11; i++)
-                    {
-                        comboBox1.Items.Clear();
-                    }
+                    comboBox1.Items.Clear();
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
-                    button2.Visible = false;
-                    button1.Visible = false;
+                    btnBuscar.Visible = false;
+                    btnNuevo.Visible = false;
                 }
                 else
                 {
@@ -131,7 +121,6 @@ namespace Loginç
                 dataGridView1.DataSource = dt;
 
                 conex.CONECTARSQL.Close();
-                //conex.Close();
             }
             catch
             {
@@ -146,10 +135,7 @@ namespace Loginç
             try
             {
                 conex.CONECTARSQL.Open();
-                //conex.Open();
-
                 SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-                //SqlCommand cmd = conex.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
@@ -161,7 +147,7 @@ namespace Loginç
                     comboBox1.Items.Add("Nombre");
                     comboBox1.Items.Add("Descripcion");
                     comboBox1.Items.Add("Categoria");
-                    comboBox1.Items.Add("Precio");//
+                    comboBox1.Items.Add("Precio");
                     comboBox1.Items.Add("Estado");
                     comboBox1.Items.Add("Cantidad");
                     comboBox1.Items.Add("Codigo de Barra");                   
@@ -169,22 +155,18 @@ namespace Loginç
                     comboBox1.SelectedIndex = 0;
                     comboBox1.Visible = true;
                     textBox1.Visible = true;
-                    button2.Visible = true;
-                    button1.Visible = true;
+                    btnBuscar.Visible = true;
+                    btnNuevo.Visible = true;
                 }
                 else
                 {
                    
                     cmd.CommandText = "select * from [dbo].[View_2] ";
-
-                    for (int i = 0; i < 11; i++)
-                    {
-                        comboBox1.Items.Clear();
-                    }
+                    comboBox1.Items.Clear();
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
-                    button2.Visible = false;
-                    button1.Visible = false;
+                    btnBuscar.Visible = false;
+                    btnNuevo.Visible = false;
 
                 }
 
@@ -197,7 +179,6 @@ namespace Loginç
                 dataGridView1.DataSource = dt;
 
                 conex.CONECTARSQL.Close();
-                //conex.Close();
             }
             catch
             {
@@ -217,10 +198,7 @@ namespace Loginç
                 }
                 else
                 {
-                    //conex.Open();
-
                     SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-                    //SqlCommand cmd = conex.CreateCommand();
 
                     cmd.CommandType = CommandType.Text;
 
@@ -268,7 +246,6 @@ namespace Loginç
                     }
 
                     //////////////////////////////////////////////////////////////
-
 
                     if (radioButton2.Checked == true)
                     {
@@ -325,7 +302,6 @@ namespace Loginç
                     dataGridView1.DataSource = dt;
 
                     conex.CONECTARSQL.Close();
-                    //conex.Close();
                 }
             }
             catch

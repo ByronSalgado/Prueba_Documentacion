@@ -42,10 +42,10 @@
             this.cliBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet9 = new Loginç._A_Beltran_CopiadoraDataSet9();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.rdb_Nombre = new System.Windows.Forms.RadioButton();
             this.rdb_ID = new System.Windows.Forms.RadioButton();
@@ -169,20 +169,20 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "A.Beltran.Copiadora S. de R.L";
             // 
-            // button1
+            // btnCerrar
             // 
-            this.button1.Location = new System.Drawing.Point(710, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 36);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Cerrar Sesion";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCerrar.Location = new System.Drawing.Point(710, 13);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(96, 36);
+            this.btnCerrar.TabIndex = 20;
+            this.btnCerrar.Text = "Cerrar Sesion";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnNuevo);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.rdb_Nombre);
             this.groupBox1.Controls.Add(this.rdb_ID);
@@ -197,23 +197,23 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(139, 165);
+            this.btnNuevo.Location = new System.Drawing.Point(139, 179);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(74, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(83, 35);
             this.btnNuevo.TabIndex = 6;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "Nuevo Cliente";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // button3
+            // btnBuscar
             // 
-            this.button3.Location = new System.Drawing.Point(43, 165);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Buscar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnBuscar.Location = new System.Drawing.Point(43, 179);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(90, 35);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar Cliente";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label1
             // 
@@ -228,7 +228,7 @@
             // rdb_Nombre
             // 
             this.rdb_Nombre.AutoSize = true;
-            this.rdb_Nombre.Location = new System.Drawing.Point(130, 46);
+            this.rdb_Nombre.Location = new System.Drawing.Point(160, 46);
             this.rdb_Nombre.Name = "rdb_Nombre";
             this.rdb_Nombre.Size = new System.Drawing.Size(62, 17);
             this.rdb_Nombre.TabIndex = 2;
@@ -257,6 +257,7 @@
             this.txtfiltro.TabIndex = 0;
             this.txtfiltro.TextChanged += new System.EventHandler(this.txtfiltro_TextChanged);
             this.txtfiltro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtfiltro_KeyDown);
+            this.txtfiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfiltro_KeyPress_1);
             // 
             // cliTableAdapter
             // 
@@ -282,10 +283,11 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Cajero";
             this.Text = "Cajero";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cajero_FormClosed);
             this.Load += new System.EventHandler(this.Cajero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cliBindingSource)).EndInit();
@@ -303,10 +305,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton rdb_Nombre;
         private System.Windows.Forms.RadioButton rdb_ID;

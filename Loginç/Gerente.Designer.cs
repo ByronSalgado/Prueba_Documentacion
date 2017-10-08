@@ -52,6 +52,8 @@
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.view3BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._A_Beltran_CopiadoraDataSet16 = new Loginç._A_Beltran_CopiadoraDataSet16();
             this.view3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet1 = new Loginç._A_Beltran_CopiadoraDataSet1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -77,13 +79,13 @@
             this.epErrorBusqueda = new System.Windows.Forms.ErrorProvider(this.components);
             this.view_4TableAdapter = new Loginç._A_Beltran_CopiadoraDataSet8TableAdapters.View_4TableAdapter();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this._A_Beltran_CopiadoraDataSet16 = new Loginç._A_Beltran_CopiadoraDataSet16();
-            this.view3BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.view_3TableAdapter1 = new Loginç._A_Beltran_CopiadoraDataSet16TableAdapters.View_3TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view3BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.view3BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -94,8 +96,6 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epErrorBusqueda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view3BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // usuarioBindingSource
@@ -208,6 +208,7 @@
             this.txtfiltro.Name = "txtfiltro";
             this.txtfiltro.Size = new System.Drawing.Size(179, 20);
             this.txtfiltro.TabIndex = 0;
+            this.txtfiltro.TextChanged += new System.EventHandler(this.txtfiltro_TextChanged);
             this.txtfiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfiltro_KeyPress);
             this.txtfiltro.Validating += new System.ComponentModel.CancelEventHandler(this.txtfiltro_Validating);
             // 
@@ -309,6 +310,16 @@
             this.sexoDataGridViewTextBoxColumn.HeaderText = "Sexo";
             this.sexoDataGridViewTextBoxColumn.Name = "sexoDataGridViewTextBoxColumn";
             this.sexoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // view3BindingSource1
+            // 
+            this.view3BindingSource1.DataMember = "View_3";
+            this.view3BindingSource1.DataSource = this._A_Beltran_CopiadoraDataSet16;
+            // 
+            // _A_Beltran_CopiadoraDataSet16
+            // 
+            this._A_Beltran_CopiadoraDataSet16.DataSetName = "_A_Beltran_CopiadoraDataSet16";
+            this._A_Beltran_CopiadoraDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // view3BindingSource
             // 
@@ -474,7 +485,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(648, 171);
+            this.btnCerrar.Location = new System.Drawing.Point(610, 210);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(161, 111);
             this.btnCerrar.TabIndex = 6;
@@ -484,7 +495,7 @@
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(648, 41);
+            this.btnAbrir.Location = new System.Drawing.Point(610, 80);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(161, 111);
             this.btnAbrir.TabIndex = 7;
@@ -528,16 +539,6 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
-            // _A_Beltran_CopiadoraDataSet16
-            // 
-            this._A_Beltran_CopiadoraDataSet16.DataSetName = "_A_Beltran_CopiadoraDataSet16";
-            this._A_Beltran_CopiadoraDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // view3BindingSource1
-            // 
-            this.view3BindingSource1.DataMember = "View_3";
-            this.view3BindingSource1.DataSource = this._A_Beltran_CopiadoraDataSet16;
-            // 
             // view_3TableAdapter1
             // 
             this.view_3TableAdapter1.ClearBeforeFill = true;
@@ -562,6 +563,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view3BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.view3BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet1)).EndInit();
             this.tabControl1.ResumeLayout(false);
@@ -573,8 +576,6 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.epErrorBusqueda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view3BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -38,6 +38,7 @@
             this.idFactura = new System.Windows.Forms.TextBox();
             this.precioUni = new System.Windows.Forms.TextBox();
             this.idProducto = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.InventrioSerie = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -52,6 +53,7 @@
             this.proBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet13 = new Loginç._A_Beltran_CopiadoraDataSet13();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -71,7 +73,6 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtImp = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.txtSubT = new System.Windows.Forms.TextBox();
@@ -115,7 +116,7 @@
             // txtArqueo
             // 
             this.txtArqueo.Enabled = false;
-            this.txtArqueo.Location = new System.Drawing.Point(468, 45);
+            this.txtArqueo.Location = new System.Drawing.Point(430, 45);
             this.txtArqueo.Name = "txtArqueo";
             this.txtArqueo.ReadOnly = true;
             this.txtArqueo.Size = new System.Drawing.Size(115, 20);
@@ -125,7 +126,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(402, 48);
+            this.label3.Location = new System.Drawing.Point(364, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 27;
@@ -134,7 +135,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(402, 22);
+            this.label4.Location = new System.Drawing.Point(364, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 29;
@@ -145,6 +146,7 @@
             this.groupBox1.Controls.Add(this.idFactura);
             this.groupBox1.Controls.Add(this.precioUni);
             this.groupBox1.Controls.Add(this.idProducto);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.InventrioSerie);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtUser);
@@ -168,6 +170,7 @@
             this.idFactura.Name = "idFactura";
             this.idFactura.Size = new System.Drawing.Size(57, 20);
             this.idFactura.TabIndex = 36;
+            this.idFactura.Visible = false;
             // 
             // precioUni
             // 
@@ -175,6 +178,7 @@
             this.precioUni.Name = "precioUni";
             this.precioUni.Size = new System.Drawing.Size(57, 20);
             this.precioUni.TabIndex = 35;
+            this.precioUni.Visible = false;
             // 
             // idProducto
             // 
@@ -182,6 +186,17 @@
             this.idProducto.Name = "idProducto";
             this.idProducto.Size = new System.Drawing.Size(63, 20);
             this.idProducto.TabIndex = 34;
+            this.idProducto.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(602, 11);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 34);
+            this.button2.TabIndex = 51;
+            this.button2.Text = "Regresar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // InventrioSerie
             // 
@@ -189,6 +204,7 @@
             this.InventrioSerie.Name = "InventrioSerie";
             this.InventrioSerie.Size = new System.Drawing.Size(63, 20);
             this.InventrioSerie.TabIndex = 33;
+            this.InventrioSerie.Visible = false;
             // 
             // label10
             // 
@@ -212,7 +228,7 @@
             // txtCAI
             // 
             this.txtCAI.Enabled = false;
-            this.txtCAI.Location = new System.Drawing.Point(467, 19);
+            this.txtCAI.Location = new System.Drawing.Point(429, 19);
             this.txtCAI.Name = "txtCAI";
             this.txtCAI.ReadOnly = true;
             this.txtCAI.Size = new System.Drawing.Size(115, 20);
@@ -291,6 +307,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.btnBorrar);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.textBox9);
@@ -310,9 +327,16 @@
             this.groupBox2.Text = "Productos";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(79, 224);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(25, 20);
+            this.textBox2.TabIndex = 62;
+            // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(257, 311);
+            this.btnBorrar.Location = new System.Drawing.Point(257, 282);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 34);
             this.btnBorrar.TabIndex = 61;
@@ -322,7 +346,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(288, 249);
+            this.textBox1.Location = new System.Drawing.Point(48, 224);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(25, 20);
             this.textBox1.TabIndex = 60;
@@ -330,7 +354,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(257, 249);
+            this.textBox9.Location = new System.Drawing.Point(17, 224);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(25, 20);
             this.textBox9.TabIndex = 59;
@@ -387,7 +411,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(257, 270);
+            this.button1.Location = new System.Drawing.Point(257, 244);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 57;
@@ -414,8 +438,11 @@
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(283, 198);
             this.dataGridView2.TabIndex = 34;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
             // proTableAdapter
             // 
@@ -440,7 +467,6 @@
             this.groupBox3.Controls.Add(this.txtTotal);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtImp);
-            this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.txtSubT);
@@ -482,16 +508,6 @@
             this.txtImp.TabIndex = 56;
             this.txtImp.Text = "0";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(200, 323);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 51;
-            this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -503,7 +519,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(77, 322);
+            this.button3.Location = new System.Drawing.Point(200, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 52;
@@ -548,6 +564,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Facturar";
             this.Text = "Facturar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Facturar_FormClosing);
             this.Load += new System.EventHandler(this.Facturar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -619,5 +636,6 @@
         private System.Windows.Forms.TextBox idProducto;
         private System.Windows.Forms.TextBox InventrioSerie;
         private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

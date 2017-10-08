@@ -16,20 +16,20 @@ namespace Loginç
     {
         Conexion cnx = new Conexion();
         DataTable table = new DataTable();
-        double acum;
-        double imp;
-        double total;
+        double precioBorrar;
+        double impBorrar;
+        double acum = 0;
+        double imp = 0;
+        double total = 0;
         public Facturar()
         {
             InitializeComponent();
         }  
         private void Facturar_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet15.Pro' Puede moverla o quitarla según sea necesario.
+          
             this.proTableAdapter1.Fill(this._A_Beltran_CopiadoraDataSet15.Pro);
-            // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet14.detalle' Puede moverla o quitarla según sea necesario.
             this.detalleTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet14.detalle);
-            // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet13.Pro' Puede moverla o quitarla según sea necesario.
             this.proTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet13.Pro);
 
             table.Columns.Add("Nombre Producto", typeof(string));
@@ -57,15 +57,6 @@ namespace Loginç
         {
             try
             {
-
-                //fact.txtID_CLIENTE.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                //fact.txt_Identificacion.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-                //fact.txtNombre.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                //fact.txtTelefono.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                //fact.txtDireccion.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                //fact.txtCorreo.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                //fact.txtRTN.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                //fact.txtID.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txtNomP.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtPrecio.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
@@ -85,7 +76,7 @@ namespace Loginç
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -113,16 +104,12 @@ namespace Loginç
                 numeroColumnas = dataGridView2.Rows[0].Cells.Count;
                 numeroDeFilas = dataGridView2.Rows.Count;
                 String nombreProducto;
-                String cantidadCompra;
 
-                // MessageBox.Show(Convert.ToString("Numero de Filas "+numeroDeFilas+" Numero de Columnas "+numeroColumnas));
                 for (contadorDeFilas = 0; contadorDeFilas < numeroDeFilas; contadorDeFilas++)
                 {
-                    //  MessageBox.Show("Fila numero="+Convert.ToString(contadorDeFilas));
                     for (contadorColumnas = 0; contadorColumnas < numeroColumnas; contadorColumnas++)
                     {
                         dataGridView2.Rows[contadorDeFilas].Cells[contadorColumnas].Value.ToString();
-                        //    MessageBox.Show(dataGridView2.Rows[contadorDeFilas].Cells[contadorColumnas].Value.ToString());
                         nombreProducto = dataGridView2.Rows[contadorDeFilas].Cells[0].Value.ToString();
 
                         cnx.obtenerDetalleProducto(nombreProducto, InventrioSerie, idProducto, precioUni);
@@ -145,6 +132,8 @@ namespace Loginç
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            precioBorrar = 0;
+            impBorrar = 0;
             txtCant.Text.Trim();
             int cant;
 
@@ -157,17 +146,26 @@ namespace Loginç
 
             }
             else
-                if (Convert.ToInt32(txtCant.Text) > Convert.ToInt32(textBox9.Text))
+             if (txtNomP.Text == "" && txtPrecio.Text == "" && textBox9.Text == "")
             {
-                MessageBox.Show("Error Cantidad Insuficiente");
-            }
+                MessageBox.Show("Error Seleccione un Producto");
+                try
+                {
+                    if (Convert.ToInt32(txtCant.Text) > Convert.ToInt32(textBox9.Text))
+                    {
+                        MessageBox.Show("Error Cantidad Insuficiente");
+                    }
+                }
+                catch
+                {
+
+                }
+                
+            }      
             else
             {
                 int numeroDeCeldas, contadorDeCeldas;
                 numeroDeCeldas = dataGridView2.Rows.Count;
-
-
-                //    MessageBox.Show(Convert.ToString(numeroDeCeldas));
                 bool exist;
                 exist = dataGridView2.Rows.Cast<DataGridViewRow>().Any(row => Convert.ToString(row.Cells["Nombre Producto"].Value) == txtNomP.Text);
                 if (!exist)
@@ -192,12 +190,9 @@ namespace Loginç
                         int celdaParaActualizar;
                         String nomp;
                         nomp = dataGridView2.Rows[contadorDeCeldas].Cells[0].Value.ToString();
-                        //  MessageBox.Show(dataGridView2.Rows[contadorDeCeldas].Cells[0].Value.ToString());
                         celdaParaActualizar = contadorDeCeldas;
                         if (txtNomP.Text == nomp)
                         {
-                            //       MessageBox.Show("Hubo coincidencia");
-
                             dataGridView2[0, celdaParaActualizar].Value = txtNomP.Text;
                             dataGridView2[1, celdaParaActualizar].Value = txtPrecio.Text;
                             dataGridView2[2, celdaParaActualizar].Value = textBox1.Text;
@@ -206,13 +201,7 @@ namespace Loginç
                             contadorDeCeldas = numeroDeCeldas;
 
                         }
-                        /*
-                        else
-                        {
-                       //     MessageBox.Show("No hay coincidencia");
-                        }
-                        */
-
+                  
                     }
 
                     cant = Convert.ToInt32(txtCant.Text) * Convert.ToInt32(txtPrecio.Text);
@@ -227,12 +216,7 @@ namespace Loginç
 
                     MessageBox.Show("Dato Existe");
 
-
                 }
-
-
-
-
 
             }
         }
@@ -240,9 +224,9 @@ namespace Loginç
         private void button2_Click_1(object sender, EventArgs e)
         {
             Cajero cjr = new Cajero();
-
             cjr.Show();
-            this.Close();
+            this.Hide();
+            
         }
 
         private void txtCant_TextChanged(object sender, EventArgs e)
@@ -287,7 +271,47 @@ namespace Loginç
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             dataGridView2.Rows.RemoveAt(dataGridView2.CurrentRow.Index);
+            if (table.Rows.Count == 0)
+            {
+                textBox2.Text = "0";
+            }
+                acum = acum - precioBorrar;
+                imp = imp - impBorrar;
+                total = total - (precioBorrar + impBorrar);
+                txtSubT.Text = Convert.ToString(acum);
+                txtImp.Text = Convert.ToString(imp);
+                txtTotal.Text = Convert.ToString(total);
+        
+        }
 
+        private void Facturar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //if (table.Rows.Count <= 1)
+            //{
+            //    textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            //}
+            //textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            //precioBorrar = Convert.ToDouble(textBox2.Text);
+            //impBorrar = precioBorrar * 0.15d;
+
+        }
+
+        private void obtenerRegistro()
+        {
+            
+            textBox2.Text = (String)dataGridView1.CurrentRow.Cells[2].Value;
+            precioBorrar = Convert.ToDouble(textBox2.Text);
+            impBorrar = precioBorrar * 0.15d;
+        }
+
+        private void dataGridView2_SelectionChanged(object sender, EventArgs e)
+        {
+            obtenerRegistro();
         }
     }
 }

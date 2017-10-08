@@ -163,7 +163,7 @@ namespace Loginç
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             NuevoUsuario nuevo = new NuevoUsuario();
-
+            this.Close();
             nuevo.Show();
           
         }
@@ -336,6 +336,11 @@ namespace Loginç
         private void txtMontoFinal_KeyDown(object sender, KeyEventArgs e)
         {
             Clipboard.Clear();
+        }
+
+        private void txtfiltro_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

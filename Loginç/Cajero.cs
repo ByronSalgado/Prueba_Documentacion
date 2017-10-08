@@ -40,6 +40,8 @@ namespace Loginç
             {
                 label1.Visible = true;
                 label1.Text = "ID Usuario";
+                txtfiltro.Clear();
+                txtfiltro.Focus();
             }
         }
 
@@ -49,40 +51,14 @@ namespace Loginç
             {
                 label1.Visible = true;
                 label1.Text = "Nombre Usuario";
+                txtfiltro.Clear();
+                txtfiltro.Focus();
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e, DataGridViewCellEventArgs c)
         {
-            if(String.IsNullOrEmpty(txtfiltro.Text))
-            {
-                MessageBox.Show("Error Ingrese Datos al Filtro");
-            }
-            else
-            {
-
-                SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-
-                cmd.CommandType = CommandType.Text;
-
-                if (rdb_ID.Checked == true)
-                {
-                    cmd.CommandText = "SELECT dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado FROM dbo.Cliente INNER JOIN dbo.Estado ON dbo.Cliente.ID_Estado = dbo.Estado.ID_Estado WHERE dbo.Cliente.ID_Cliente like ('%" + txtfiltro.Text + "%') GROUP BY dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado;";
-                }
-                else
-                {
-                    cmd.CommandText = "SELECT dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado FROM dbo.Cliente INNER JOIN dbo.Estado ON dbo.Cliente.ID_Estado = dbo.Estado.ID_Estado WHERE dbo.Cliente.Nombre_Cliente like ('%" + txtfiltro.Text + "%') GROUP BY dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado;";
-                }
-
-                cmd.ExecuteNonQuery();
-
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-
-            }
+            
             
         }
 
@@ -145,5 +121,57 @@ namespace Loginç
         {
             Clipboard.Clear();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtfiltro.Text))
+            {
+                MessageBox.Show("Error Ingrese Datos al Filtro");
+            }
+            else
+            {
+                SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
+
+                cmd.CommandType = CommandType.Text;
+
+                if (rdb_ID.Checked == true)
+                {
+                    cmd.CommandText = "SELECT dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado FROM dbo.Cliente INNER JOIN dbo.Estado ON dbo.Cliente.ID_Estado = dbo.Estado.ID_Estado WHERE dbo.Cliente.ID_Cliente like ('%" + txtfiltro.Text + "%') GROUP BY dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado;";
+                }
+                else
+                {
+                    cmd.CommandText = "SELECT dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado FROM dbo.Cliente INNER JOIN dbo.Estado ON dbo.Cliente.ID_Estado = dbo.Estado.ID_Estado WHERE dbo.Cliente.Nombre_Cliente like ('%" + txtfiltro.Text + "%') GROUP BY dbo.Cliente.ID_Cliente, dbo.Cliente.Nombre_Cliente, dbo.Cliente.Telefono_Cliente, dbo.Cliente.Direccion_Cliente, dbo.Cliente.Correo_Cliente, dbo.Cliente.RTN, dbo.Estado.Descripcion_Estado;";
+                }
+
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+
+            }
+
+        }
+
+        private void txtfiltro_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (rdb_ID.Checked == true)
+            {
+                Validar.SoloNumeros(e);
+            }
+
+            if (rdb_Nombre.Checked == true)
+            {
+                Validar.SoloLetras(e);
+            }
+        }
+
+        private void Cajero_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
+
