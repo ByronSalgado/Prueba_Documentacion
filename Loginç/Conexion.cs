@@ -23,16 +23,9 @@ namespace Loginç
         {
             try
             {
-<<<<<<< Updated upstream
-                this.SQLServer = (@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
-                CONECTARSQL = new SqlConnection(this.SQLServer);
-=======
-
                 this.SQLServer = (@"Data Source=ASTRID\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
                 this.CONECTARSQL = new SqlConnection(this.SQLServer);
->>>>>>> Stashed changes
                 CONECTARSQL.Open();
-
                 // MessageBox.Show("Conectado a la base de datos", "Mensaje");
             }
 

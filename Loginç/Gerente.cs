@@ -183,7 +183,7 @@ namespace Loginç
         /***************************************************************************Caja*/
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
+            SqlConnection conex = new SqlConnection(@"Data Source=ASTRID\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
 
             conex.Open();
 

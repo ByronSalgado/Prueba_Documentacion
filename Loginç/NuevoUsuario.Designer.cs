@@ -157,6 +157,7 @@
             // 
             this.txtContraseña.Location = new System.Drawing.Point(419, 14);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(176, 20);
             this.txtContraseña.TabIndex = 9;
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtNombreUsuario_TextChanged_1);
@@ -169,6 +170,7 @@
             // 
             this.txtVerificar.Location = new System.Drawing.Point(419, 52);
             this.txtVerificar.Name = "txtVerificar";
+            this.txtVerificar.PasswordChar = '*';
             this.txtVerificar.Size = new System.Drawing.Size(176, 20);
             this.txtVerificar.TabIndex = 10;
             this.txtVerificar.TextChanged += new System.EventHandler(this.txtVerificar_TextChanged_1);

@@ -98,13 +98,11 @@ namespace Loginç
             if (char.IsWhiteSpace(v.KeyChar))
             {
                 v.Handled = true;
-
+                MessageBox.Show("NO PUEDE INCLUIR ESPACIOS EN BLANCO" +
+                  "", "Error", MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
             }
         }
-
-
-       
-
 
     }
 }
