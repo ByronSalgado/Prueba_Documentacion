@@ -151,7 +151,7 @@ namespace Loginç
             rbM.Checked = true;
         }
 
-        /**********************************Validaciones************************************************/
+       
         public static bool validarEmail(string email)
         {
             string expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
