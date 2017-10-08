@@ -77,7 +77,7 @@ namespace Loginç
         private void txtIdentidad_TextChanged_1(object sender, EventArgs e)
         {
            
-            txtIdentidad.MaxLength = 15;
+            txtIdentidad.MaxLength = 14;
         }
 
         private void txtTelefono_TextChanged_1(object sender, EventArgs e)
@@ -89,25 +89,25 @@ namespace Loginç
         private void txtDireccion_TextChanged_1(object sender, EventArgs e)
         {    
                   
-            txtDireccion.MaxLength = 20;    
+            txtDireccion.MaxLength = 35;    
         }
 
         private void txtCorreo_TextChanged_1(object sender, EventArgs e)
         {
           
-            txtCorreo.MaxLength = 20;
+            txtCorreo.MaxLength = 35;
         }
 
         private void txtNombreUsuario_TextChanged_1(object sender, EventArgs e)
         {
 
-            txtNombre.MaxLength = 10;
+            txtNombre.MaxLength = 30;
         }
 
         private void txtContrasenia_TextChanged_1(object sender, EventArgs e)
         {
 
-            txtContraseña.MaxLength = 10;
+            txtContraseña.MaxLength = 20;
         }
 
         private void txtUsuario_TextChanged_1(object sender, EventArgs e)
@@ -119,7 +119,7 @@ namespace Loginç
         private void txtVerificar_TextChanged_1(object sender, EventArgs e)
         {
 
-            txtVerificar.MaxLength = 10;
+            txtVerificar.MaxLength = 20;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -134,21 +134,15 @@ namespace Loginç
         {
            
             Validar.SoloNumeros(e);
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-
-            }
+            Validar.Espacio(e);
+         
         }
 
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validar.SoloNumeros(e);
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-
-            }
+            Validar.Espacio(e);
+            
         }
 
         private void NuevoUsuario_Load(object sender, EventArgs e)
@@ -178,132 +172,82 @@ namespace Loginç
         }
         private void txtIdentidad_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
-
+            Validar.KeyDown(e);
         }
 
         private void txtIdentidad_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-               
-               MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-                     
-             }
+            Validar.MouseDown(e);
         }
 
         private void txtTelefono_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtTelefono_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtDireccion_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtDireccion_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtCorreo_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtCorreo_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtNombre_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtNombre_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtUsuario_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtContraseña_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtContraseña_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtVerificar_KeyDown(object sender, KeyEventArgs e)
         {
-            Clipboard.Clear();
+            Validar.KeyDown(e);
         }
 
         private void txtVerificar_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
-                   MessageBoxIcon.Error);
-            }
+            Validar.MouseDown(e);
         }
 
         private void txtCorreo_Leave(object sender, EventArgs e)
@@ -330,38 +274,22 @@ namespace Loginç
 
         private void txtCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-
-            }
+            Validar.Espacio(e);
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-
-            }
+            Validar.Espacio(e);
         }
 
         private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-
-            }
+            Validar.Espacio(e);
         }
 
         private void txtVerificar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-
-            }
+            Validar.Espacio(e);
         }
 
         private void txtDireccion_Validating(object sender, CancelEventArgs e)

@@ -121,6 +121,7 @@ C:\Users\bxron\Desktop\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+<<<<<<< Updated upstream
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
@@ -142,3 +143,33 @@ C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Docu
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
 C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+=======
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\mscorlib.dll
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\es\mscorlib.resources.dll
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normidna.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfc.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfd.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfkc.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfkd.nlp
+>>>>>>> Stashed changes

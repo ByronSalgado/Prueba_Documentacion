@@ -12,7 +12,7 @@ namespace Loginç.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,8 +26,8 @@ namespace Loginç.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JOR18MADRID\\SQLEXPRESS;Initial Catalog=Proyecto_Desarrollo;Integrated" +
-            " Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ASTRID\\SQLEXPRESS;Initial Catalog=Proyecto_Desarrollo;Integrated Secu" +
+            "rity=True")]
         public string Proyecto_DesarrolloConnectionString {
             get {
                 return ((string)(this["Proyecto_DesarrolloConnectionString"]));
@@ -37,8 +37,8 @@ namespace Loginç.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-O9EIBG3\\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integr" +
-            "ated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ASTRID\\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integrated Secu" +
+            "rity=True")]
         public string A_Beltran_CopiadoraConnectionString {
             get {
                 return ((string)(this["A_Beltran_CopiadoraConnectionString"]));

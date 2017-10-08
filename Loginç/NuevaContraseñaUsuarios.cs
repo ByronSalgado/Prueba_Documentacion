@@ -37,9 +37,9 @@ namespace Loginç
                 {
                     if (cone.Autentificar(txtUsuarioRecuContraseña.Text) > 0)
                     {
-                        Conexion cone = new Conexion();
+                        Conexion conexion=new Conexion();
 
-                    cone.ingresarContraseña(txtReinContraseñaRecuContraseña.Text, txtUsuarioRecuContraseña.Text);
+                        conexion.ingresarContraseña(txtReinContraseñaRecuContraseña.Text, txtUsuarioRecuContraseña.Text);
                         txtContraseñaRecuContraseña.Clear();
                         txtReinContraseñaRecuContraseña.Clear();
                         MessageBox.Show("SE HAN GUARDADO LOS CAMBIOS", "Msj");

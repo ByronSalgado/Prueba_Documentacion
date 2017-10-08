@@ -44,7 +44,7 @@ namespace Loginç
             {
                 v.Handled = false;
             }
-            else
+            else 
             {
                 v.Handled = true;
                 MessageBox.Show("Solo Numeros");
@@ -75,5 +75,36 @@ namespace Loginç
                 MessageBox.Show("Solo numeros o numeros con punto decimal");
             }
         }
+
+        public static void MouseDown(MouseEventArgs v)
+        {
+            if (v.Button == MouseButtons.Right)
+            {
+
+                MessageBox.Show("No se puede utilizar el boton derecho" +
+                  "", "Error", MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+            }
+            
+        }
+
+        public static void KeyDown(KeyEventArgs v)
+        {
+            Clipboard.Clear();
+        }
+
+        public static void Espacio(KeyPressEventArgs v)
+        {
+            if (char.IsWhiteSpace(v.KeyChar))
+            {
+                v.Handled = true;
+
+            }
+        }
+
+
+       
+
+
     }
 }
