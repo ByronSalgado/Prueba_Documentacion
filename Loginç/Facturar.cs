@@ -291,27 +291,15 @@ namespace Loginç
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //if (table.Rows.Count <= 1)
-            //{
-            //    textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            //}
-            //textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            //precioBorrar = Convert.ToDouble(textBox2.Text);
-            //impBorrar = precioBorrar * 0.15d;
-
-        }
-
-        private void obtenerRegistro()
-        {
-            
-            textBox2.Text = (String)dataGridView1.CurrentRow.Cells[2].Value;
+            if (table.Rows.Count <= 1)
+            {
+                textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            }
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             precioBorrar = Convert.ToDouble(textBox2.Text);
             impBorrar = precioBorrar * 0.15d;
+
         }
 
-        private void dataGridView2_SelectionChanged(object sender, EventArgs e)
-        {
-            obtenerRegistro();
-        }
     }
 }

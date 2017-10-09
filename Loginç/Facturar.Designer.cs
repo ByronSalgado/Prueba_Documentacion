@@ -442,7 +442,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(283, 198);
             this.dataGridView2.TabIndex = 34;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
             // proTableAdapter
             // 
