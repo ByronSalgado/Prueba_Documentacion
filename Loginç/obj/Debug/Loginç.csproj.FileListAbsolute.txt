@@ -19,3 +19,24 @@ C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio
 C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
 C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
 C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache

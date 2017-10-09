@@ -80,8 +80,6 @@
             this.TxtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtUsuario_KeyDown);
             this.TxtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUsuario_KeyPress);
             this.TxtUsuario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtUsuario_MouseDown);
-            this.TxtUsuario.MouseLeave += new System.EventHandler(this.TxtUsuario_MouseLeave);
-            this.TxtUsuario.MouseHover += new System.EventHandler(this.TxtUsuario_MouseHover);
             // 
             // TxtContraseña
             // 
@@ -91,12 +89,10 @@
             this.TxtContraseña.Size = new System.Drawing.Size(100, 20);
             this.TxtContraseña.TabIndex = 3;
             this.TxtContraseña.TextChanged += new System.EventHandler(this.TxtContraseña_TextChanged);
-            this.TxtContraseña.Enter += new System.EventHandler(this.TxtContraseña_Enter);
             this.TxtContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtContraseña_KeyDown);
             this.TxtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtContraseña_KeyPress);
             this.TxtContraseña.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtContraseña_MouseDown);
-            this.TxtContraseña.MouseLeave += new System.EventHandler(this.TxtContraseña_MouseLeave);
-            this.TxtContraseña.MouseHover += new System.EventHandler(this.TxtContraseña_MouseHover);
+
             // 
             // btnIngresar
             // 
@@ -147,7 +143,6 @@
             this.txtIntentosErrores.Size = new System.Drawing.Size(17, 20);
             this.txtIntentosErrores.TabIndex = 8;
             this.txtIntentosErrores.Visible = false;
-            this.txtIntentosErrores.TextChanged += new System.EventHandler(this.txtIntentosErrores_TextChanged);
             // 
             // label3
             // 

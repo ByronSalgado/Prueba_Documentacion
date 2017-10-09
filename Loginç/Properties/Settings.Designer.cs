@@ -26,8 +26,8 @@ namespace Loginç.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HR7H29I\\JULIO;Initial Catalog=Proyecto_Desarrollo;Integrated " +
-            "Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-21KAN6J\\SQLEXPRESS;Initial Catalog=Proyecto_Desarrollo;Integr" +
+            "ated Security=True")]
         public string Proyecto_DesarrolloConnectionString {
             get {
                 return ((string)(this["Proyecto_DesarrolloConnectionString"]));
@@ -37,11 +37,23 @@ namespace Loginç.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-HR7H29I\\JULIO;Initial Catalog=A.Beltran.Copiadora;Integrated " +
-            "Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-21KAN6J\\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integr" +
+            "ated Security=True")]
         public string A_Beltran_CopiadoraConnectionString {
             get {
                 return ((string)(this["A_Beltran_CopiadoraConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\r\n</SerializableConnectionString>")]
+        public string S {
+            get {
+                return ((string)(this["S"]));
+            }
+            set {
+                this["S"] = value;
             }
         }
     }

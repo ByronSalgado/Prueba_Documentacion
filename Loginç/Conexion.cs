@@ -23,7 +23,7 @@ namespace Loginç
         {
             try
             {
-                this.SQLServer = (@"Data Source=DESKTOP-HR7H29I\JULIO; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
+                this.SQLServer = (@"Data Source=DESKTOP-21KAN6J\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
                 this.CONECTARSQL = new SqlConnection(this.SQLServer);
                 CONECTARSQL.Open();
             }
