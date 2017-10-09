@@ -14,7 +14,7 @@ namespace Loginç
 {
     public partial class FormGerente : Form
     {
-
+        Conexion conex = new Conexion();
         public FormGerente()
         {
             InitializeComponent();
@@ -59,7 +59,7 @@ namespace Loginç
             this.view_3TableAdapter.Fill(this._A_Beltran_CopiadoraDataSet1.View_3);
             // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet.Usuario' Puede moverla o quitarla según sea necesario.
             this.usuarioTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet.Usuario);
-            Conexion cnx = new Conexion();
+            
 
             rdb_ID.Checked = true;
         }
@@ -112,11 +112,8 @@ namespace Loginç
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
 
-            conex.Open();
-
-            SqlCommand cmd = conex.CreateCommand();
+            SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
 
             cmd.CommandType = CommandType.Text;
 
@@ -139,7 +136,7 @@ namespace Loginç
             da.Fill(dt);
             dataGridView1.DataSource = dt;
 
-            conex.Close();
+            conex.CONECTARSQL.Close();
         }
 
         private void txtfiltro_KeyPress(object sender, KeyPressEventArgs e)

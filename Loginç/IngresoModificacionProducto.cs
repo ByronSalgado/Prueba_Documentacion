@@ -93,7 +93,6 @@ namespace Loginç
 
             Conexion conex = new Conexion();
             string salida;
-            int id;
 
             if (String.IsNullOrEmpty(txtNomProducto.Text) | String.IsNullOrEmpty(txtNum.Text) | String.IsNullOrEmpty(txtCodigo.Text) | String.IsNullOrEmpty(txtDescripcion.Text) | String.IsNullOrEmpty(txtPrecio.Text) | String.IsNullOrEmpty(txtCantidad.Text))
             {
