@@ -180,27 +180,27 @@ namespace Loginç
         /***************************************************************************Caja*/
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            SqlConnection conex = new SqlConnection(@"Data Source=ASTRID\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
 
-            conex.Open();
+            SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
 
-            SqlCommand ccc = conex.CreateCommand();
-
-            ccc.CommandType = CommandType.Text;
+            cmd.CommandType = CommandType.Text;
 
 
-            ccc.CommandText = "SELECT * FROM dbo.Arqueo As A inner join [dbo].[Estado] As B on A.ID_Estado = b.ID_Estado WHERE ([Fecha_Final] = CONVERT(DATE, '" + dateTimePicker1.Text + "'))  ";
+            cmd.CommandText = "SELECT * FROM dbo.Arqueo As A inner join [dbo].[Estado] As B on A.ID_Estado = b.ID_Estado WHERE ([Fecha_Final] = CONVERT(DATE, '" + dateTimePicker1.Text + "'))  ";
 
 
 
-            ccc.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(ccc);
+            cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
 
-            da.Fill(dt);
-            dataGridView2.DataSource = dt;
+                da.Fill(dt);
+                dataGridView2.DataSource = dt;
 
-            conex.Close();
+             
+            
+
+            
         }
 
         private void btnAbrir_Click(object sender, EventArgs e)
@@ -338,6 +338,11 @@ namespace Loginç
         private void txtfiltro_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }
