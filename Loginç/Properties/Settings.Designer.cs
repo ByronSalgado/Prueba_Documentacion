@@ -26,7 +26,7 @@ namespace Loginç.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-21KAN6J\\SQLEXPRESS;Initial Catalog=Proyecto_Desarrollo;Integr" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UVN87AS\\SQLEXPRESS;Initial Catalog=Proyecto_Desarrollo;Integr" +
             "ated Security=True")]
         public string Proyecto_DesarrolloConnectionString {
             get {
@@ -37,7 +37,7 @@ namespace Loginç.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-21KAN6J\\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integr" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UVN87AS\\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integr" +
             "ated Security=True")]
         public string A_Beltran_CopiadoraConnectionString {
             get {

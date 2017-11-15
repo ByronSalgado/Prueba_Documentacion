@@ -36,11 +36,7 @@ namespace Loginç
 
             num = Convert.ToInt32(txtID_CLIENTE.Text);
 
-            SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-O9EIBG3\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
-
-            conex.Open();
-
-            SqlCommand cmd = conex.CreateCommand();
+            SqlCommand cmd = con.CONECTARSQL.CreateCommand();
 
             cmd.CommandType = CommandType.Text;
 
@@ -53,13 +49,6 @@ namespace Loginç
 
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-            conex.Close();
-
-            
-            
-            
-
-
 
         }
 
@@ -73,25 +62,33 @@ namespace Loginç
             else
             {
                 con.validarFacturar(txtEstadoArqueo);
-                int numero = Convert.ToInt32(txtEstadoArqueo.Text);
-
-                if (numero == 7)
+                if (txtEstadoArqueo.Text == "")
                 {
-                    MessageBox.Show("El arqueo esta cerrado");
+                    MessageBox.Show("Arqueo no inicializado");
                 }
                 else
                 {
-                    if (numero == 6)
-                    {
-                        Facturar fac = new Facturar();
-                        fac.txtId_Cliente.Text = txtID_CLIENTE.Text;
-                        fac.Show();
-                        this.Hide();
-                    }
-                   
-                }
-                    
 
+
+                    int numero = Convert.ToInt32(txtEstadoArqueo.Text);
+
+                    if (numero == 7)
+                    {
+                        MessageBox.Show("El arqueo esta cerrado");
+                    }
+                    else
+                    {
+                        if (numero == 6)
+                        {
+                            Facturar fac = new Facturar();
+                            fac.txtId_Cliente.Text = txtID_CLIENTE.Text;
+                            fac.Show();
+                            this.Hide();
+                        }
+
+                    }
+
+                }
             }
 
         }
