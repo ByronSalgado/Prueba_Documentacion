@@ -35,11 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.idFactura = new System.Windows.Forms.TextBox();
-            this.precioUni = new System.Windows.Forms.TextBox();
-            this.idProducto = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.InventrioSerie = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtCAI = new System.Windows.Forms.TextBox();
@@ -53,10 +49,7 @@
             this.proBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet13 = new Loginç._A_Beltran_CopiadoraDataSet13();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNomP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -79,6 +72,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.proTableAdapter1 = new Loginç._A_Beltran_CopiadoraDataSet15TableAdapters.ProTableAdapter();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proBindingSource1)).BeginInit();
@@ -91,15 +86,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.detalleBindingSource)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtId_Cliente
             // 
             this.txtId_Cliente.Enabled = false;
-            this.txtId_Cliente.Location = new System.Drawing.Point(82, 19);
+            this.txtId_Cliente.Location = new System.Drawing.Point(82, 22);
             this.txtId_Cliente.Name = "txtId_Cliente";
             this.txtId_Cliente.ReadOnly = true;
-            this.txtId_Cliente.Size = new System.Drawing.Size(131, 20);
+            this.txtId_Cliente.Size = new System.Drawing.Size(175, 20);
             this.txtId_Cliente.TabIndex = 24;
             this.txtId_Cliente.Text = "0";
             this.txtId_Cliente.TextChanged += new System.EventHandler(this.txtID_CLIENTE_TextChanged);
@@ -107,7 +103,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 22);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(20, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 23;
@@ -116,26 +113,29 @@
             // txtArqueo
             // 
             this.txtArqueo.Enabled = false;
-            this.txtArqueo.Location = new System.Drawing.Point(430, 45);
+            this.txtArqueo.Location = new System.Drawing.Point(376, 49);
             this.txtArqueo.Name = "txtArqueo";
             this.txtArqueo.ReadOnly = true;
-            this.txtArqueo.Size = new System.Drawing.Size(115, 20);
+            this.txtArqueo.Size = new System.Drawing.Size(175, 20);
             this.txtArqueo.TabIndex = 28;
             this.txtArqueo.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(364, 48);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(315, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 27;
             this.label3.Text = "ID Arqueo";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(364, 22);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(332, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 29;
@@ -143,11 +143,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.idFactura);
-            this.groupBox1.Controls.Add(this.precioUni);
-            this.groupBox1.Controls.Add(this.idProducto);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.InventrioSerie);
+            this.groupBox1.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.txtCAI);
@@ -156,41 +152,19 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtArqueo);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 14);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Location = new System.Drawing.Point(12, 104);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(683, 81);
+            this.groupBox1.Size = new System.Drawing.Size(561, 81);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Factura";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // idFactura
-            // 
-            this.idFactura.Location = new System.Drawing.Point(296, 48);
-            this.idFactura.Name = "idFactura";
-            this.idFactura.Size = new System.Drawing.Size(57, 20);
-            this.idFactura.TabIndex = 36;
-            this.idFactura.Visible = false;
-            // 
-            // precioUni
-            // 
-            this.precioUni.Location = new System.Drawing.Point(296, 19);
-            this.precioUni.Name = "precioUni";
-            this.precioUni.Size = new System.Drawing.Size(57, 20);
-            this.precioUni.TabIndex = 35;
-            this.precioUni.Visible = false;
-            // 
-            // idProducto
-            // 
-            this.idProducto.Location = new System.Drawing.Point(219, 48);
-            this.idProducto.Name = "idProducto";
-            this.idProducto.Size = new System.Drawing.Size(63, 20);
-            this.idProducto.TabIndex = 34;
-            this.idProducto.Visible = false;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(602, 11);
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(603, 121);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 34);
             this.button2.TabIndex = 51;
@@ -198,18 +172,11 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // InventrioSerie
-            // 
-            this.InventrioSerie.Location = new System.Drawing.Point(219, 19);
-            this.InventrioSerie.Name = "InventrioSerie";
-            this.InventrioSerie.Size = new System.Drawing.Size(63, 20);
-            this.InventrioSerie.TabIndex = 33;
-            this.InventrioSerie.Visible = false;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(16, 48);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Location = new System.Drawing.Point(16, 52);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 13);
             this.label10.TabIndex = 32;
@@ -218,20 +185,20 @@
             // txtUser
             // 
             this.txtUser.Enabled = false;
-            this.txtUser.Location = new System.Drawing.Point(82, 45);
+            this.txtUser.Location = new System.Drawing.Point(82, 49);
             this.txtUser.Name = "txtUser";
             this.txtUser.ReadOnly = true;
-            this.txtUser.Size = new System.Drawing.Size(131, 20);
+            this.txtUser.Size = new System.Drawing.Size(175, 20);
             this.txtUser.TabIndex = 31;
             this.txtUser.Text = "0";
             // 
             // txtCAI
             // 
             this.txtCAI.Enabled = false;
-            this.txtCAI.Location = new System.Drawing.Point(429, 19);
+            this.txtCAI.Location = new System.Drawing.Point(376, 22);
             this.txtCAI.Name = "txtCAI";
             this.txtCAI.ReadOnly = true;
-            this.txtCAI.Size = new System.Drawing.Size(115, 20);
+            this.txtCAI.Size = new System.Drawing.Size(175, 20);
             this.txtCAI.TabIndex = 30;
             this.txtCAI.Text = "0";
             // 
@@ -307,10 +274,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox2.Controls.Add(this.btnBorrar);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtNomP);
             this.groupBox2.Controls.Add(this.label7);
@@ -319,24 +284,19 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.txtCant);
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 101);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox2.Location = new System.Drawing.Point(11, 202);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(371, 354);
+            this.groupBox2.Size = new System.Drawing.Size(371, 312);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(79, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(25, 20);
-            this.textBox2.TabIndex = 62;
-            // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(257, 282);
+            this.btnBorrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBorrar.Location = new System.Drawing.Point(257, 264);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 34);
             this.btnBorrar.TabIndex = 61;
@@ -344,26 +304,11 @@
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(48, 224);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(25, 20);
-            this.textBox1.TabIndex = 60;
-            this.textBox1.Visible = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(17, 224);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(25, 20);
-            this.textBox9.TabIndex = 59;
-            this.textBox9.Visible = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 247);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(15, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 13);
             this.label6.TabIndex = 52;
@@ -372,7 +317,7 @@
             // txtNomP
             // 
             this.txtNomP.Enabled = false;
-            this.txtNomP.Location = new System.Drawing.Point(111, 244);
+            this.txtNomP.Location = new System.Drawing.Point(111, 226);
             this.txtNomP.Name = "txtNomP";
             this.txtNomP.ReadOnly = true;
             this.txtNomP.Size = new System.Drawing.Size(131, 20);
@@ -383,7 +328,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 273);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(15, 255);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 54;
@@ -392,7 +338,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Enabled = false;
-            this.txtPrecio.Location = new System.Drawing.Point(111, 270);
+            this.txtPrecio.Location = new System.Drawing.Point(111, 252);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.ReadOnly = true;
             this.txtPrecio.Size = new System.Drawing.Size(131, 20);
@@ -403,7 +349,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 296);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(15, 278);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 56;
@@ -411,7 +358,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(257, 244);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(257, 226);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 57;
@@ -421,7 +369,7 @@
             // 
             // txtCant
             // 
-            this.txtCant.Location = new System.Drawing.Point(111, 296);
+            this.txtCant.Location = new System.Drawing.Point(111, 278);
             this.txtCant.Name = "txtCant";
             this.txtCant.Size = new System.Drawing.Size(131, 20);
             this.txtCant.TabIndex = 58;
@@ -463,6 +411,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox3.Controls.Add(this.txtTotal);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtImp);
@@ -471,9 +420,10 @@
             this.groupBox3.Controls.Add(this.txtSubT);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.dataGridView2);
-            this.groupBox3.Location = new System.Drawing.Point(389, 101);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox3.Location = new System.Drawing.Point(388, 202);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(307, 354);
+            this.groupBox3.Size = new System.Drawing.Size(299, 312);
             this.groupBox3.TabIndex = 51;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Producto";
@@ -481,17 +431,18 @@
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(77, 296);
+            this.txtTotal.Location = new System.Drawing.Point(72, 277);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(198, 20);
+            this.txtTotal.Size = new System.Drawing.Size(79, 20);
             this.txtTotal.TabIndex = 58;
             this.txtTotal.Text = "0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 299);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(16, 280);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 57;
@@ -500,17 +451,18 @@
             // txtImp
             // 
             this.txtImp.Enabled = false;
-            this.txtImp.Location = new System.Drawing.Point(77, 270);
+            this.txtImp.Location = new System.Drawing.Point(72, 251);
             this.txtImp.Name = "txtImp";
             this.txtImp.ReadOnly = true;
-            this.txtImp.Size = new System.Drawing.Size(198, 20);
+            this.txtImp.Size = new System.Drawing.Size(79, 20);
             this.txtImp.TabIndex = 56;
             this.txtImp.Text = "0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 273);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(16, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 13);
             this.label5.TabIndex = 55;
@@ -518,9 +470,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(200, 322);
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(214, 243);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(75, 34);
             this.button3.TabIndex = 52;
             this.button3.Text = "Facturar";
             this.button3.UseVisualStyleBackColor = true;
@@ -529,17 +482,18 @@
             // txtSubT
             // 
             this.txtSubT.Enabled = false;
-            this.txtSubT.Location = new System.Drawing.Point(76, 244);
+            this.txtSubT.Location = new System.Drawing.Point(71, 225);
             this.txtSubT.Name = "txtSubT";
             this.txtSubT.ReadOnly = true;
-            this.txtSubT.Size = new System.Drawing.Size(199, 20);
+            this.txtSubT.Size = new System.Drawing.Size(79, 20);
             this.txtSubT.TabIndex = 54;
             this.txtSubT.Text = "0";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 247);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Location = new System.Drawing.Point(16, 228);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 53;
@@ -553,12 +507,40 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(102, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(438, 36);
+            this.label11.TabIndex = 53;
+            this.label11.Text = "A.Beltran.Copiadora S. de R.L";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox2.Image = global::Loginç.Properties.Resources.icon_account2;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 90);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 52;
+            this.pictureBox2.TabStop = false;
+            // 
             // Facturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 461);
+            this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
+            this.ClientSize = new System.Drawing.Size(699, 516);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "Facturar";
@@ -580,7 +562,9 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -609,8 +593,6 @@
         public System.Windows.Forms.TextBox txtCAI;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtNomP;
         private System.Windows.Forms.Label label7;
@@ -630,11 +612,8 @@
         private System.Windows.Forms.BindingSource proBindingSource1;
         private _A_Beltran_CopiadoraDataSet15TableAdapters.ProTableAdapter proTableAdapter1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.TextBox idFactura;
-        private System.Windows.Forms.TextBox precioUni;
-        private System.Windows.Forms.TextBox idProducto;
-        private System.Windows.Forms.TextBox InventrioSerie;
         private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

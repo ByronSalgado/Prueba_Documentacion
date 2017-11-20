@@ -15,25 +15,20 @@ namespace Loginç
     public partial class Bodega : Form
     {
         Conexion conex = new Conexion();
-
         public Bodega()
         {
             InitializeComponent();
                                
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             link lk = new link();
-
             lk.Show();
             this.Close();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             IngresoModificacionProducto In = new IngresoModificacionProducto();
-
             In.Show();
             this.Close();
             In.button1.Visible = true;
@@ -42,18 +37,12 @@ namespace Loginç
         }
 
         private void Bodega_Load(object sender, EventArgs e)
-        {
-            
+        {            
             try
             {
-
-
                 radioButton1.Checked = true;
-
                 SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-
                 cmd.CommandType = CommandType.Text;
-
                 if (radioButton1.Checked == true)
                 {
                     cmd.CommandText = "select * from [dbo].[View_2] ";  
@@ -62,7 +51,6 @@ namespace Loginç
                     textBox1.Visible = false;
                     btnBuscar.Visible = false;
                     btnNuevo.Visible = false;
-
                 }
                 else
                 {
@@ -70,15 +58,11 @@ namespace Loginç
                     
 
                 }
-
                 cmd.ExecuteNonQuery();
-
                 DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
+                SqlDataAdapter da = new SqlDataAdapter(cmd);            
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-
                 conex.CONECTARSQL.Close();
                 comboBox1.SelectedIndex = 1;
             }
@@ -88,17 +72,12 @@ namespace Loginç
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
             try
             {
-
                 SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-
                 cmd.CommandType = CommandType.Text;
-
                 if (radioButton1.Checked == true)
-                {
-                    
+                {                   
                     cmd.CommandText = "select * from [dbo].[View_2] ";
                     comboBox1.Items.Clear();
                     comboBox1.Visible = false;
@@ -108,40 +87,30 @@ namespace Loginç
                 }
                 else
                 {
-                    cmd.CommandText = "select * from [dbo].[View_1] ";
-                    
+                    cmd.CommandText = "select * from [dbo].[View_1] ";                    
                 }
-
                 cmd.ExecuteNonQuery();
-
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
-
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-
                 conex.CONECTARSQL.Close();
             }
             catch
             {
 
-            }
-            
+            }            
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            
+        {            
             try
             {
                 conex.CONECTARSQL.Open();
                 SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-
                 cmd.CommandType = CommandType.Text;
-
                 if (radioButton2.Checked == true)
-                {
-                                    
+                {                                    
                     cmd.CommandText = "select * from [dbo].[View_1] ";
                     comboBox1.Items.Add("Codigo");
                     comboBox1.Items.Add("Nombre");
@@ -159,34 +128,26 @@ namespace Loginç
                     btnNuevo.Visible = true;
                 }
                 else
-                {
-                   
+                {                   
                     cmd.CommandText = "select * from [dbo].[View_2] ";
                     comboBox1.Items.Clear();
                     comboBox1.Visible = false;
                     textBox1.Visible = false;
                     btnBuscar.Visible = false;
                     btnNuevo.Visible = false;
-
                 }
-
                 cmd.ExecuteNonQuery();
-
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
-
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-
                 conex.CONECTARSQL.Close();
             }
             catch
             {
 
-            }
-            
+            }            
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -199,9 +160,7 @@ namespace Loginç
                 else
                 {
                     SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-
                     cmd.CommandType = CommandType.Text;
-
                     if (radioButton1.Checked == true)
                     {
                         if (comboBox1.SelectedIndex == 0)
@@ -244,9 +203,7 @@ namespace Loginç
                             cmd.CommandText = "select * from [dbo].[View_2] where .Codigo_Barra like '%" + textBox1.Text.Trim() + "%'";
                         }
                     }
-
                     //////////////////////////////////////////////////////////////
-
                     if (radioButton2.Checked == true)
                     {
                         if (comboBox1.SelectedIndex == 0)
@@ -297,10 +254,8 @@ namespace Loginç
                     cmd.ExecuteNonQuery();
                     DataTable dt = new DataTable();
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
-
                     da.Fill(dt);
                     dataGridView1.DataSource = dt;
-
                     conex.CONECTARSQL.Close();
                 }
             }
@@ -309,29 +264,17 @@ namespace Loginç
 
             }                                         
         }
-
         private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+        {        }
         private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+        {        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
+        {        }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+        {        
             IngresoModificacionProducto modificar = new IngresoModificacionProducto();
-
             try
             {
-
                 modificar.textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 modificar.txtCodigo.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
                 modificar.txtNomProducto.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -349,22 +292,17 @@ namespace Loginç
                 modificar.label9.Visible = true;
             }
             catch
-            {
-
-            }
+            {            }
         }
-
         private void textBox1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
-
                 MessageBox.Show("No se puede utilizar el boton derecho" +
                   "", "Error", MessageBoxButtons.OK,
                    MessageBoxIcon.Error);
             }
         }
-
         private void textBox1_Validating(object sender, CancelEventArgs e)
         {
             if (textBox1.Text.Trim() == String.Empty)
@@ -372,25 +310,107 @@ namespace Loginç
                 epError.SetError(textBox1, "No se permiten campos vacíos");
                 textBox1.Text = "";
             }
-
-
             else
                 epError.SetError(textBox1, "");
         }
-
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             Clipboard.Clear();
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        {        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             textBox1.MaxLength = 10;
         }
+        private void InitializeComponent()
+        {
+            this.iDClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.identificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rTNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionEstadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionIdentificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SuspendLayout();
+            // 
+            // iDClienteDataGridViewTextBoxColumn
+            // 
+            this.iDClienteDataGridViewTextBoxColumn.DataPropertyName = "ID_Cliente";
+            this.iDClienteDataGridViewTextBoxColumn.HeaderText = "ID_Cliente";
+            this.iDClienteDataGridViewTextBoxColumn.Name = "iDClienteDataGridViewTextBoxColumn";
+            this.iDClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // identificacionDataGridViewTextBoxColumn
+            // 
+            this.identificacionDataGridViewTextBoxColumn.DataPropertyName = "Identificacion";
+            this.identificacionDataGridViewTextBoxColumn.HeaderText = "Identificacion";
+            this.identificacionDataGridViewTextBoxColumn.Name = "identificacionDataGridViewTextBoxColumn";
+            this.identificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreClienteDataGridViewTextBoxColumn
+            // 
+            this.nombreClienteDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Cliente";
+            this.nombreClienteDataGridViewTextBoxColumn.HeaderText = "Nombre_Cliente";
+            this.nombreClienteDataGridViewTextBoxColumn.Name = "nombreClienteDataGridViewTextBoxColumn";
+            this.nombreClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonoClienteDataGridViewTextBoxColumn
+            // 
+            this.telefonoClienteDataGridViewTextBoxColumn.DataPropertyName = "Telefono_Cliente";
+            this.telefonoClienteDataGridViewTextBoxColumn.HeaderText = "Telefono_Cliente";
+            this.telefonoClienteDataGridViewTextBoxColumn.Name = "telefonoClienteDataGridViewTextBoxColumn";
+            this.telefonoClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // direccionClienteDataGridViewTextBoxColumn
+            // 
+            this.direccionClienteDataGridViewTextBoxColumn.DataPropertyName = "Direccion_Cliente";
+            this.direccionClienteDataGridViewTextBoxColumn.HeaderText = "Direccion_Cliente";
+            this.direccionClienteDataGridViewTextBoxColumn.Name = "direccionClienteDataGridViewTextBoxColumn";
+            this.direccionClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // correoClienteDataGridViewTextBoxColumn
+            // 
+            this.correoClienteDataGridViewTextBoxColumn.DataPropertyName = "Correo_Cliente";
+            this.correoClienteDataGridViewTextBoxColumn.HeaderText = "Correo_Cliente";
+            this.correoClienteDataGridViewTextBoxColumn.Name = "correoClienteDataGridViewTextBoxColumn";
+            this.correoClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rTNDataGridViewTextBoxColumn
+            // 
+            this.rTNDataGridViewTextBoxColumn.DataPropertyName = "RTN";
+            this.rTNDataGridViewTextBoxColumn.HeaderText = "RTN";
+            this.rTNDataGridViewTextBoxColumn.Name = "rTNDataGridViewTextBoxColumn";
+            this.rTNDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionEstadoDataGridViewTextBoxColumn
+            // 
+            this.descripcionEstadoDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Estado";
+            this.descripcionEstadoDataGridViewTextBoxColumn.HeaderText = "Descripcion_Estado";
+            this.descripcionEstadoDataGridViewTextBoxColumn.Name = "descripcionEstadoDataGridViewTextBoxColumn";
+            this.descripcionEstadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionIdentificacionDataGridViewTextBoxColumn
+            // 
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Identificacion";
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.HeaderText = "Descripcion_Identificacion";
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.Name = "descripcionIdentificacionDataGridViewTextBoxColumn";
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Bodega
+            // 
+            this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
+            this.ClientSize = new System.Drawing.Size(809, 424);
+            this.Name = "Bodega";
+            this.Text = "Bodega";
+            this.Load += new System.EventHandler(this.Bodega_Load_1);
+            this.ResumeLayout(false);
+
+        }
+
+        private void Bodega_Load_1(object sender, EventArgs e)
+        {        }
     }
 }

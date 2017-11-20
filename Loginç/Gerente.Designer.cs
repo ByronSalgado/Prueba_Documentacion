@@ -32,12 +32,10 @@
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet = new Loginç._A_Beltran_CopiadoraDataSet();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.usuarioTableAdapter = new Loginç._A_Beltran_CopiadoraDataSetTableAdapters.UsuarioTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.rdb_Nombre = new System.Windows.Forms.RadioButton();
             this.rdb_ID = new System.Windows.Forms.RadioButton();
             this.txtfiltro = new System.Windows.Forms.TextBox();
@@ -64,11 +62,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblMontoFinal = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.descripcionEstadoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaInicialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoInicialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoFinalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.view4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet8 = new Loginç._A_Beltran_CopiadoraDataSet8();
             this.lblMontoInicial = new System.Windows.Forms.Label();
@@ -78,8 +71,17 @@
             this.view_3TableAdapter = new Loginç._A_Beltran_CopiadoraDataSet1TableAdapters.View_3TableAdapter();
             this.epErrorBusqueda = new System.Windows.Forms.ErrorProvider(this.components);
             this.view_4TableAdapter = new Loginç._A_Beltran_CopiadoraDataSet8TableAdapters.View_4TableAdapter();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.view_3TableAdapter1 = new Loginç._A_Beltran_CopiadoraDataSet16TableAdapters.View_3TableAdapter();
+            this.fechaInicialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montoInicialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montoFinalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionEstadoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -110,24 +112,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(734, 12);
+            this.button1.Location = new System.Drawing.Point(712, 252);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar Sesion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(109, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(438, 36);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "A.Beltran.Copiadora S. de R.L";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // usuarioTableAdapter
             // 
@@ -137,51 +128,45 @@
             // 
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.rdb_Nombre);
             this.groupBox1.Controls.Add(this.rdb_ID);
             this.groupBox1.Controls.Add(this.txtfiltro);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(564, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(244, 282);
+            this.groupBox1.Size = new System.Drawing.Size(244, 191);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros de Busqueda";
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(139, 165);
+            this.btnNuevo.BackColor = System.Drawing.SystemColors.Control;
+            this.btnNuevo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNuevo.Location = new System.Drawing.Point(120, 68);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(74, 23);
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(43, 165);
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(24, 68);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(74, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "Buscar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            this.label1.Visible = false;
             // 
             // rdb_Nombre
             // 
             this.rdb_Nombre.AutoSize = true;
-            this.rdb_Nombre.Location = new System.Drawing.Point(130, 46);
+            this.rdb_Nombre.Location = new System.Drawing.Point(80, 19);
             this.rdb_Nombre.Name = "rdb_Nombre";
             this.rdb_Nombre.Size = new System.Drawing.Size(62, 17);
             this.rdb_Nombre.TabIndex = 2;
@@ -193,7 +178,7 @@
             // rdb_ID
             // 
             this.rdb_ID.AutoSize = true;
-            this.rdb_ID.Location = new System.Drawing.Point(43, 46);
+            this.rdb_ID.Location = new System.Drawing.Point(15, 19);
             this.rdb_ID.Name = "rdb_ID";
             this.rdb_ID.Size = new System.Drawing.Size(36, 17);
             this.rdb_ID.TabIndex = 1;
@@ -204,7 +189,7 @@
             // 
             // txtfiltro
             // 
-            this.txtfiltro.Location = new System.Drawing.Point(43, 128);
+            this.txtfiltro.Location = new System.Drawing.Point(15, 42);
             this.txtfiltro.Name = "txtfiltro";
             this.txtfiltro.Size = new System.Drawing.Size(179, 20);
             this.txtfiltro.TabIndex = 0;
@@ -338,11 +323,15 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 116);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(822, 353);
+            this.tabControl1.Size = new System.Drawing.Size(827, 353);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
+            this.tabPage1.Controls.Add(this.dateTimePicker2);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.txtMontoFinal);
             this.tabPage1.Controls.Add(this.btnBuscar);
             this.tabPage1.Controls.Add(this.txtMontoInicial);
@@ -355,14 +344,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(814, 327);
+            this.tabPage1.Size = new System.Drawing.Size(819, 327);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "Arqueo";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // txtMontoFinal
             // 
-            this.txtMontoFinal.Location = new System.Drawing.Point(94, 47);
+            this.txtMontoFinal.Location = new System.Drawing.Point(349, 42);
             this.txtMontoFinal.Name = "txtMontoFinal";
             this.txtMontoFinal.Size = new System.Drawing.Size(100, 20);
             this.txtMontoFinal.TabIndex = 18;
@@ -373,7 +362,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(484, 51);
+            this.btnBuscar.Location = new System.Drawing.Point(485, 12);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 10;
@@ -383,7 +372,7 @@
             // 
             // txtMontoInicial
             // 
-            this.txtMontoInicial.Location = new System.Drawing.Point(94, 17);
+            this.txtMontoInicial.Location = new System.Drawing.Point(349, 12);
             this.txtMontoInicial.Name = "txtMontoInicial";
             this.txtMontoInicial.Size = new System.Drawing.Size(100, 20);
             this.txtMontoInicial.TabIndex = 15;
@@ -395,7 +384,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(379, 54);
+            this.dateTimePicker1.Location = new System.Drawing.Point(94, 10);
             this.dateTimePicker1.MaxDate = new System.DateTime(2017, 10, 8, 22, 50, 56, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
@@ -406,7 +395,8 @@
             // lblMontoFinal
             // 
             this.lblMontoFinal.AutoSize = true;
-            this.lblMontoFinal.Location = new System.Drawing.Point(26, 50);
+            this.lblMontoFinal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMontoFinal.Location = new System.Drawing.Point(281, 45);
             this.lblMontoFinal.Name = "lblMontoFinal";
             this.lblMontoFinal.Size = new System.Drawing.Size(62, 13);
             this.lblMontoFinal.TabIndex = 17;
@@ -419,25 +409,90 @@
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.descripcionEstadoDataGridViewTextBoxColumn1,
             this.fechaInicialDataGridViewTextBoxColumn,
             this.fechaFinalDataGridViewTextBoxColumn,
             this.montoInicialDataGridViewTextBoxColumn,
-            this.montoFinalDataGridViewTextBoxColumn});
+            this.montoFinalDataGridViewTextBoxColumn,
+            this.descripcionEstadoDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.view4BindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(16, 80);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(543, 241);
+            this.dataGridView2.Size = new System.Drawing.Size(544, 241);
             this.dataGridView2.TabIndex = 8;
             // 
-            // descripcionEstadoDataGridViewTextBoxColumn1
+            // view4BindingSource
             // 
-            this.descripcionEstadoDataGridViewTextBoxColumn1.DataPropertyName = "Descripcion_Estado";
-            this.descripcionEstadoDataGridViewTextBoxColumn1.HeaderText = "Descripcion_Estado";
-            this.descripcionEstadoDataGridViewTextBoxColumn1.Name = "descripcionEstadoDataGridViewTextBoxColumn1";
-            this.descripcionEstadoDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.view4BindingSource.DataMember = "View_4";
+            this.view4BindingSource.DataSource = this._A_Beltran_CopiadoraDataSet8;
+            // 
+            // _A_Beltran_CopiadoraDataSet8
+            // 
+            this._A_Beltran_CopiadoraDataSet8.DataSetName = "_A_Beltran_CopiadoraDataSet8";
+            this._A_Beltran_CopiadoraDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lblMontoInicial
+            // 
+            this.lblMontoInicial.AutoSize = true;
+            this.lblMontoInicial.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMontoInicial.Location = new System.Drawing.Point(276, 15);
+            this.lblMontoInicial.Name = "lblMontoInicial";
+            this.lblMontoInicial.Size = new System.Drawing.Size(67, 13);
+            this.lblMontoInicial.TabIndex = 16;
+            this.lblMontoInicial.Text = "Monto Inicial";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(586, 42);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(192, 111);
+            this.btnCerrar.TabIndex = 6;
+            this.btnCerrar.Text = "Cerrar Caja";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnAbrir
+            // 
+            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.Location = new System.Drawing.Point(586, 188);
+            this.btnAbrir.Name = "btnAbrir";
+            this.btnAbrir.Size = new System.Drawing.Size(192, 111);
+            this.btnAbrir.TabIndex = 7;
+            this.btnAbrir.Text = "Abrir Caja";
+            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(819, 327);
+            this.tabPage2.TabIndex = 2;
+            this.tabPage2.Text = "Buscar Usuario";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // view_3TableAdapter
+            // 
+            this.view_3TableAdapter.ClearBeforeFill = true;
+            // 
+            // epErrorBusqueda
+            // 
+            this.epErrorBusqueda.ContainerControl = this;
+            // 
+            // view_4TableAdapter
+            // 
+            this.view_4TableAdapter.ClearBeforeFill = true;
+            // 
+            // view_3TableAdapter1
+            // 
+            this.view_3TableAdapter1.ClearBeforeFill = true;
             // 
             // fechaInicialDataGridViewTextBoxColumn
             // 
@@ -467,74 +522,49 @@
             this.montoFinalDataGridViewTextBoxColumn.Name = "montoFinalDataGridViewTextBoxColumn";
             this.montoFinalDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // view4BindingSource
+            // descripcionEstadoDataGridViewTextBoxColumn1
             // 
-            this.view4BindingSource.DataMember = "View_4";
-            this.view4BindingSource.DataSource = this._A_Beltran_CopiadoraDataSet8;
+            this.descripcionEstadoDataGridViewTextBoxColumn1.DataPropertyName = "Descripcion_Estado";
+            this.descripcionEstadoDataGridViewTextBoxColumn1.HeaderText = "Descripcion_Estado";
+            this.descripcionEstadoDataGridViewTextBoxColumn1.Name = "descripcionEstadoDataGridViewTextBoxColumn1";
+            this.descripcionEstadoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // _A_Beltran_CopiadoraDataSet8
+            // label1
             // 
-            this._A_Beltran_CopiadoraDataSet8.DataSetName = "_A_Beltran_CopiadoraDataSet8";
-            this._A_Beltran_CopiadoraDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(21, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Fecha Inicial";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // lblMontoInicial
+            // label3
             // 
-            this.lblMontoInicial.AutoSize = true;
-            this.lblMontoInicial.Location = new System.Drawing.Point(21, 20);
-            this.lblMontoInicial.Name = "lblMontoInicial";
-            this.lblMontoInicial.Size = new System.Drawing.Size(67, 13);
-            this.lblMontoInicial.TabIndex = 16;
-            this.lblMontoInicial.Text = "Monto Inicial";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(21, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Fecha Final";
             // 
-            // btnCerrar
+            // dateTimePicker2
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(610, 210);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(161, 111);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.Text = "Cerrar Caja";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnAbrir
-            // 
-            this.btnAbrir.Location = new System.Drawing.Point(610, 80);
-            this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(161, 111);
-            this.btnAbrir.TabIndex = 7;
-            this.btnAbrir.Text = "Abrir Caja";
-            this.btnAbrir.UseVisualStyleBackColor = true;
-            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(814, 327);
-            this.tabPage2.TabIndex = 2;
-            this.tabPage2.Text = "Buscar Usuario";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // view_3TableAdapter
-            // 
-            this.view_3TableAdapter.ClearBeforeFill = true;
-            // 
-            // epErrorBusqueda
-            // 
-            this.epErrorBusqueda.ContainerControl = this;
-            // 
-            // view_4TableAdapter
-            // 
-            this.view_4TableAdapter.ClearBeforeFill = true;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(94, 45);
+            this.dateTimePicker2.MaxDate = new System.DateTime(2017, 10, 8, 22, 50, 56, 0);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(99, 20);
+            this.dateTimePicker2.TabIndex = 21;
+            this.dateTimePicker2.Value = new System.DateTime(2017, 10, 8, 0, 0, 0, 0);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox2.Image = global::Loginç.Properties.Resources.icon_account2;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 11);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(88, 90);
@@ -542,19 +572,28 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
-            // view_3TableAdapter1
+            // label2
             // 
-            this.view_3TableAdapter1.ClearBeforeFill = true;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(104, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(438, 36);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "A.Beltran.Copiadora S. de R.L";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FormGerente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.ClientSize = new System.Drawing.Size(851, 481);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.Name = "FormGerente";
@@ -586,15 +625,12 @@
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
         private _A_Beltran_CopiadoraDataSet _A_Beltran_CopiadoraDataSet;
         private System.Windows.Forms.BindingSource usuarioBindingSource;
         private _A_Beltran_CopiadoraDataSetTableAdapters.UsuarioTableAdapter usuarioTableAdapter;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton rdb_Nombre;
         private System.Windows.Forms.RadioButton rdb_ID;
         private System.Windows.Forms.TextBox txtfiltro;
@@ -623,11 +659,6 @@
         private _A_Beltran_CopiadoraDataSet8 _A_Beltran_CopiadoraDataSet8;
         private System.Windows.Forms.BindingSource view4BindingSource;
         private _A_Beltran_CopiadoraDataSet8TableAdapters.View_4TableAdapter view_4TableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionEstadoDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaInicialDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn montoInicialDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn montoFinalDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtMontoFinal;
         private System.Windows.Forms.TextBox txtMontoInicial;
         private System.Windows.Forms.Label lblMontoFinal;
@@ -636,5 +667,15 @@
         private _A_Beltran_CopiadoraDataSet16 _A_Beltran_CopiadoraDataSet16;
         private System.Windows.Forms.BindingSource view3BindingSource1;
         private _A_Beltran_CopiadoraDataSet16TableAdapters.View_3TableAdapter view_3TableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaInicialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montoInicialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montoFinalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionEstadoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

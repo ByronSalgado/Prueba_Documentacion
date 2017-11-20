@@ -15,46 +15,28 @@ namespace Loginç
     public partial class PerfilCliente : Form
     {
         Conexion con = new Conexion();
-        public int num;
-    
-        
+        public int num;        
         public PerfilCliente()
         {
             InitializeComponent();
           
         }
-
         private void PerfilCliente_Load(object sender, EventArgs e)
         {
-
             // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet12.fact' Puede moverla o quitarla según sea necesario.
             this.factTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet12.fact);
-
-            //Facturar fact = new Facturar();
-            //fact.txtID_CLIENTE.Text=
-
-
             num = Convert.ToInt32(txtID_CLIENTE.Text);
-
             SqlCommand cmd = con.CONECTARSQL.CreateCommand();
-
             cmd.CommandType = CommandType.Text;
-
             cmd.CommandText = "SELECT dbo.Arqueo.ID_Arqueo, dbo.Tipo_Pago.Descripcion_Tipo_Pago, dbo.Usuario.Usuario, dbo.CAI.ID_CAI,CONVERT(date, getdate()) 'Fecha' , dbo.Factura.Impuesto FROM dbo.Arqueo INNER JOIN dbo.Factura ON dbo.Arqueo.ID_Arqueo = dbo.Factura.ID_Arqueo INNER JOIN dbo.Tipo_Pago ON dbo.Factura.ID_Tipo_Pago = dbo.Tipo_Pago.ID_Tipo_Pago INNER JOIN dbo.Usuario ON dbo.Factura.ID_Usuario = dbo.Usuario.ID_Usuario CROSS JOIN dbo.CAI where dbo.Factura.ID_Cliente = '" + num + "'";
-            // txtValidar.Text = "0";
             cmd.ExecuteNonQuery();
-
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (con.validarFacturar() == false)
             {
                 MessageBox.Show("Arqueo esta cerrado");
@@ -68,8 +50,6 @@ namespace Loginç
                 }
                 else
                 {
-
-
                     int numero = Convert.ToInt32(txtEstadoArqueo.Text);
 
                     if (numero == 7)
@@ -183,6 +163,11 @@ namespace Loginç
         public void valiFac()
         {
             
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
