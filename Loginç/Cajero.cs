@@ -22,7 +22,9 @@ namespace Loginç
 
         private void Cajero_Load(object sender, EventArgs e)
         {
-            this.cliTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet9.Cli);
+            // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet17.Cli' Puede moverla o quitarla según sea necesario.
+            this.cliTableAdapter1.Fill(this._A_Beltran_CopiadoraDataSet17.Cli);
+            //this.cliTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet9.Cli);
             rdb_ID.Checked = true;
         }
 
@@ -66,7 +68,7 @@ namespace Loginç
         {
             NuevoCliente nuevoCliente = new NuevoCliente();
             nuevoCliente.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

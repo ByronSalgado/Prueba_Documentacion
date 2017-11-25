@@ -746,14 +746,14 @@ namespace Loginç
 
         }
 
-        public string nuevoCliente(int cbTipoIden, TextBox txtNombreCliente, TextBox txtIdentidad, TextBox txtTelefono, TextBox txtDireccion, TextBox txtCorreo, TextBox txtRTN)
+        public string nuevoCliente(int cbTipoIden, TextBox txtNombreCliente, TextBox txtIdentidad, TextBox txtTelefono, TextBox txtDireccion, TextBox txtCorreo)
         {
 
             string salida = "";
 
             try
             {
-                COMANDOSQL = new SqlCommand("insert into [Cliente] values (1,'" + Convert.ToInt32(cbTipoIden) + "','" + txtTelefono.Text + "','" + txtNombreCliente.Text.Trim() + "','" + txtDireccion.Text.Trim() + "','" + txtCorreo.Text + "','" + txtRTN.Text + "','" + txtIdentidad.Text.Trim() + "')", CONECTARSQL);
+                COMANDOSQL = new SqlCommand("insert into [Cliente] values (1,'" + Convert.ToInt32(cbTipoIden) + "','" + txtTelefono.Text + "','" + txtNombreCliente.Text.Trim() + "','" + txtDireccion.Text.Trim() + "','" + txtCorreo.Text + "','" + txtIdentidad.Text.Trim() + "')", CONECTARSQL);
                 COMANDOSQL.ExecuteNonQuery();
                 salida = "Ingresado";
             }

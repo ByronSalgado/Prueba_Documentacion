@@ -143,6 +143,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.idFactura);
             this.groupBox1.Controls.Add(this.precioUni);
             this.groupBox1.Controls.Add(this.idProducto);
@@ -156,6 +157,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtArqueo);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(12, 14);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(683, 81);
@@ -166,7 +168,7 @@
             // 
             // idFactura
             // 
-            this.idFactura.Location = new System.Drawing.Point(296, 48);
+            this.idFactura.Location = new System.Drawing.Point(296, 45);
             this.idFactura.Name = "idFactura";
             this.idFactura.Size = new System.Drawing.Size(57, 20);
             this.idFactura.TabIndex = 36;
@@ -182,7 +184,7 @@
             // 
             // idProducto
             // 
-            this.idProducto.Location = new System.Drawing.Point(219, 48);
+            this.idProducto.Location = new System.Drawing.Point(219, 45);
             this.idProducto.Name = "idProducto";
             this.idProducto.Size = new System.Drawing.Size(63, 20);
             this.idProducto.TabIndex = 34;
@@ -190,12 +192,14 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(602, 11);
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(591, 11);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 34);
             this.button2.TabIndex = 51;
             this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // InventrioSerie
@@ -247,7 +251,7 @@
             this.precioDataGridViewTextBoxColumn,
             this.descripcionEstadoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.proBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 18);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 19);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -307,6 +311,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.btnBorrar);
             this.groupBox2.Controls.Add(this.textBox1);
@@ -315,13 +321,14 @@
             this.groupBox2.Controls.Add(this.txtNomP);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtPrecio);
+            this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.txtCant);
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Location = new System.Drawing.Point(12, 101);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(371, 354);
+            this.groupBox2.Size = new System.Drawing.Size(371, 368);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos";
@@ -333,15 +340,19 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(25, 20);
             this.textBox2.TabIndex = 62;
+            this.textBox2.Visible = false;
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(257, 282);
+            this.btnBorrar.BackColor = System.Drawing.Color.Red;
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBorrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBorrar.Location = new System.Drawing.Point(278, 282);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 34);
             this.btnBorrar.TabIndex = 61;
             this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // textBox1
@@ -363,6 +374,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(15, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 13);
@@ -375,7 +387,7 @@
             this.txtNomP.Location = new System.Drawing.Point(111, 244);
             this.txtNomP.Name = "txtNomP";
             this.txtNomP.ReadOnly = true;
-            this.txtNomP.Size = new System.Drawing.Size(131, 20);
+            this.txtNomP.Size = new System.Drawing.Size(161, 20);
             this.txtNomP.TabIndex = 53;
             this.txtNomP.TextChanged += new System.EventHandler(this.txtNomP_TextChanged);
             this.txtNomP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNomP_KeyDown);
@@ -383,6 +395,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(15, 273);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
@@ -395,7 +408,7 @@
             this.txtPrecio.Location = new System.Drawing.Point(111, 270);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.ReadOnly = true;
-            this.txtPrecio.Size = new System.Drawing.Size(131, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(161, 20);
             this.txtPrecio.TabIndex = 55;
             this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             this.txtPrecio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPrecio_KeyDown);
@@ -403,6 +416,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Location = new System.Drawing.Point(15, 296);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 13);
@@ -411,19 +425,22 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(257, 244);
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(278, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 57;
             this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtCant
             // 
             this.txtCant.Location = new System.Drawing.Point(111, 296);
             this.txtCant.Name = "txtCant";
-            this.txtCant.Size = new System.Drawing.Size(131, 20);
+            this.txtCant.Size = new System.Drawing.Size(161, 20);
             this.txtCant.TabIndex = 58;
             this.txtCant.TextChanged += new System.EventHandler(this.txtCant_TextChanged);
             this.txtCant.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCant_KeyDown);
@@ -463,6 +480,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox3.Controls.Add(this.txtTotal);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtImp);
@@ -471,9 +490,10 @@
             this.groupBox3.Controls.Add(this.txtSubT);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox3.Location = new System.Drawing.Point(389, 101);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(307, 354);
+            this.groupBox3.Size = new System.Drawing.Size(307, 368);
             this.groupBox3.TabIndex = 51;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Producto";
@@ -481,17 +501,18 @@
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(77, 296);
+            this.txtTotal.Location = new System.Drawing.Point(128, 296);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(198, 20);
+            this.txtTotal.Size = new System.Drawing.Size(161, 20);
             this.txtTotal.TabIndex = 58;
             this.txtTotal.Text = "0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 299);
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(49, 299);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 57;
@@ -500,17 +521,18 @@
             // txtImp
             // 
             this.txtImp.Enabled = false;
-            this.txtImp.Location = new System.Drawing.Point(77, 270);
+            this.txtImp.Location = new System.Drawing.Point(128, 270);
             this.txtImp.Name = "txtImp";
             this.txtImp.ReadOnly = true;
-            this.txtImp.Size = new System.Drawing.Size(198, 20);
+            this.txtImp.Size = new System.Drawing.Size(161, 20);
             this.txtImp.TabIndex = 56;
             this.txtImp.Text = "0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 273);
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(49, 273);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 13);
             this.label5.TabIndex = 55;
@@ -518,28 +540,32 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(200, 322);
+            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(214, 328);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(75, 34);
             this.button3.TabIndex = 52;
             this.button3.Text = "Facturar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // txtSubT
             // 
             this.txtSubT.Enabled = false;
-            this.txtSubT.Location = new System.Drawing.Point(76, 244);
+            this.txtSubT.Location = new System.Drawing.Point(128, 244);
             this.txtSubT.Name = "txtSubT";
             this.txtSubT.ReadOnly = true;
-            this.txtSubT.Size = new System.Drawing.Size(199, 20);
+            this.txtSubT.Size = new System.Drawing.Size(161, 20);
             this.txtSubT.TabIndex = 54;
             this.txtSubT.Text = "0";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 247);
+            this.label9.ForeColor = System.Drawing.SystemColors.Control;
+            this.label9.Location = new System.Drawing.Point(50, 247);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 53;
@@ -557,7 +583,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 461);
+            this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
+            this.ClientSize = new System.Drawing.Size(708, 471);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);

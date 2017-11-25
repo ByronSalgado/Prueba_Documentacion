@@ -43,7 +43,7 @@ namespace Loginç
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtTelefono.Text) | String.IsNullOrEmpty(txtIdentidad.Text) | String.IsNullOrEmpty(txtCorreo.Text) | String.IsNullOrEmpty(txtRTN.Text) | String.IsNullOrEmpty(txtDireccion.Text))
+            if (String.IsNullOrEmpty(txtTelefono.Text) | String.IsNullOrEmpty(txtIdentidad.Text) | String.IsNullOrEmpty(txtCorreo.Text) | String.IsNullOrEmpty(txtDireccion.Text))
             {
                 MessageBox.Show("Datos Vacios");
             }
@@ -52,7 +52,7 @@ namespace Loginç
                 if (cnx.validarClienteExistente(txtTelefono.Text) < 0)
                 {
 
-                    cnx.nuevoCliente((cbTipoIden.SelectedIndex + 1)/*Pasar a +1*/, txtTelefono, txtIdentidad, txtNombreCliente, txtDireccion, txtCorreo, txtRTN);
+                    cnx.nuevoCliente((cbTipoIden.SelectedIndex + 1)/*Pasar a +1*/, txtTelefono, txtIdentidad, txtNombreCliente, txtDireccion, txtCorreo);
                     MessageBox.Show("Se Ingresaron los datos");
                 }
                 else
@@ -128,7 +128,7 @@ namespace Loginç
 
         private void txtRTN_TextChanged(object sender, EventArgs e)
         {
-            txtRTN.MaxLength = 12;
+            
         }
     }
 }

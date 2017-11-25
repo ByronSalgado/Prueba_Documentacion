@@ -104,7 +104,10 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.White;
+            this.btnIngresar.BackColor = System.Drawing.Color.Lime;
+            this.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnIngresar.Location = new System.Drawing.Point(107, 274);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
@@ -143,7 +146,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(82, 182);
+            this.label4.Location = new System.Drawing.Point(50, 182);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 18);
             this.label4.TabIndex = 16;
@@ -164,12 +167,16 @@
             // 
             // Atras
             // 
+            this.Atras.BackColor = System.Drawing.Color.Red;
+            this.Atras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.Atras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Atras.ForeColor = System.Drawing.SystemColors.Control;
             this.Atras.Location = new System.Drawing.Point(227, 274);
             this.Atras.Name = "Atras";
             this.Atras.Size = new System.Drawing.Size(75, 23);
             this.Atras.TabIndex = 27;
             this.Atras.Text = "Regresar";
-            this.Atras.UseVisualStyleBackColor = true;
+            this.Atras.UseVisualStyleBackColor = false;
             this.Atras.Click += new System.EventHandler(this.Atras_Click);
             this.Atras.MouseLeave += new System.EventHandler(this.Atras_MouseLeave_1);
             this.Atras.MouseHover += new System.EventHandler(this.Atras_MouseHover_1);

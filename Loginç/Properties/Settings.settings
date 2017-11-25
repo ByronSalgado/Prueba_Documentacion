@@ -18,9 +18,5 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-UVN87AS\SQLEXPRESS;Initial Catalog=A.Beltran.Copiadora;Integrated Security=True</Value>
     </Setting>
-    <Setting Name="S" Type="System.String" Scope="User">
-      <Value Profile="(Default)">
-&lt;/SerializableConnectionString&gt;</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

@@ -1,63 +1,220 @@
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
-C:\Users\JUCEB31\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
-C:\Users\Erika Zelaya\Desktop\Prueba y Doc\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
-C:\Users\JUCEBAC\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\bin\Debug\Loginç.exe.config
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\bin\Debug\Loginç.exe
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\bin\Debug\Loginç.pdb
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.exe
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.pdb
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+c:\users\jor18madrid\documents\visual studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\Jor18Madrid\Documents\Visual Studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\Jor18Madrid\Documents\Visual Studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\Jor18Madrid\Documents\Visual Studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\Jor18Madrid\Documents\Visual Studio 2015\Projects\Loginç\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Perfil_Usuario.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\bxron\Desktop\Septima Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\bxron\Desktop\OctavaSemana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\OctavaSemana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\OctavaSemana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\bxron\Desktop\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\Clases\Desarrollo\Novena Semana\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\Byron\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\bxron\Desktop\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Loginç\obj\Debug\Loginç.pdb
+<<<<<<< Updated upstream
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\Clases\Proyecto Desarrollo\ProyectoDesarrollo\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+=======
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\Loginç.pdb
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\mscorlib.dll
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\es\mscorlib.resources.dll
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normidna.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfc.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfd.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfkc.nlp
+C:\Users\Astrid\Desktop\YARELLY\UNICAH\ASTRID\CLASES III PERIODO 2017\PRUEBA Y DOCUMENTACION\Prueba_Documentacion\Loginç\bin\Debug\normnfkd.nlp
+>>>>>>> Stashed changes
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.exe
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.pdb
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\bxron\Desktop\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
+C:\Users\bxron\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\bxron\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.exe
+C:\Users\bxron\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.pdb
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.exe
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.pdb
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.exe
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\bin\Debug\Loginç.pdb
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.csprojResolveAssemblyReference.cache
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Bodega.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Cajero.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.ContraseñaGerente.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Facturar.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.IngresoModificacionProducto.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.link.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.FormGerente.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevaContraseñaIngresaGerente.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevaContraseñaUsuarios.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevoCliente.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.NuevoUsuario.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.PerfilCliente.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Properties.Resources.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.Servicio_Tecnico.resources
+C:\Users\JUCEBAC\Desktop\probar\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Prueba_Documentacion-00461872ef6034bf6ef24a5ec4aff2027f6ef1b2\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache

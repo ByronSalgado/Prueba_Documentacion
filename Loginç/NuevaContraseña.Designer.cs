@@ -62,7 +62,7 @@
             this.txtContraseñaRecuContraseña.Location = new System.Drawing.Point(202, 182);
             this.txtContraseñaRecuContraseña.Name = "txtContraseñaRecuContraseña";
             this.txtContraseñaRecuContraseña.PasswordChar = '*';
-            this.txtContraseñaRecuContraseña.Size = new System.Drawing.Size(100, 20);
+            this.txtContraseñaRecuContraseña.Size = new System.Drawing.Size(121, 20);
             this.txtContraseñaRecuContraseña.TabIndex = 4;
             this.txtContraseñaRecuContraseña.TextChanged += new System.EventHandler(this.txtContraseñaRecuContraseña_TextChanged);
             // 
@@ -71,7 +71,7 @@
             this.txtReinContraseñaRecuContraseña.Location = new System.Drawing.Point(202, 208);
             this.txtReinContraseñaRecuContraseña.Name = "txtReinContraseñaRecuContraseña";
             this.txtReinContraseñaRecuContraseña.PasswordChar = '*';
-            this.txtReinContraseñaRecuContraseña.Size = new System.Drawing.Size(100, 20);
+            this.txtReinContraseñaRecuContraseña.Size = new System.Drawing.Size(121, 20);
             this.txtReinContraseñaRecuContraseña.TabIndex = 5;
             this.txtReinContraseñaRecuContraseña.TextChanged += new System.EventHandler(this.txtReinContraseñaRecuContraseña_TextChanged);
             // 
@@ -127,7 +127,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(107, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -189,7 +191,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(231, 274);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);

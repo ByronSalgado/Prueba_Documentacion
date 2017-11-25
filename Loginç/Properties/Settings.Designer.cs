@@ -44,17 +44,5 @@ namespace Loginç.Properties {
                 return ((string)(this["A_Beltran_CopiadoraConnectionString"]));
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\r\n</SerializableConnectionString>")]
-        public string S {
-            get {
-                return ((string)(this["S"]));
-            }
-            set {
-                this["S"] = value;
-            }
-        }
     }
 }

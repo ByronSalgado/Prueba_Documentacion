@@ -110,18 +110,24 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(734, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar Sesion";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(109, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(438, 36);
@@ -135,12 +141,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.rdb_Nombre);
             this.groupBox1.Controls.Add(this.rdb_ID);
             this.groupBox1.Controls.Add(this.txtfiltro);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(564, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(244, 282);
@@ -150,28 +158,34 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(139, 165);
+            this.btnNuevo.BackColor = System.Drawing.Color.Lime;
+            this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNuevo.Location = new System.Drawing.Point(24, 167);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(74, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(96, 36);
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(43, 165);
+            this.button3.BackColor = System.Drawing.Color.Turquoise;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(126, 167);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 23);
+            this.button3.Size = new System.Drawing.Size(96, 36);
             this.button3.TabIndex = 4;
             this.button3.Text = "Buscar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 103);
+            this.label1.Location = new System.Drawing.Point(21, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
@@ -181,7 +195,7 @@
             // rdb_Nombre
             // 
             this.rdb_Nombre.AutoSize = true;
-            this.rdb_Nombre.Location = new System.Drawing.Point(130, 46);
+            this.rdb_Nombre.Location = new System.Drawing.Point(160, 46);
             this.rdb_Nombre.Name = "rdb_Nombre";
             this.rdb_Nombre.Size = new System.Drawing.Size(62, 17);
             this.rdb_Nombre.TabIndex = 2;
@@ -193,7 +207,7 @@
             // rdb_ID
             // 
             this.rdb_ID.AutoSize = true;
-            this.rdb_ID.Location = new System.Drawing.Point(43, 46);
+            this.rdb_ID.Location = new System.Drawing.Point(24, 46);
             this.rdb_ID.Name = "rdb_ID";
             this.rdb_ID.Size = new System.Drawing.Size(36, 17);
             this.rdb_ID.TabIndex = 1;
@@ -204,9 +218,9 @@
             // 
             // txtfiltro
             // 
-            this.txtfiltro.Location = new System.Drawing.Point(43, 128);
+            this.txtfiltro.Location = new System.Drawing.Point(24, 114);
             this.txtfiltro.Name = "txtfiltro";
-            this.txtfiltro.Size = new System.Drawing.Size(179, 20);
+            this.txtfiltro.Size = new System.Drawing.Size(198, 20);
             this.txtfiltro.TabIndex = 0;
             this.txtfiltro.TextChanged += new System.EventHandler(this.txtfiltro_TextChanged);
             this.txtfiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfiltro_KeyPress);
@@ -343,6 +357,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.tabPage1.Controls.Add(this.txtMontoFinal);
             this.tabPage1.Controls.Add(this.btnBuscar);
             this.tabPage1.Controls.Add(this.txtMontoInicial);
@@ -352,6 +367,7 @@
             this.tabPage1.Controls.Add(this.lblMontoInicial);
             this.tabPage1.Controls.Add(this.btnCerrar);
             this.tabPage1.Controls.Add(this.btnAbrir);
+            this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -373,12 +389,16 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(484, 51);
+            this.btnBuscar.BackColor = System.Drawing.Color.Turquoise;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBuscar.Location = new System.Drawing.Point(463, 38);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(96, 36);
             this.btnBuscar.TabIndex = 10;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtMontoInicial
@@ -395,18 +415,16 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(379, 54);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2017, 10, 8, 22, 50, 56, 0);
+            this.dateTimePicker1.Location = new System.Drawing.Point(358, 47);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
             this.dateTimePicker1.TabIndex = 9;
-            this.dateTimePicker1.Value = new System.DateTime(2017, 10, 8, 0, 0, 0, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblMontoFinal
             // 
             this.lblMontoFinal.AutoSize = true;
-            this.lblMontoFinal.Location = new System.Drawing.Point(26, 50);
+            this.lblMontoFinal.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMontoFinal.Location = new System.Drawing.Point(21, 50);
             this.lblMontoFinal.Name = "lblMontoFinal";
             this.lblMontoFinal.Size = new System.Drawing.Size(62, 13);
             this.lblMontoFinal.TabIndex = 17;
@@ -480,6 +498,7 @@
             // lblMontoInicial
             // 
             this.lblMontoInicial.AutoSize = true;
+            this.lblMontoInicial.ForeColor = System.Drawing.SystemColors.Control;
             this.lblMontoInicial.Location = new System.Drawing.Point(21, 20);
             this.lblMontoInicial.Name = "lblMontoInicial";
             this.lblMontoInicial.Size = new System.Drawing.Size(67, 13);
@@ -488,26 +507,37 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(610, 210);
+            this.btnCerrar.BackColor = System.Drawing.Color.Red;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCerrar.Location = new System.Drawing.Point(610, 197);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(161, 111);
             this.btnCerrar.TabIndex = 6;
             this.btnCerrar.Text = "Cerrar Caja";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnAbrir
             // 
+            this.btnAbrir.BackColor = System.Drawing.Color.Lime;
+            this.btnAbrir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAbrir.Location = new System.Drawing.Point(610, 80);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(161, 111);
             this.btnAbrir.TabIndex = 7;
             this.btnAbrir.Text = "Abrir Caja";
-            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.UseVisualStyleBackColor = false;
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // tabPage2
             // 
+            this.tabPage2.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -551,6 +581,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.ClientSize = new System.Drawing.Size(851, 481);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);

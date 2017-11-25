@@ -173,6 +173,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_A_Beltran_CopiadoraDataSet16.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_A_Beltran_CopiadoraDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_A_Beltran_CopiadoraDataSet17.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_A_Beltran_CopiadoraDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -369,6 +374,17 @@
     </None>
     <None Include="_A_Beltran_CopiadoraDataSet16.xss">
       <DependentUpon>_A_Beltran_CopiadoraDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="_A_Beltran_CopiadoraDataSet17.xsc">
+      <DependentUpon>_A_Beltran_CopiadoraDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="_A_Beltran_CopiadoraDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_A_Beltran_CopiadoraDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_A_Beltran_CopiadoraDataSet17.xss">
+      <DependentUpon>_A_Beltran_CopiadoraDataSet17.xsd</DependentUpon>
     </None>
     <None Include="_A_Beltran_CopiadoraDataSet2.xsc">
       <DependentUpon>_A_Beltran_CopiadoraDataSet2.xsd</DependentUpon>

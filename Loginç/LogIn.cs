@@ -17,12 +17,18 @@ namespace Loginç
        
         Conexion conexion = new Conexion();
        
-      
+       // int contadorErroresIngresar;
         public link()
         {
             InitializeComponent();
+/*
+            TxtUsuario.Text = "Usuario";
+            TxtUsuario.ForeColor = Color.Gray;
 
+            TxtContraseña.Text = "Contraseña";
 
+            TxtContraseña.ForeColor = Color.Gray;
+*/
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -70,20 +76,21 @@ namespace Loginç
                                 }
                                 else
                                 {
+                                    MessageBox.Show("BIENVENIDO", "Mensaje");
                                     if (Convert.ToInt32(TxtIdRol.Text) == 1)
                                     {
                                         FormGerente gere = new FormGerente();
                                         gere.Show();
                                         this.Hide();
                                     }
-                                    
+                                    /////////////////////Cajero2  cajero
                                     else if (Convert.ToInt32(TxtIdRol.Text) == 2)
                                     {
                                          Cajero ser = new Cajero();
                                         ser.Show();
                                         this.Hide();
                                     }
-                                    
+                                    //////////////////////
                                     else if (Convert.ToInt32(TxtIdRol.Text) == 3)
                                     {
                                         Servicio_Tecnico ser = new Servicio_Tecnico();
@@ -104,10 +111,10 @@ namespace Loginç
                             {
                                 if (TxtIdRol.Text != "1")
                                 {
+                                    MessageBox.Show("NO SE PUEDE INGRESAR", "mensaje");
                                     contadorErroresIngresar++;
                                     txtIntentosErrores.Text = Convert.ToString(contadorErroresIngresar);
                                     conexion.actualizarErrores(txtIntentosErrores, TxtUsuario);
-                                    MessageBox.Show("NO SE PUEDE INGRESAR", "mensaje"); 
                                     TxtUsuario.Clear();
                                     TxtContraseña.Clear();
                                 }
@@ -128,7 +135,11 @@ namespace Loginç
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-          
+            /*
+            NuevaContraseñaIngresaGerente nueva = new NuevaContraseñaIngresaGerente();
+            nueva.Show();
+            this.Hide();
+            */
             ContraseñaGerente gere = new ContraseñaGerente();
             gere.Show();
             this.Hide();
@@ -155,18 +166,52 @@ namespace Loginç
             this.Close();
         }
 
+        private void TxtContraseña_Enter(object sender, EventArgs e)
+        {
+            /*
+            TxtContraseña.Text = "";
+            TxtContraseña.ForeColor = Color.Black;
+           */
+        }
 
         private void btnIngresar_MouseHover(object sender, EventArgs e)
         {
-            btnIngresar.BackColor = Color.Gray;
         }
 
         private void btnIngresar_MouseLeave(object sender, EventArgs e)
         {
-            btnIngresar.BackColor = Color.White;
         }
 
-      
+       /* private void btnSalir_MouseHover(object sender, EventArgs e)
+        {
+            btnSalir.BackColor = Color.Gray;
+        }
+
+        private void btnSalir_MouseLeave(object sender, EventArgs e)
+        {
+            btnSalir.BackColor = Color.White;
+        }
+        */
+        private void TxtUsuario_MouseHover(object sender, EventArgs e)
+        {
+            //TxtUsuario.BackColor = Color.Gray;
+        }
+
+        private void TxtContraseña_MouseHover(object sender, EventArgs e)
+        {
+            //TxtContraseña.BackColor = Color.Gray;
+        }
+
+        private void TxtUsuario_MouseLeave(object sender, EventArgs e)
+        {
+            //TxtUsuario.BackColor = Color.White;
+        }
+
+        private void TxtContraseña_MouseLeave(object sender, EventArgs e)
+        {
+            //TxtContraseña.BackColor = Color.White;
+        }
+
         private void TxtUsuario_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -215,6 +260,11 @@ namespace Loginç
                 e.Handled = true;
 
             }
+        }
+
+        private void txtIntentosErrores_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

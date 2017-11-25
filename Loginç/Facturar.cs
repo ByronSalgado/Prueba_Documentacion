@@ -27,7 +27,8 @@ namespace Loginç
         }  
         private void Facturar_Load(object sender, EventArgs e)
         {
-          
+            dataGridView1.ForeColor = Color.Black;
+            dataGridView2.ForeColor = Color.Black;
             this.proTableAdapter1.Fill(this._A_Beltran_CopiadoraDataSet15.Pro);
             this.detalleTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet14.detalle);
             this.proTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet13.Pro);

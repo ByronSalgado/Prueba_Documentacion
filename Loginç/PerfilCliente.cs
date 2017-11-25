@@ -36,7 +36,11 @@ namespace Loginç
 
             num = Convert.ToInt32(txtID_CLIENTE.Text);
 
-            SqlCommand cmd = con.CONECTARSQL.CreateCommand();
+            SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-UVN87AS\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
+
+            conex.Open();
+
+            SqlCommand cmd = conex.CreateCommand();
 
             cmd.CommandType = CommandType.Text;
 
@@ -49,6 +53,13 @@ namespace Loginç
 
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+            conex.Close();
+
+            
+            
+            
+
+
 
         }
 
@@ -62,33 +73,25 @@ namespace Loginç
             else
             {
                 con.validarFacturar(txtEstadoArqueo);
-                if (txtEstadoArqueo.Text == "")
+                int numero = Convert.ToInt32(txtEstadoArqueo.Text);
+
+                if (numero == 7)
                 {
-                    MessageBox.Show("Arqueo no inicializado");
+                    MessageBox.Show("El arqueo esta cerrado");
                 }
                 else
                 {
-
-
-                    int numero = Convert.ToInt32(txtEstadoArqueo.Text);
-
-                    if (numero == 7)
+                    if (numero == 6)
                     {
-                        MessageBox.Show("El arqueo esta cerrado");
+                        Facturar fac = new Facturar();
+                        fac.txtId_Cliente.Text = txtID_CLIENTE.Text;
+                        fac.Show();
+                        this.Hide();
                     }
-                    else
-                    {
-                        if (numero == 6)
-                        {
-                            Facturar fac = new Facturar();
-                            fac.txtId_Cliente.Text = txtID_CLIENTE.Text;
-                            fac.Show();
-                            this.Hide();
-                        }
-
-                    }
-
+                   
                 }
+                    
+
             }
 
         }

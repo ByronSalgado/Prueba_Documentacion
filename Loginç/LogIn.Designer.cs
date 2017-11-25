@@ -52,7 +52,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(107, 156);
+            this.label1.Location = new System.Drawing.Point(82, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 0;
@@ -80,6 +80,8 @@
             this.TxtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtUsuario_KeyDown);
             this.TxtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUsuario_KeyPress);
             this.TxtUsuario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtUsuario_MouseDown);
+            this.TxtUsuario.MouseLeave += new System.EventHandler(this.TxtUsuario_MouseLeave);
+            this.TxtUsuario.MouseHover += new System.EventHandler(this.TxtUsuario_MouseHover);
             // 
             // TxtContraseña
             // 
@@ -89,14 +91,19 @@
             this.TxtContraseña.Size = new System.Drawing.Size(100, 20);
             this.TxtContraseña.TabIndex = 3;
             this.TxtContraseña.TextChanged += new System.EventHandler(this.TxtContraseña_TextChanged);
+            this.TxtContraseña.Enter += new System.EventHandler(this.TxtContraseña_Enter);
             this.TxtContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtContraseña_KeyDown);
             this.TxtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtContraseña_KeyPress);
             this.TxtContraseña.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtContraseña_MouseDown);
-
+            this.TxtContraseña.MouseLeave += new System.EventHandler(this.TxtContraseña_MouseLeave);
+            this.TxtContraseña.MouseHover += new System.EventHandler(this.TxtContraseña_MouseHover);
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.White;
+            this.btnIngresar.BackColor = System.Drawing.Color.Lime;
+            this.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnIngresar.Location = new System.Drawing.Point(167, 276);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
@@ -143,6 +150,7 @@
             this.txtIntentosErrores.Size = new System.Drawing.Size(17, 20);
             this.txtIntentosErrores.TabIndex = 8;
             this.txtIntentosErrores.Visible = false;
+            this.txtIntentosErrores.TextChanged += new System.EventHandler(this.txtIntentosErrores_TextChanged);
             // 
             // label3
             // 

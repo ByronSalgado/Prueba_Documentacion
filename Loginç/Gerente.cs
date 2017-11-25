@@ -112,9 +112,9 @@ namespace Loginç
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Conexion conex = new Conexion();
             SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
-
+            
             cmd.CommandType = CommandType.Text;
 
             if (rdb_ID.Checked == true)
@@ -180,27 +180,27 @@ namespace Loginç
         /***************************************************************************Caja*/
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-UVN87AS\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
 
-            SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
+            conex.Open();
 
-            cmd.CommandType = CommandType.Text;
+            SqlCommand ccc = conex.CreateCommand();
 
-
-            cmd.CommandText = "SELECT * FROM dbo.Arqueo As A inner join [dbo].[Estado] As B on A.ID_Estado = b.ID_Estado WHERE ([Fecha_Final] = CONVERT(DATE, '" + dateTimePicker1.Text + "'))  ";
-
+            ccc.CommandType = CommandType.Text;
 
 
-            cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ccc.CommandText = "SELECT * FROM dbo.Arqueo As A inner join [dbo].[Estado] As B on A.ID_Estado = b.ID_Estado WHERE ([Fecha_Final] = CONVERT(DATE, '" + dateTimePicker1.Text + "'))  ";
 
-                da.Fill(dt);
-                dataGridView2.DataSource = dt;
 
-             
-            
 
-            
+            ccc.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(ccc);
+
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+
+            conex.Close();
         }
 
         private void btnAbrir_Click(object sender, EventArgs e)
@@ -307,7 +307,7 @@ namespace Loginç
 
         private void txtMontoInicial_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validar.NumerosDecimales(e);
+            Validar.SoloNumeros(e);
         }
 
         private void txtMontoFinal_TextChanged(object sender, EventArgs e)
@@ -317,7 +317,7 @@ namespace Loginç
 
         private void txtMontoFinal_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validar.NumerosDecimales(e);
+            Validar.SoloNumeros(e);
         }
 
         private void txtMontoInicial_TextChanged(object sender, EventArgs e)
@@ -338,11 +338,6 @@ namespace Loginç
         private void txtfiltro_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-          
         }
     }
 }
