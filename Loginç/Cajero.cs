@@ -79,12 +79,11 @@ namespace Loginç
             {
 
                 fact.txtID_CLIENTE.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                fact.txt_Identificacion.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+                fact.txt_Identificacion.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
                 fact.txtNombre.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
                 fact.txtTelefono.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
                 fact.txtDireccion.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
                 fact.txtCorreo.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                fact.txtRTN.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
                 fact.txtID.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
 
                 string seleccion;

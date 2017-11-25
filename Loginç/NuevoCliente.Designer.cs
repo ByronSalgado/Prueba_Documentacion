@@ -70,9 +70,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(17, 96);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(573, 251);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
@@ -81,7 +81,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(33, 106);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(221, 22);
             this.txtDireccion.TabIndex = 3;
@@ -90,7 +90,7 @@
             // txtIdentidad
             // 
             this.txtIdentidad.Location = new System.Drawing.Point(320, 55);
-            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdentidad.Name = "txtIdentidad";
             this.txtIdentidad.Size = new System.Drawing.Size(221, 22);
             this.txtIdentidad.TabIndex = 0;
@@ -99,7 +99,7 @@
             // txtNombreCliente
             // 
             this.txtNombreCliente.Location = new System.Drawing.Point(33, 55);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Size = new System.Drawing.Size(221, 22);
             this.txtNombreCliente.TabIndex = 1;
@@ -118,7 +118,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(320, 106);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(221, 22);
             this.txtTelefono.TabIndex = 2;
@@ -129,7 +129,7 @@
             this.cbTipoIden.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipoIden.FormattingEnabled = true;
             this.cbTipoIden.Location = new System.Drawing.Point(33, 154);
-            this.cbTipoIden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTipoIden.Margin = new System.Windows.Forms.Padding(4);
             this.cbTipoIden.Name = "cbTipoIden";
             this.cbTipoIden.Size = new System.Drawing.Size(221, 24);
             this.cbTipoIden.TabIndex = 14;
@@ -177,7 +177,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(320, 154);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(221, 22);
             this.txtCorreo.TabIndex = 4;
@@ -203,7 +203,7 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnIngresar.Location = new System.Drawing.Point(383, 354);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(100, 28);
             this.btnIngresar.TabIndex = 20;
@@ -219,7 +219,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Location = new System.Drawing.Point(491, 354);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 21;
@@ -260,6 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.ClientSize = new System.Drawing.Size(607, 398);
             this.Controls.Add(this.label9);
@@ -267,7 +268,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "NuevoCliente";
             this.Text = "NuevoCliente";
             this.Load += new System.EventHandler(this.NuevoCliente_Load);

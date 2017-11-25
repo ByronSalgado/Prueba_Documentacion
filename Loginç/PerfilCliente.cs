@@ -155,10 +155,6 @@ namespace Loginç
             txtCorreo.MaxLength = 15;
         }
 
-        private void txtRTN_TextChanged(object sender, EventArgs e)
-        {
-            txtRTN.MaxLength = 12;
-        }
 
         private void txtID_TextChanged(object sender, EventArgs e)
         {

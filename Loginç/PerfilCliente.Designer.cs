@@ -33,8 +33,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtRTN = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -79,7 +77,7 @@
             // txtEstadoArqueo
             // 
             this.txtEstadoArqueo.Location = new System.Drawing.Point(16, 480);
-            this.txtEstadoArqueo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstadoArqueo.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstadoArqueo.Name = "txtEstadoArqueo";
             this.txtEstadoArqueo.Size = new System.Drawing.Size(24, 22);
             this.txtEstadoArqueo.TabIndex = 38;
@@ -91,7 +89,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(484, 480);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 37;
@@ -102,8 +100,8 @@
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(416, 162);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Location = new System.Drawing.Point(13, 165);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(167, 22);
@@ -115,42 +113,19 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(412, 143);
+            this.label8.Location = new System.Drawing.Point(413, 99);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(21, 17);
             this.label8.TabIndex = 35;
             this.label8.Text = "ID";
             // 
-            // txtRTN
-            // 
-            this.txtRTN.Enabled = false;
-            this.txtRTN.Location = new System.Drawing.Point(416, 118);
-            this.txtRTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtRTN.Name = "txtRTN";
-            this.txtRTN.ReadOnly = true;
-            this.txtRTN.Size = new System.Drawing.Size(167, 22);
-            this.txtRTN.TabIndex = 34;
-            this.txtRTN.TextChanged += new System.EventHandler(this.txtRTN_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(412, 98);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 17);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "RTN";
-            // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(215, 208);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Location = new System.Drawing.Point(16, 208);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(163, 22);
+            this.txtCorreo.Size = new System.Drawing.Size(167, 22);
             this.txtCorreo.TabIndex = 32;
             this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
@@ -159,7 +134,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(211, 191);
+            this.label6.Location = new System.Drawing.Point(12, 191);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 17);
@@ -169,9 +144,9 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(215, 162);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(163, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(167, 22);
             this.txtDireccion.TabIndex = 30;
             this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
@@ -189,10 +164,10 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(215, 118);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Location = new System.Drawing.Point(416, 162);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(163, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(168, 22);
             this.txtTelefono.TabIndex = 28;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
@@ -202,7 +177,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(211, 98);
+            this.label4.Location = new System.Drawing.Point(412, 142);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 17);
@@ -212,8 +187,8 @@
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(16, 208);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Location = new System.Drawing.Point(215, 116);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(167, 22);
@@ -226,7 +201,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(12, 191);
+            this.label3.Location = new System.Drawing.Point(212, 99);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 17);
@@ -236,8 +211,8 @@
             // txt_Identificacion
             // 
             this.txt_Identificacion.Enabled = false;
-            this.txt_Identificacion.Location = new System.Drawing.Point(16, 162);
-            this.txt_Identificacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Identificacion.Location = new System.Drawing.Point(415, 116);
+            this.txt_Identificacion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Identificacion.Name = "txt_Identificacion";
             this.txt_Identificacion.ReadOnly = true;
             this.txt_Identificacion.Size = new System.Drawing.Size(167, 22);
@@ -252,14 +227,14 @@
             this.label2.Location = new System.Drawing.Point(12, 143);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.Size = new System.Drawing.Size(122, 17);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Identificacion";
+            this.label2.Text = "Tipo Identificacion";
             // 
             // txtID_CLIENTE
             // 
             this.txtID_CLIENTE.Location = new System.Drawing.Point(16, 118);
-            this.txtID_CLIENTE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID_CLIENTE.Margin = new System.Windows.Forms.Padding(4);
             this.txtID_CLIENTE.Name = "txtID_CLIENTE";
             this.txtID_CLIENTE.ReadOnly = true;
             this.txtID_CLIENTE.Size = new System.Drawing.Size(167, 22);
@@ -318,7 +293,7 @@
             this.impuestoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.factBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(22, 238);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(568, 223);
@@ -345,7 +320,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(484, 10);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 40;
@@ -359,7 +334,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Location = new System.Drawing.Point(376, 480);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 41;
@@ -402,7 +377,7 @@
             // descripcionTipoPagoDataGridViewTextBoxColumn
             // 
             this.descripcionTipoPagoDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Tipo_Pago";
-            this.descripcionTipoPagoDataGridViewTextBoxColumn.HeaderText = "Descripcion_Tipo_Pago";
+            this.descripcionTipoPagoDataGridViewTextBoxColumn.HeaderText = "Descripcion Tipo Pago";
             this.descripcionTipoPagoDataGridViewTextBoxColumn.Name = "descripcionTipoPagoDataGridViewTextBoxColumn";
             this.descripcionTipoPagoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -416,7 +391,7 @@
             // iDCAIDataGridViewTextBoxColumn
             // 
             this.iDCAIDataGridViewTextBoxColumn.DataPropertyName = "ID_CAI";
-            this.iDCAIDataGridViewTextBoxColumn.HeaderText = "ID_CAI";
+            this.iDCAIDataGridViewTextBoxColumn.HeaderText = "ID CAI";
             this.iDCAIDataGridViewTextBoxColumn.Name = "iDCAIDataGridViewTextBoxColumn";
             this.iDCAIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -431,6 +406,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.ClientSize = new System.Drawing.Size(603, 521);
             this.Controls.Add(this.label9);
@@ -442,8 +418,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtRTN);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtDireccion);
@@ -456,7 +430,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtID_CLIENTE);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "PerfilCliente";
             this.Text = "PerfilCliente";
             this.Load += new System.EventHandler(this.PerfilCliente_Load);
@@ -477,8 +452,6 @@
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtRTN;
-        private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtDireccion;
