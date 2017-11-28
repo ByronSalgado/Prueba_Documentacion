@@ -302,7 +302,7 @@ namespace Loginç
 
         private void txtMontoInicial_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validar.SoloNumeros(e);
+            Validar.NumerosDecimales(e);
         }
 
         private void txtMontoFinal_TextChanged(object sender, EventArgs e)
@@ -312,7 +312,7 @@ namespace Loginç
 
         private void txtMontoFinal_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validar.SoloNumeros(e);
+            Validar.NumerosDecimales(e);
         }
 
         private void txtMontoInicial_TextChanged(object sender, EventArgs e)
