@@ -48,18 +48,18 @@ namespace Loginç
             {
 
 
-                radioButton1.Checked = true;
+                rbInventario.Checked = true;
 
                 SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
 
                 cmd.CommandType = CommandType.Text;
 
-                if (radioButton1.Checked == true)
+                if (rbInventario.Checked == true)
                 {
                     cmd.CommandText = "select * from [dbo].[View_2] ";  
-                    comboBox1.Items.Clear();        
-                    comboBox1.Visible = false;
-                    textBox1.Visible = false;
+                    cmbFiltro.Items.Clear();        
+                    cmbFiltro.Visible = false;
+                    txtBuscar.Visible = false;
                     btnBuscar.Visible = false;
                     btnNuevo.Visible = false;
 
@@ -77,10 +77,10 @@ namespace Loginç
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                dtgProductos.DataSource = dt;
 
                 conex.CONECTARSQL.Close();
-                comboBox1.SelectedIndex = 1;
+                cmbFiltro.SelectedIndex = 1;
             }
             catch
             { }
@@ -96,15 +96,17 @@ namespace Loginç
 
                 cmd.CommandType = CommandType.Text;
 
-                if (radioButton1.Checked == true)
+                if (rbInventario.Checked == true)
                 {
                     
                     cmd.CommandText = "select * from [dbo].[View_2] ";
-                    comboBox1.Items.Clear();
-                    comboBox1.Visible = false;
-                    textBox1.Visible = false;
+                    cmbFiltro.Items.Clear();
+                    cmbFiltro.Visible = false;
+                    txtBuscar.Visible = false;
                     btnBuscar.Visible = false;
                     btnNuevo.Visible = false;
+                    lbBuscar.Visible = false;
+                    lbFiltro.Visible = false;
                 }
                 else
                 {
@@ -118,7 +120,7 @@ namespace Loginç
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                dtgProductos.DataSource = dt;
 
                 conex.CONECTARSQL.Close();
             }
@@ -139,32 +141,34 @@ namespace Loginç
 
                 cmd.CommandType = CommandType.Text;
 
-                if (radioButton2.Checked == true)
+                if (rbSerie.Checked == true)
                 {
                                     
                     cmd.CommandText = "select * from [dbo].[View_1] ";
-                    comboBox1.Items.Add("Codigo");
-                    comboBox1.Items.Add("Nombre");
-                    comboBox1.Items.Add("Descripcion");
-                    comboBox1.Items.Add("Categoria");
-                    comboBox1.Items.Add("Precio");
-                    comboBox1.Items.Add("Estado");
-                    comboBox1.Items.Add("Cantidad");
-                    comboBox1.Items.Add("Codigo de Barra");                   
-                    comboBox1.Items.Add("Numero de Serie");
-                    comboBox1.SelectedIndex = 0;
-                    comboBox1.Visible = true;
-                    textBox1.Visible = true;
+                    cmbFiltro.Items.Add("Codigo");
+                    cmbFiltro.Items.Add("Nombre");
+                    cmbFiltro.Items.Add("Descripcion");
+                    cmbFiltro.Items.Add("Categoria");
+                    cmbFiltro.Items.Add("Precio");
+                    cmbFiltro.Items.Add("Estado");
+                    cmbFiltro.Items.Add("Cantidad");
+                    cmbFiltro.Items.Add("Codigo de Barra");                   
+                    cmbFiltro.Items.Add("Numero de Serie");
+                    cmbFiltro.SelectedIndex = 0;
+                    cmbFiltro.Visible = true;
+                    txtBuscar.Visible = true;
                     btnBuscar.Visible = true;
                     btnNuevo.Visible = true;
+                    lbBuscar.Visible = true;
+                    lbFiltro.Visible = true;
                 }
                 else
                 {
                    
                     cmd.CommandText = "select * from [dbo].[View_2] ";
-                    comboBox1.Items.Clear();
-                    comboBox1.Visible = false;
-                    textBox1.Visible = false;
+                    cmbFiltro.Items.Clear();
+                    cmbFiltro.Visible = false;
+                    txtBuscar.Visible = false;
                     btnBuscar.Visible = false;
                     btnNuevo.Visible = false;
 
@@ -176,7 +180,7 @@ namespace Loginç
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                dtgProductos.DataSource = dt;
 
                 conex.CONECTARSQL.Close();
             }
@@ -192,7 +196,7 @@ namespace Loginç
             try
             {
                 conex.CONECTARSQL.Open();
-                if (String.IsNullOrEmpty(textBox1.Text))
+                if (String.IsNullOrEmpty(txtBuscar.Text))
                 {
                     MessageBox.Show("Falta llenar ciertos campos", "Mensaje");
                 }
@@ -202,96 +206,96 @@ namespace Loginç
 
                     cmd.CommandType = CommandType.Text;
 
-                    if (radioButton1.Checked == true)
+                    if (rbInventario.Checked == true)
                     {
-                        if (comboBox1.SelectedIndex == 0)
+                        if (cmbFiltro.SelectedIndex == 0)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where ID_Producto like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where ID_Producto like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 1)
+                        if (cmbFiltro.SelectedIndex == 1)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where Nombre_Producto like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where Nombre_Producto like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 2)
+                        if (cmbFiltro.SelectedIndex == 2)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where Descripcion_Producto like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where Descripcion_Producto like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 3)
+                        if (cmbFiltro.SelectedIndex == 3)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where Categoria like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where Categoria like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 4)
+                        if (cmbFiltro.SelectedIndex == 4)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where Precio like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where Precio like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 5)
+                        if (cmbFiltro.SelectedIndex == 5)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where Estado like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where Estado like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 6)
+                        if (cmbFiltro.SelectedIndex == 6)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where Cantidad like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where Cantidad like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 7)
+                        if (cmbFiltro.SelectedIndex == 7)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_2] where .Codigo_Barra like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_2] where .Codigo_Barra like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                     }
 
                     //////////////////////////////////////////////////////////////
 
-                    if (radioButton2.Checked == true)
+                    if (rbSerie.Checked == true)
                     {
-                        if (comboBox1.SelectedIndex == 0)
+                        if (cmbFiltro.SelectedIndex == 0)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where ID_Producto like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where ID_Producto like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 1)
+                        if (cmbFiltro.SelectedIndex == 1)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Nombre_Producto like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Nombre_Producto like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 2)
+                        if (cmbFiltro.SelectedIndex == 2)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Descripcion_Producto like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Descripcion_Producto like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 3)
+                        if (cmbFiltro.SelectedIndex == 3)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Nombre_Categoria like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Nombre_Categoria like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 4)
+                        if (cmbFiltro.SelectedIndex == 4)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Precio like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Precio like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 5)
+                        if (cmbFiltro.SelectedIndex == 5)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Descripcion_Estado like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Descripcion_Estado like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 6)
+                        if (cmbFiltro.SelectedIndex == 6)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Cantidad like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Cantidad like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 7)
+                        if (cmbFiltro.SelectedIndex == 7)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Codigo_Barra like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Codigo_Barra like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                         else
-                        if (comboBox1.SelectedIndex == 8)
+                        if (cmbFiltro.SelectedIndex == 8)
                         {
-                            cmd.CommandText = "select * from [dbo].[View_1] where Serie like '%" + textBox1.Text.Trim() + "%'";
+                            cmd.CommandText = "select * from [dbo].[View_1] where Serie like '%" + txtBuscar.Text.Trim() + "%'";
                         }
                     }
                     cmd.ExecuteNonQuery();
@@ -299,7 +303,7 @@ namespace Loginç
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                     da.Fill(dt);
-                    dataGridView1.DataSource = dt;
+                    dtgProductos.DataSource = dt;
 
                     conex.CONECTARSQL.Close();
                 }
@@ -332,13 +336,13 @@ namespace Loginç
             try
             {
 
-                modificar.textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                modificar.txtCodigo.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                modificar.txtNomProducto.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                modificar.txtDescripcion.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                modificar.txtCantidad.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                modificar.txtPrecio.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                modificar.txtNum.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                modificar.textBox1.Text = dtgProductos.Rows[e.RowIndex].Cells[0].Value.ToString();
+                modificar.txtCodigo.Text = dtgProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
+                modificar.txtNomProducto.Text = dtgProductos.Rows[e.RowIndex].Cells[2].Value.ToString();
+                modificar.txtDescripcion.Text = dtgProductos.Rows[e.RowIndex].Cells[3].Value.ToString();
+                modificar.txtCantidad.Text = dtgProductos.Rows[e.RowIndex].Cells[4].Value.ToString();
+                modificar.txtPrecio.Text = dtgProductos.Rows[e.RowIndex].Cells[5].Value.ToString();
+                modificar.txtNum.Text = dtgProductos.Rows[e.RowIndex].Cells[7].Value.ToString();
 
                 modificar.Show();
                 modificar.button1.Visible = false;
@@ -367,15 +371,15 @@ namespace Loginç
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
         {
-            if (textBox1.Text.Trim() == String.Empty)
+            if (txtBuscar.Text.Trim() == String.Empty)
             {
-                epError.SetError(textBox1, "No se permiten campos vacíos");
-                textBox1.Text = "";
+                epError.SetError(txtBuscar, "No se permiten campos vacíos");
+                txtBuscar.Text = "";
             }
 
 
             else
-                epError.SetError(textBox1, "");
+                epError.SetError(txtBuscar, "");
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -390,7 +394,7 @@ namespace Loginç
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.MaxLength = 10;
+            txtBuscar.MaxLength = 10;
         }
     }
 }

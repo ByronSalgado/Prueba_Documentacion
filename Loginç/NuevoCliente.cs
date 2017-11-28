@@ -65,7 +65,7 @@ namespace Loginç
 
         private void NuevoCliente_Load(object sender, EventArgs e)
         {
-
+            cbTipoIden.SelectedIndex = 0;
         }
 
         private void txtCorreo_Leave_1(object sender, EventArgs e)
