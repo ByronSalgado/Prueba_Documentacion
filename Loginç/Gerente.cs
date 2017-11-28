@@ -180,27 +180,22 @@ namespace Loginç
         /***************************************************************************Caja*/
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            SqlConnection conex = new SqlConnection(@"Data Source=DESKTOP-UVN87AS\SQLEXPRESS; Initial Catalog = A.Beltran.Copiadora; Integrated Security = True;MultipleActiveResultSets=true;");
+            SqlCommand cmd = conex.CONECTARSQL.CreateCommand();
 
-            conex.Open();
-
-            SqlCommand ccc = conex.CreateCommand();
-
-            ccc.CommandType = CommandType.Text;
+            cmd.CommandType = CommandType.Text;
 
 
-            ccc.CommandText = "SELECT * FROM dbo.Arqueo As A inner join [dbo].[Estado] As B on A.ID_Estado = b.ID_Estado WHERE ([Fecha_Final] = CONVERT(DATE, '" + dateTimePicker1.Text + "'))  ";
+            cmd.CommandText = "SELECT * FROM dbo.Arqueo As A inner join [dbo].[Estado] As B on A.ID_Estado = b.ID_Estado WHERE ([Fecha_Final] = CONVERT(DATE, '" + dateTimePicker1.Text + "'))  ";
 
 
 
-            ccc.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(ccc);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             da.Fill(dt);
             dataGridView2.DataSource = dt;
 
-            conex.Close();
         }
 
         private void btnAbrir_Click(object sender, EventArgs e)
