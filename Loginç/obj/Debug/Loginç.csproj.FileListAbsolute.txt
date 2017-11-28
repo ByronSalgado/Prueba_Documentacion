@@ -260,3 +260,6 @@ C:\Users\bxron\Desktop\Prueba_Documentacion\Prueba_Documentacion\Loginç\obj\Deb
 C:\Users\bxron\Desktop\Prueba_Documentacion\Prueba_Documentacion\Loginç\obj\Debug\Loginç.csproj.GenerateResource.Cache
 C:\Users\bxron\Desktop\Prueba_Documentacion\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
 C:\Users\bxron\Desktop\Prueba_Documentacion\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb
+C:\Users\Erika Zelaya\Desktop\Prueba_Documentacion\Loginç\bin\Debug\Loginç.exe.config
+C:\Users\Erika Zelaya\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.exe
+C:\Users\Erika Zelaya\Desktop\Prueba_Documentacion\Loginç\obj\Debug\Loginç.pdb

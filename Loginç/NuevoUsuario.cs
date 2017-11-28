@@ -60,7 +60,7 @@ namespace Loginç
                     if (cnx.validadUsuarioExistente(txtNombre.Text) > 0)
                     {
                         cnx.nuevoUsuario(txtNombre, txtUsuario, txtContraseña, txtIdentidad, (cbRol.SelectedIndex + 2), txtTelefono, txtDireccion, txtCorreo, sexo);
-                        MessageBox.Show("Se Ingresaron los datos");
+                        MessageBox.Show("Se Ingresarón los Datos");
 
                     }
                     else
@@ -124,8 +124,8 @@ namespace Loginç
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormGerente gernte = new FormGerente();
-            gernte.Show();
+            FormGerente gerente = new FormGerente();
+            gerente.Show();
             this.Close();
         }
  
@@ -258,8 +258,8 @@ namespace Loginç
             }
             else
             {
-                MessageBox.Show("Direccion de Correo no Valida, el correo debe tener el formato: nombre@dominio.com" +
-                "\npor favor seleccione un correo valido", "validacion de correo electronico", MessageBoxButtons.OK,
+                MessageBox.Show("Dirección de Correo no Valida, el correo debe tener el formato: nombre@dominio.com" +
+                "\nPor favor seleccione un correo valido", "validación de correo electronico", MessageBoxButtons.OK,
                  MessageBoxIcon.Exclamation);
                 txtCorreo.Text = "";
                
@@ -405,7 +405,7 @@ namespace Loginç
         {
             if (String.IsNullOrEmpty(txtNombre.Text) | String.IsNullOrEmpty(txtIdentidad.Text) | String.IsNullOrEmpty(txtTelefono.Text) | String.IsNullOrEmpty(txtDireccion.Text) | String.IsNullOrEmpty(txtCorreo.Text) | String.IsNullOrEmpty(textBox1.Text))
             {
-                MessageBox.Show("Algun Campo Esta Vacio", "Mensaje");
+                MessageBox.Show("Campos Vacíos", "Mensaje");
             }
             else
             {

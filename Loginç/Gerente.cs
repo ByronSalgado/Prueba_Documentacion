@@ -276,11 +276,11 @@ namespace Loginç
                     ModificarUser.txtUsuario.Visible = false;
                     ModificarUser.btnAgregar.Visible = false;
                     ModificarUser.cbRol.Visible = false;
-                    ModificarUser.label3.Visible = false;
-                    ModificarUser.label4.Visible = false;
-                    ModificarUser.label6.Visible = false;
-                    ModificarUser.label7.Visible = false;
-                    ModificarUser.button2.Visible = true;
+                    ModificarUser.lbUsuario.Visible = false;
+                    ModificarUser.lbRol.Visible = false;
+                    ModificarUser.lbVerificar.Visible = false;
+                    ModificarUser.lbContraseña.Visible = false;
+                    ModificarUser.btnModificar.Visible = true;
                     this.Hide();
                 }
 
