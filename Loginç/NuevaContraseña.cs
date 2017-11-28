@@ -22,7 +22,7 @@ namespace Loginç
             {
                 txtContraseñaRecuContraseña.Enabled = false;
                 txtReinContraseñaRecuContraseña.Enabled=false;
-                button1.Enabled = false;
+                btnIngresar.Enabled = false;
             }
         }
 
@@ -91,22 +91,22 @@ namespace Loginç
 
         private void button1_MouseHover(object sender, EventArgs e)
         {
-            button1.BackColor = Color.Gray;
+            btnIngresar.BackColor = Color.Gray;
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.White;
+            btnIngresar.BackColor = Color.White;
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            button2.BackColor = Color.Gray;
+            btnSalir.BackColor = Color.Gray;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            button2.BackColor = Color.White;
+            btnSalir.BackColor = Color.White;
         }
 
         private void NuevaContraseñaIngresaGerente_Load(object sender, EventArgs e)

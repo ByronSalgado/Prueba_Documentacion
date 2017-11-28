@@ -37,7 +37,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -48,29 +48,32 @@
             // 
             // txtReinContraseñaRecuContraseña
             // 
-            this.txtReinContraseñaRecuContraseña.Location = new System.Drawing.Point(202, 208);
+            this.txtReinContraseñaRecuContraseña.Location = new System.Drawing.Point(269, 256);
+            this.txtReinContraseñaRecuContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtReinContraseñaRecuContraseña.Name = "txtReinContraseñaRecuContraseña";
             this.txtReinContraseñaRecuContraseña.PasswordChar = '*';
-            this.txtReinContraseñaRecuContraseña.Size = new System.Drawing.Size(100, 20);
+            this.txtReinContraseñaRecuContraseña.Size = new System.Drawing.Size(132, 22);
             this.txtReinContraseñaRecuContraseña.TabIndex = 13;
             this.txtReinContraseñaRecuContraseña.TextChanged += new System.EventHandler(this.txtReinContraseñaRecuContraseña_TextChanged);
             // 
             // txtContraseñaRecuContraseña
             // 
-            this.txtContraseñaRecuContraseña.Location = new System.Drawing.Point(202, 182);
+            this.txtContraseñaRecuContraseña.Location = new System.Drawing.Point(269, 224);
+            this.txtContraseñaRecuContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraseñaRecuContraseña.Name = "txtContraseñaRecuContraseña";
             this.txtContraseñaRecuContraseña.PasswordChar = '*';
-            this.txtContraseñaRecuContraseña.Size = new System.Drawing.Size(100, 20);
+            this.txtContraseñaRecuContraseña.Size = new System.Drawing.Size(132, 22);
             this.txtContraseñaRecuContraseña.TabIndex = 12;
             this.txtContraseñaRecuContraseña.TextChanged += new System.EventHandler(this.txtContraseñaRecuContraseña_TextChanged);
             // 
             // txtUsuarioRecuContraseña
             // 
             this.txtUsuarioRecuContraseña.Enabled = false;
-            this.txtUsuarioRecuContraseña.Location = new System.Drawing.Point(202, 154);
+            this.txtUsuarioRecuContraseña.Location = new System.Drawing.Point(269, 190);
+            this.txtUsuarioRecuContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuarioRecuContraseña.Name = "txtUsuarioRecuContraseña";
             this.txtUsuarioRecuContraseña.ReadOnly = true;
-            this.txtUsuarioRecuContraseña.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuarioRecuContraseña.Size = new System.Drawing.Size(132, 22);
             this.txtUsuarioRecuContraseña.TabIndex = 11;
             this.txtUsuarioRecuContraseña.TextChanged += new System.EventHandler(this.txtUsuarioRecuContraseña_TextChanged);
             // 
@@ -80,9 +83,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 210);
+            this.label4.Location = new System.Drawing.Point(37, 258);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 18);
+            this.label4.Size = new System.Drawing.Size(181, 24);
             this.label4.TabIndex = 40;
             this.label4.Text = "Verificar contraseña:\r\n";
             // 
@@ -91,10 +95,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::Loginç.Properties.Resources.Contraseña;
-            this.pictureBox4.Location = new System.Drawing.Point(180, 208);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(240, 256);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox4.Size = new System.Drawing.Size(30, 24);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 39;
             this.pictureBox4.TabStop = false;
@@ -104,10 +108,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Loginç.Properties.Resources.Contraseña;
-            this.pictureBox1.Location = new System.Drawing.Point(180, 182);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(240, 224);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
@@ -116,10 +120,10 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::Loginç.Properties.Resources.candado;
-            this.pictureBox3.Location = new System.Drawing.Point(180, 154);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(240, 190);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox3.Size = new System.Drawing.Size(30, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
@@ -128,10 +132,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Loginç.Properties.Resources.icon_account2;
-            this.pictureBox2.Location = new System.Drawing.Point(167, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(223, 14);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 90);
+            this.pictureBox2.Size = new System.Drawing.Size(117, 111);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 36;
             this.pictureBox2.TabStop = false;
@@ -142,25 +146,25 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.15F);
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(103, 112);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(137, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 20);
+            this.label5.Size = new System.Drawing.Size(306, 25);
             this.label5.TabIndex = 35;
-            this.label5.Text = "A.Beltran Copiadora S. de R.L";
+            this.label5.Text = "A.Beltran Copiadora S. de R.L.";
             // 
-            // button1
+            // btnIngresar
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(167, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnIngresar.BackColor = System.Drawing.Color.Lime;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnIngresar.Location = new System.Drawing.Point(223, 340);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(100, 28);
+            this.btnIngresar.TabIndex = 33;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label6
             // 
@@ -168,9 +172,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(82, 182);
+            this.label6.Location = new System.Drawing.Point(109, 224);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 18);
+            this.label6.Size = new System.Drawing.Size(111, 24);
             this.label6.TabIndex = 32;
             this.label6.Text = "Contraseña:";
             // 
@@ -180,31 +185,33 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(107, 156);
+            this.label7.Location = new System.Drawing.Point(143, 192);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 18);
+            this.label7.Size = new System.Drawing.Size(79, 24);
             this.label7.TabIndex = 31;
             this.label7.Text = "Usuario:";
             // 
             // NuevaContraseñaUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
-            this.ClientSize = new System.Drawing.Size(414, 339);
+            this.ClientSize = new System.Drawing.Size(552, 417);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtReinContraseñaRecuContraseña);
             this.Controls.Add(this.txtContraseñaRecuContraseña);
             this.Controls.Add(this.txtUsuarioRecuContraseña);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "NuevaContraseñaUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -228,7 +235,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtUsuarioRecuContraseña;

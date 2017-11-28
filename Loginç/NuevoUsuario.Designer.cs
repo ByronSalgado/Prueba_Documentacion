@@ -71,7 +71,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(487, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 0;
@@ -92,9 +92,9 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Location = new System.Drawing.Point(16, 322);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(571, 161);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
@@ -126,7 +126,7 @@
             this.cbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRol.FormattingEnabled = true;
             this.cbRol.Location = new System.Drawing.Point(25, 100);
-            this.cbRol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRol.Margin = new System.Windows.Forms.Padding(4);
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(233, 24);
             this.cbRol.TabIndex = 19;
@@ -135,7 +135,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(25, 46);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(233, 22);
             this.txtUsuario.TabIndex = 8;
@@ -148,7 +148,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(303, 46);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(233, 22);
@@ -162,7 +162,7 @@
             // txtVerificar
             // 
             this.txtVerificar.Location = new System.Drawing.Point(303, 101);
-            this.txtVerificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVerificar.Margin = new System.Windows.Forms.Padding(4);
             this.txtVerificar.Name = "txtVerificar";
             this.txtVerificar.PasswordChar = '*';
             this.txtVerificar.Size = new System.Drawing.Size(233, 22);
@@ -196,7 +196,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(25, 47);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(233, 22);
             this.txtNombre.TabIndex = 1;
@@ -234,9 +234,9 @@
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox3.Location = new System.Drawing.Point(16, 95);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(571, 204);
             this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
@@ -246,7 +246,7 @@
             // 
             this.rbF.AutoSize = true;
             this.rbF.Location = new System.Drawing.Point(432, 146);
-            this.rbF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbF.Margin = new System.Windows.Forms.Padding(4);
             this.rbF.Name = "rbF";
             this.rbF.Size = new System.Drawing.Size(37, 21);
             this.rbF.TabIndex = 37;
@@ -258,7 +258,7 @@
             // 
             this.rbM.AutoSize = true;
             this.rbM.Location = new System.Drawing.Point(379, 146);
-            this.rbM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbM.Margin = new System.Windows.Forms.Padding(4);
             this.rbM.Name = "rbM";
             this.rbM.Size = new System.Drawing.Size(40, 21);
             this.rbM.TabIndex = 36;
@@ -279,7 +279,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(303, 98);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(233, 22);
             this.txtCorreo.TabIndex = 34;
@@ -303,7 +303,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(25, 143);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(233, 22);
             this.txtDireccion.TabIndex = 32;
@@ -325,7 +325,7 @@
             // txtIdentidad
             // 
             this.txtIdentidad.Location = new System.Drawing.Point(25, 95);
-            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdentidad.Name = "txtIdentidad";
             this.txtIdentidad.Size = new System.Drawing.Size(233, 22);
             this.txtIdentidad.TabIndex = 28;
@@ -338,7 +338,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(303, 50);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(233, 22);
             this.txtTelefono.TabIndex = 30;
@@ -374,7 +374,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAgregar.Location = new System.Drawing.Point(379, 491);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 30);
             this.btnAgregar.TabIndex = 33;
@@ -392,7 +392,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(379, 491);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 30);
             this.button2.TabIndex = 36;
@@ -404,7 +404,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(20, 496);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(27, 22);
             this.textBox1.TabIndex = 38;
@@ -419,9 +419,9 @@
             this.label1.Location = new System.Drawing.Point(116, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 35);
+            this.label1.Size = new System.Drawing.Size(421, 35);
             this.label1.TabIndex = 47;
-            this.label1.Text = "A.Beltran.Copiadora S. de R.L";
+            this.label1.Text = "A.Beltran.Copiadora S. de R.L.";
             // 
             // pictureBox2
             // 
@@ -450,7 +450,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "NuevoUsuario";
             this.Text = "NuevoUsuario";

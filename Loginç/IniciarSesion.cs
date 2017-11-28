@@ -35,7 +35,7 @@ namespace Loginç
         {
             if (String.IsNullOrEmpty(TxtUsuario.Text) | String.IsNullOrEmpty(TxtContraseña.Text))
             {
-                MessageBox.Show("USUARIO O CONTRASEÑA ESTAN VACIOS", "Mensaje");
+                MessageBox.Show("USUARIO O CONTRASEÑA ESTAN VACIOS", "MENSAJE");
                 TxtUsuario.Clear();
                 TxtContraseña.Clear();
             }
@@ -43,7 +43,7 @@ namespace Loginç
             {
                 if (conexion.obtenerUsuarioExiste(TxtUsuario.Text) == false)
                 {
-                    MessageBox.Show("EL USUARIO NO EXISTE ,INGRESE UNO CORRECTO", "Msj");
+                    MessageBox.Show("EL USUARIO NO EXISTE ,INGRESE UNO CORRECTO", "MENSAJE");
                     TxtUsuario.Clear();
                     TxtContraseña.Clear();
                 }
@@ -54,7 +54,7 @@ namespace Loginç
                     if (contadorErroresIngresar == 3)
                     {
                         conexion.actualizarUsuarioBloqueado(TxtUsuario.Text);
-                        MessageBox.Show("ESTE USUARIO ESTA BLOQUEADO POR SOBREPASAR EL LIMITE DE INTENTOS PARA INGRESAR", "Msj");
+                        MessageBox.Show("ESTE USUARIO ESTA BLOQUEADO POR SOBREPASAR EL LIMITE DE INTENTOS PARA INGRESAR", "MENSAJE");
                         TxtUsuario.Clear();
                         TxtContraseña.Clear();
                     }
@@ -67,7 +67,7 @@ namespace Loginç
                             {
                                 if (Convert.ToInt32(txtIdEstado.Text) == 3)
                                 {
-                                    MessageBox.Show("DEBES CAMBIAR LA CONTRASEÑA", "Msj");
+                                    MessageBox.Show("DEBES CAMBIAR LA CONTRASEÑA", "MENSAJE");
                                     NuevaContraseñaUsuarios contraUsuarios = new NuevaContraseñaUsuarios();
                                     String user = TxtUsuario.Text;
                                     contraUsuarios.txtUsuarioRecuContraseña.Text = user;
@@ -76,7 +76,7 @@ namespace Loginç
                                 }
                                 else
                                 {
-                                    MessageBox.Show("BIENVENIDO", "Mensaje");
+                                    MessageBox.Show("BIENVENIDO", "MENSAJE");
                                     if (Convert.ToInt32(TxtIdRol.Text) == 1)
                                     {
                                         FormGerente gere = new FormGerente();
@@ -91,12 +91,13 @@ namespace Loginç
                                         this.Hide();
                                     }
                                     //////////////////////
-                                    else if (Convert.ToInt32(TxtIdRol.Text) == 3)
+                                    /*else if (Convert.ToInt32(TxtIdRol.Text) == 3)
                                     {
                                         Servicio_Tecnico ser = new Servicio_Tecnico();
                                         ser.Show();
                                         this.Hide();
                                     }
+                                    */
                                     else if (Convert.ToInt32(TxtIdRol.Text) == 4)
                                     {
                                         Bodega bdg = new Bodega();
@@ -111,7 +112,7 @@ namespace Loginç
                             {
                                 if (TxtIdRol.Text != "1")
                                 {
-                                    MessageBox.Show("NO SE PUEDE INGRESAR", "mensaje");
+                                    MessageBox.Show("NO SE PUEDE INGRESAR", "MENSAJE");
                                     contadorErroresIngresar++;
                                     txtIntentosErrores.Text = Convert.ToString(contadorErroresIngresar);
                                     conexion.actualizarErrores(txtIntentosErrores, TxtUsuario);
@@ -120,7 +121,7 @@ namespace Loginç
                                 }
                                 else
                                 {
-                                    MessageBox.Show("NO SE PUEDE INGRESAR", "mensaje");
+                                    MessageBox.Show("NO SE PUEDE INGRESAR", "MENSAJE");
                                     TxtUsuario.Clear();
                                     TxtContraseña.Clear();
                                 }
@@ -148,7 +149,7 @@ namespace Loginç
 
         private void link_Load(object sender, EventArgs e)
         {
-            linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            llbVinculo.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
         }
 
         private void TxtUsuario_TextChanged(object sender, EventArgs e)
@@ -217,8 +218,8 @@ namespace Loginç
             if (e.Button == MouseButtons.Right)
             {
 
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
+                MessageBox.Show("NO SE PUEDE UTILIZAR EL BOTON DERECHO" +
+                  "", "ERROR", MessageBoxButtons.OK,
                    MessageBoxIcon.Error);
             }
         }
@@ -233,8 +234,8 @@ namespace Loginç
             if (e.Button == MouseButtons.Right)
             {
 
-                MessageBox.Show("No se puede utilizar el boton derecho" +
-                  "", "Error", MessageBoxButtons.OK,
+                MessageBox.Show("NO SE PUEDE UTILIZAR EL BOTON DERECHO" +
+                  "", "ERROR", MessageBoxButtons.OK,
                    MessageBoxIcon.Error);
             }
         }

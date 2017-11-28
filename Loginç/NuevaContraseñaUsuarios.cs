@@ -18,16 +18,11 @@ namespace Loginç
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(txtUsuarioRecuContraseña.Text) | String.IsNullOrEmpty(txtContraseñaRecuContraseña.Text) | String.IsNullOrEmpty(txtReinContraseñaRecuContraseña.Text))
             {
-                MessageBox.Show("USUARIO O CONTRASEÑA ESTAN VACIOS", "Mensaje");
+                MessageBox.Show("USUARIO O CONTRASEÑA ESTAN VACIOS", "MENSAJE");
                 txtContraseñaRecuContraseña.Clear();
                 txtReinContraseñaRecuContraseña.Clear();
             }
@@ -42,14 +37,14 @@ namespace Loginç
                         conexion.ingresarContraseña(txtReinContraseñaRecuContraseña.Text, txtUsuarioRecuContraseña.Text);
                         txtContraseñaRecuContraseña.Clear();
                         txtReinContraseñaRecuContraseña.Clear();
-                        MessageBox.Show("SE HAN GUARDADO LOS CAMBIOS", "Msj");
+                        MessageBox.Show("SE HAN GUARDADO LOS CAMBIOS", "MENSAJE");
                     link link = new link();
                     link.Show();
                     this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("EL USUARIO NO CORRESPONDE AL DE LA BASE DE DATOS", "Mensaje");
+                        MessageBox.Show("EL USUARIO NO CORRESPONDE AL DE LA BASE DE DATOS", "MENSAJE");
                         txtContraseñaRecuContraseña.Clear();
                         txtReinContraseñaRecuContraseña.Clear();
                     }
@@ -58,7 +53,7 @@ namespace Loginç
                 }
                 else
                 {
-                    MessageBox.Show("LOS CAMPOS DE LAS CONTRASEÑAS NO SON IGUALES", "Msj");
+                    MessageBox.Show("LOS CAMPOS DE LAS CONTRASEÑAS NO SON IGUALES", "MENSAJE");
                     txtContraseñaRecuContraseña.Clear();
                     txtReinContraseñaRecuContraseña.Clear();
                     txtUsuarioRecuContraseña.Clear();

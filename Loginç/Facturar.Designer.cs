@@ -35,15 +35,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.idFactura = new System.Windows.Forms.TextBox();
-            this.precioUni = new System.Windows.Forms.TextBox();
-            this.idProducto = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.InventrioSerie = new System.Windows.Forms.TextBox();
+            this.txtidFactura = new System.Windows.Forms.TextBox();
+            this.txtprecioUni = new System.Windows.Forms.TextBox();
+            this.txtidProducto = new System.Windows.Forms.TextBox();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtInventrioSerie = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtCAI = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvInventario = new System.Windows.Forms.DataGridView();
             this.nombreProductoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,18 +53,18 @@
             this.proBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet13 = new Loginç._A_Beltran_CopiadoraDataSet13();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtn3 = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtn2 = new System.Windows.Forms.TextBox();
+            this.txtn1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNomP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.txtCant = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvCarrito = new System.Windows.Forms.DataGridView();
             this.proTableAdapter = new Loginç._A_Beltran_CopiadoraDataSet13TableAdapters.ProTableAdapter();
             this._A_Beltran_CopiadoraDataSet14 = new Loginç._A_Beltran_CopiadoraDataSet14();
             this.detalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -74,19 +74,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtImp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnFacturar = new System.Windows.Forms.Button();
             this.txtSubT = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.proTableAdapter1 = new Loginç._A_Beltran_CopiadoraDataSet15TableAdapters.ProTableAdapter();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet13)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalleBindingSource)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -97,7 +97,7 @@
             // 
             this.txtId_Cliente.Enabled = false;
             this.txtId_Cliente.Location = new System.Drawing.Point(109, 23);
-            this.txtId_Cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId_Cliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtId_Cliente.Name = "txtId_Cliente";
             this.txtId_Cliente.ReadOnly = true;
             this.txtId_Cliente.Size = new System.Drawing.Size(173, 22);
@@ -119,7 +119,7 @@
             // 
             this.txtArqueo.Enabled = false;
             this.txtArqueo.Location = new System.Drawing.Point(573, 55);
-            this.txtArqueo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtArqueo.Margin = new System.Windows.Forms.Padding(4);
             this.txtArqueo.Name = "txtArqueo";
             this.txtArqueo.ReadOnly = true;
             this.txtArqueo.Size = new System.Drawing.Size(152, 22);
@@ -149,11 +149,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.idFactura);
-            this.groupBox1.Controls.Add(this.precioUni);
-            this.groupBox1.Controls.Add(this.idProducto);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.InventrioSerie);
+            this.groupBox1.Controls.Add(this.txtidFactura);
+            this.groupBox1.Controls.Add(this.txtprecioUni);
+            this.groupBox1.Controls.Add(this.txtidProducto);
+            this.groupBox1.Controls.Add(this.btnRegresar);
+            this.groupBox1.Controls.Add(this.txtInventrioSerie);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.txtCAI);
@@ -164,63 +164,63 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(16, 17);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(911, 100);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Factura";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // idFactura
+            // txtidFactura
             // 
-            this.idFactura.Location = new System.Drawing.Point(395, 55);
-            this.idFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idFactura.Name = "idFactura";
-            this.idFactura.Size = new System.Drawing.Size(75, 22);
-            this.idFactura.TabIndex = 36;
-            this.idFactura.Visible = false;
+            this.txtidFactura.Location = new System.Drawing.Point(395, 55);
+            this.txtidFactura.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidFactura.Name = "txtidFactura";
+            this.txtidFactura.Size = new System.Drawing.Size(75, 22);
+            this.txtidFactura.TabIndex = 36;
+            this.txtidFactura.Visible = false;
             // 
-            // precioUni
+            // txtprecioUni
             // 
-            this.precioUni.Location = new System.Drawing.Point(395, 23);
-            this.precioUni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.precioUni.Name = "precioUni";
-            this.precioUni.Size = new System.Drawing.Size(75, 22);
-            this.precioUni.TabIndex = 35;
-            this.precioUni.Visible = false;
+            this.txtprecioUni.Location = new System.Drawing.Point(395, 23);
+            this.txtprecioUni.Margin = new System.Windows.Forms.Padding(4);
+            this.txtprecioUni.Name = "txtprecioUni";
+            this.txtprecioUni.Size = new System.Drawing.Size(75, 22);
+            this.txtprecioUni.TabIndex = 35;
+            this.txtprecioUni.Visible = false;
             // 
-            // idProducto
+            // txtidProducto
             // 
-            this.idProducto.Location = new System.Drawing.Point(292, 55);
-            this.idProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idProducto.Name = "idProducto";
-            this.idProducto.Size = new System.Drawing.Size(83, 22);
-            this.idProducto.TabIndex = 34;
-            this.idProducto.Visible = false;
+            this.txtidProducto.Location = new System.Drawing.Point(292, 55);
+            this.txtidProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidProducto.Name = "txtidProducto";
+            this.txtidProducto.Size = new System.Drawing.Size(83, 22);
+            this.txtidProducto.TabIndex = 34;
+            this.txtidProducto.Visible = false;
             // 
-            // button2
+            // btnRegresar
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(788, 14);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 42);
-            this.button2.TabIndex = 51;
-            this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnRegresar.BackColor = System.Drawing.Color.Red;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegresar.Location = new System.Drawing.Point(788, 14);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(100, 42);
+            this.btnRegresar.TabIndex = 51;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // InventrioSerie
+            // txtInventrioSerie
             // 
-            this.InventrioSerie.Location = new System.Drawing.Point(292, 23);
-            this.InventrioSerie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.InventrioSerie.Name = "InventrioSerie";
-            this.InventrioSerie.Size = new System.Drawing.Size(83, 22);
-            this.InventrioSerie.TabIndex = 33;
-            this.InventrioSerie.Visible = false;
+            this.txtInventrioSerie.Location = new System.Drawing.Point(292, 23);
+            this.txtInventrioSerie.Margin = new System.Windows.Forms.Padding(4);
+            this.txtInventrioSerie.Name = "txtInventrioSerie";
+            this.txtInventrioSerie.Size = new System.Drawing.Size(83, 22);
+            this.txtInventrioSerie.TabIndex = 33;
+            this.txtInventrioSerie.Visible = false;
             // 
             // label10
             // 
@@ -236,7 +236,7 @@
             // 
             this.txtUser.Enabled = false;
             this.txtUser.Location = new System.Drawing.Point(109, 55);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
             this.txtUser.ReadOnly = true;
             this.txtUser.Size = new System.Drawing.Size(173, 22);
@@ -247,35 +247,35 @@
             // 
             this.txtCAI.Enabled = false;
             this.txtCAI.Location = new System.Drawing.Point(572, 23);
-            this.txtCAI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCAI.Margin = new System.Windows.Forms.Padding(4);
             this.txtCAI.Name = "txtCAI";
             this.txtCAI.ReadOnly = true;
             this.txtCAI.Size = new System.Drawing.Size(152, 22);
             this.txtCAI.TabIndex = 30;
             this.txtCAI.Text = "0";
             // 
-            // dataGridView1
+            // dgvInventario
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvInventario.AllowUserToAddRows = false;
+            this.dgvInventario.AllowUserToDeleteRows = false;
+            this.dgvInventario.AutoGenerateColumns = false;
+            this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombreProductoDataGridViewTextBoxColumn,
             this.cantidadDataGridViewTextBoxColumn,
             this.precioDataGridViewTextBoxColumn,
             this.descripcionEstadoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.proBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 23);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(448, 245);
-            this.dataGridView1.TabIndex = 33;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
+            this.dgvInventario.DataSource = this.proBindingSource1;
+            this.dgvInventario.Location = new System.Drawing.Point(23, 23);
+            this.dgvInventario.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvInventario.MultiSelect = false;
+            this.dgvInventario.Name = "dgvInventario";
+            this.dgvInventario.ReadOnly = true;
+            this.dgvInventario.Size = new System.Drawing.Size(448, 245);
+            this.dgvInventario.TabIndex = 33;
+            this.dgvInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvInventario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dgvInventario.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
             // nombreProductoDataGridViewTextBoxColumn
             // 
@@ -329,37 +329,37 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtn3);
             this.groupBox2.Controls.Add(this.btnBorrar);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtn2);
+            this.groupBox2.Controls.Add(this.txtn1);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtNomP);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtPrecio);
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvInventario);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Controls.Add(this.txtCant);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Location = new System.Drawing.Point(16, 124);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(495, 453);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBox2
+            // txtn3
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 276);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(32, 22);
-            this.textBox2.TabIndex = 62;
-            this.textBox2.Visible = false;
+            this.txtn3.Location = new System.Drawing.Point(105, 276);
+            this.txtn3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtn3.Name = "txtn3";
+            this.txtn3.Size = new System.Drawing.Size(32, 22);
+            this.txtn3.TabIndex = 62;
+            this.txtn3.Visible = false;
             // 
             // btnBorrar
             // 
@@ -367,7 +367,7 @@
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBorrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBorrar.Location = new System.Drawing.Point(371, 347);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(100, 42);
             this.btnBorrar.TabIndex = 61;
@@ -375,23 +375,23 @@
             this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // textBox1
+            // txtn2
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 276);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 22);
-            this.textBox1.TabIndex = 60;
-            this.textBox1.Visible = false;
+            this.txtn2.Location = new System.Drawing.Point(64, 276);
+            this.txtn2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtn2.Name = "txtn2";
+            this.txtn2.Size = new System.Drawing.Size(32, 22);
+            this.txtn2.TabIndex = 60;
+            this.txtn2.Visible = false;
             // 
-            // textBox9
+            // txtn1
             // 
-            this.textBox9.Location = new System.Drawing.Point(23, 276);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(32, 22);
-            this.textBox9.TabIndex = 59;
-            this.textBox9.Visible = false;
+            this.txtn1.Location = new System.Drawing.Point(23, 276);
+            this.txtn1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtn1.Name = "txtn1";
+            this.txtn1.Size = new System.Drawing.Size(32, 22);
+            this.txtn1.TabIndex = 59;
+            this.txtn1.Visible = false;
             // 
             // label6
             // 
@@ -408,7 +408,7 @@
             // 
             this.txtNomP.Enabled = false;
             this.txtNomP.Location = new System.Drawing.Point(148, 300);
-            this.txtNomP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomP.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomP.Name = "txtNomP";
             this.txtNomP.ReadOnly = true;
             this.txtNomP.Size = new System.Drawing.Size(213, 22);
@@ -431,7 +431,7 @@
             // 
             this.txtPrecio.Enabled = false;
             this.txtPrecio.Location = new System.Drawing.Point(148, 332);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.ReadOnly = true;
             this.txtPrecio.Size = new System.Drawing.Size(213, 22);
@@ -450,24 +450,24 @@
             this.label8.TabIndex = 56;
             this.label8.Text = "Cantidad";
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(371, 298);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 42);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnAgregar.BackColor = System.Drawing.Color.Lime;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAgregar.Location = new System.Drawing.Point(371, 298);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(100, 42);
+            this.btnAgregar.TabIndex = 57;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtCant
             // 
             this.txtCant.Location = new System.Drawing.Point(148, 364);
-            this.txtCant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCant.Margin = new System.Windows.Forms.Padding(4);
             this.txtCant.Name = "txtCant";
             this.txtCant.Size = new System.Drawing.Size(213, 22);
             this.txtCant.TabIndex = 58;
@@ -475,20 +475,20 @@
             this.txtCant.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCant_KeyDown);
             this.txtCant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCant_KeyPress);
             // 
-            // dataGridView2
+            // dgvCarrito
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(8, 23);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView2.MultiSelect = false;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(377, 244);
-            this.dataGridView2.TabIndex = 34;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.dgvCarrito.AllowUserToAddRows = false;
+            this.dgvCarrito.AllowUserToDeleteRows = false;
+            this.dgvCarrito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCarrito.Location = new System.Drawing.Point(8, 23);
+            this.dgvCarrito.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCarrito.MultiSelect = false;
+            this.dgvCarrito.Name = "dgvCarrito";
+            this.dgvCarrito.ReadOnly = true;
+            this.dgvCarrito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCarrito.Size = new System.Drawing.Size(377, 244);
+            this.dgvCarrito.TabIndex = 34;
+            this.dgvCarrito.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // proTableAdapter
             // 
@@ -516,15 +516,15 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtImp);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.btnFacturar);
             this.groupBox3.Controls.Add(this.txtSubT);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.Controls.Add(this.dgvCarrito);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox3.Location = new System.Drawing.Point(519, 124);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(409, 453);
             this.groupBox3.TabIndex = 51;
             this.groupBox3.TabStop = false;
@@ -534,7 +534,7 @@
             // 
             this.txtTotal.Enabled = false;
             this.txtTotal.Location = new System.Drawing.Point(171, 364);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(213, 22);
@@ -556,7 +556,7 @@
             // 
             this.txtImp.Enabled = false;
             this.txtImp.Location = new System.Drawing.Point(171, 332);
-            this.txtImp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtImp.Margin = new System.Windows.Forms.Padding(4);
             this.txtImp.Name = "txtImp";
             this.txtImp.ReadOnly = true;
             this.txtImp.Size = new System.Drawing.Size(213, 22);
@@ -574,25 +574,25 @@
             this.label5.TabIndex = 55;
             this.label5.Text = "Impuesto";
             // 
-            // button3
+            // btnFacturar
             // 
-            this.button3.BackColor = System.Drawing.Color.Lime;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(285, 404);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 42);
-            this.button3.TabIndex = 52;
-            this.button3.Text = "Facturar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.btnFacturar.BackColor = System.Drawing.Color.Lime;
+            this.btnFacturar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFacturar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnFacturar.Location = new System.Drawing.Point(285, 404);
+            this.btnFacturar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFacturar.Name = "btnFacturar";
+            this.btnFacturar.Size = new System.Drawing.Size(100, 42);
+            this.btnFacturar.TabIndex = 52;
+            this.btnFacturar.Text = "Facturar";
+            this.btnFacturar.UseVisualStyleBackColor = false;
+            this.btnFacturar.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // txtSubT
             // 
             this.txtSubT.Enabled = false;
             this.txtSubT.Location = new System.Drawing.Point(171, 300);
-            this.txtSubT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSubT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubT.Name = "txtSubT";
             this.txtSubT.ReadOnly = true;
             this.txtSubT.Size = new System.Drawing.Size(213, 22);
@@ -628,7 +628,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Facturar";
             this.Text = "Facturar";
@@ -636,14 +636,14 @@
             this.Load += new System.EventHandler(this.Facturar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet13)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detalleBindingSource)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -661,7 +661,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvInventario;
         private System.Windows.Forms.GroupBox groupBox2;
         private _A_Beltran_CopiadoraDataSet13 _A_Beltran_CopiadoraDataSet13;
         private System.Windows.Forms.BindingSource proBindingSource;
@@ -673,37 +673,37 @@
         private _A_Beltran_CopiadoraDataSet14 _A_Beltran_CopiadoraDataSet14;
         private System.Windows.Forms.BindingSource detalleBindingSource;
         private _A_Beltran_CopiadoraDataSet14TableAdapters.detalleTableAdapter detalleTableAdapter;
-        public System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.DataGridView dgvCarrito;
         private System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.TextBox txtCAI;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtn2;
+        private System.Windows.Forms.TextBox txtn1;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtNomP;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtCant;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtImp;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnFacturar;
         public System.Windows.Forms.TextBox txtSubT;
         private System.Windows.Forms.Label label9;
         private _A_Beltran_CopiadoraDataSet15 _A_Beltran_CopiadoraDataSet15;
         private System.Windows.Forms.BindingSource proBindingSource1;
         private _A_Beltran_CopiadoraDataSet15TableAdapters.ProTableAdapter proTableAdapter1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.TextBox idFactura;
-        private System.Windows.Forms.TextBox precioUni;
-        private System.Windows.Forms.TextBox idProducto;
-        private System.Windows.Forms.TextBox InventrioSerie;
+        private System.Windows.Forms.TextBox txtidFactura;
+        private System.Windows.Forms.TextBox txtprecioUni;
+        private System.Windows.Forms.TextBox txtidProducto;
+        private System.Windows.Forms.TextBox txtInventrioSerie;
         private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtn3;
     }
 }

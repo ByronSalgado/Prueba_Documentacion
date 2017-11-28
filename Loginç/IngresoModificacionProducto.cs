@@ -37,8 +37,8 @@ namespace Loginç
             this.categoria_ProductoTableAdapter1.Fill(this._A_Beltran_CopiadoraDataSet5.Categoria_Producto);
             // TODO: esta línea de código carga datos en la tabla '_A_Beltran_CopiadoraDataSet3.Estado' Puede moverla o quitarla según sea necesario.
             this.estadoTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet3.Estado);
-            comboBox1.SelectedIndex = 0;
-            comboBox2.SelectedIndex = 0;
+            cmbCategoria.SelectedIndex = 0;
+            cmbEstado.SelectedIndex = 0;
 
         }
 
@@ -53,7 +53,7 @@ namespace Loginç
 
             else
             {
-                if (comboBox1.SelectedIndex == 0 && Convert.ToInt32(txtCantidad.Text) > 1)
+                if (cmbCategoria.SelectedIndex == 0 && Convert.ToInt32(txtCantidad.Text) > 1)
                 {
                     MessageBox.Show("Error Solo puede ingresar una copiadora");
                     txtCantidad.Text = "";
@@ -65,9 +65,9 @@ namespace Loginç
                     string salida;
                     try
                     {
-                        conex.COMANDOSQL = new SqlCommand("update Producto  set  [ID_Categoria] = " + Convert.ToInt16(comboBox1.SelectedIndex + 1) + ", [ID_Estado] =  " + Convert.ToInt16(comboBox2.SelectedIndex + 1) + ", [Codigo_Barra] = '" + txtCodigo.Text + "', [Nombre_Producto] = '" + txtNomProducto.Text + "', [Descripcion_Producto] = '" + txtDescripcion.Text + "' ,[Cantidad] = '" + txtCantidad.Text + "', [Precio] ='" + txtPrecio.Text + "' where[ID_Producto] = '" + textBox1.Text + "'", conex.CONECTARSQL);
+                        conex.COMANDOSQL = new SqlCommand("update Producto  set  [ID_Categoria] = " + Convert.ToInt16(cmbCategoria.SelectedIndex + 1) + ", [ID_Estado] =  " + Convert.ToInt16(cmbEstado.SelectedIndex + 1) + ", [Codigo_Barra] = '" + txtCodigo.Text + "', [Nombre_Producto] = '" + txtNomProducto.Text + "', [Descripcion_Producto] = '" + txtDescripcion.Text + "' ,[Cantidad] = '" + txtCantidad.Text + "', [Precio] ='" + txtPrecio.Text + "' where[ID_Producto] = '" + txtCodigoProducto.Text + "'", conex.CONECTARSQL);
                         conex.COMANDOSQL.ExecuteNonQuery();
-                        conex.COMANDOSQL = new SqlCommand("update Inventario_Serie  set [Serie] = " + txtNum.Text + " where[ID_Producto] = " + textBox1.Text + "", conex.CONECTARSQL);
+                        conex.COMANDOSQL = new SqlCommand("update Inventario_Serie  set [Serie] = " + txtNum.Text + " where[ID_Producto] = " + txtCodigoProducto.Text + "", conex.CONECTARSQL);
                         conex.COMANDOSQL.ExecuteNonQuery();
                         salida = "Datos insertados correctamente";
                     }
@@ -100,7 +100,7 @@ namespace Loginç
             }
             else
             {
-                if (comboBox1.SelectedIndex == 0 && Convert.ToInt32(txtCantidad.Text) > 1)
+                if (cmbCategoria.SelectedIndex == 0 && Convert.ToInt32(txtCantidad.Text) > 1)
                 {
                     MessageBox.Show("Error Solo puede ingresar una copiadora");
                     txtCantidad.Text = "";
@@ -112,7 +112,7 @@ namespace Loginç
 
                     try
                     {
-                        conex.nuevoProducto((comboBox1.SelectedIndex + 1), txtNomProducto, txtCodigo, txtDescripcion, txtPrecio, txtCantidad);
+                        conex.nuevoProducto((cmbCategoria.SelectedIndex + 1), txtNomProducto, txtCodigo, txtDescripcion, txtPrecio, txtCantidad);
                         conex.obtenerLastID(obtenerIdProducto);
                         conex.insertarIdSerie(obtenerIdProducto, txtNum.Text);
                         //id = Convert.ToInt16(conex.retornar_id());

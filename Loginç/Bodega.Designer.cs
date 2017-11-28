@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbBuscar = new System.Windows.Forms.Label();
+            this.lbFiltro = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbInventario = new System.Windows.Forms.RadioButton();
             this.rbSerie = new System.Windows.Forms.RadioButton();
@@ -42,8 +44,6 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
-            this.lbFiltro = new System.Windows.Forms.Label();
-            this.lbBuscar = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProductos)).BeginInit();
@@ -63,13 +63,37 @@
             this.groupBox1.Controls.Add(this.txtBuscar);
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(592, 112);
+            this.groupBox1.Location = new System.Drawing.Point(789, 138);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 269);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(307, 331);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtro";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lbBuscar
+            // 
+            this.lbBuscar.AutoSize = true;
+            this.lbBuscar.Location = new System.Drawing.Point(4, 206);
+            this.lbBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBuscar.Name = "lbBuscar";
+            this.lbBuscar.Size = new System.Drawing.Size(52, 17);
+            this.lbBuscar.TabIndex = 9;
+            this.lbBuscar.Text = "Buscar";
+            this.lbBuscar.Visible = false;
+            // 
+            // lbFiltro
+            // 
+            this.lbFiltro.AutoSize = true;
+            this.lbFiltro.Location = new System.Drawing.Point(4, 146);
+            this.lbFiltro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbFiltro.Name = "lbFiltro";
+            this.lbFiltro.Size = new System.Drawing.Size(39, 17);
+            this.lbFiltro.TabIndex = 4;
+            this.lbFiltro.Text = "Filtro";
+            this.lbFiltro.Visible = false;
             // 
             // groupBox2
             // 
@@ -78,9 +102,11 @@
             this.groupBox2.Controls.Add(this.rbInventario);
             this.groupBox2.Controls.Add(this.rbSerie);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox2.Location = new System.Drawing.Point(6, 29);
+            this.groupBox2.Location = new System.Drawing.Point(8, 36);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(211, 87);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(281, 107);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo Inventario";
@@ -90,9 +116,10 @@
             // 
             this.rbInventario.AutoSize = true;
             this.rbInventario.Checked = true;
-            this.rbInventario.Location = new System.Drawing.Point(6, 19);
+            this.rbInventario.Location = new System.Drawing.Point(8, 23);
+            this.rbInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbInventario.Name = "rbInventario";
-            this.rbInventario.Size = new System.Drawing.Size(72, 17);
+            this.rbInventario.Size = new System.Drawing.Size(91, 21);
             this.rbInventario.TabIndex = 2;
             this.rbInventario.TabStop = true;
             this.rbInventario.Text = "Inventario";
@@ -102,9 +129,10 @@
             // rbSerie
             // 
             this.rbSerie.AutoSize = true;
-            this.rbSerie.Location = new System.Drawing.Point(6, 42);
+            this.rbSerie.Location = new System.Drawing.Point(8, 52);
+            this.rbSerie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbSerie.Name = "rbSerie";
-            this.rbSerie.Size = new System.Drawing.Size(54, 17);
+            this.rbSerie.Size = new System.Drawing.Size(69, 21);
             this.rbSerie.TabIndex = 3;
             this.rbSerie.Text = "Series";
             this.rbSerie.UseVisualStyleBackColor = true;
@@ -116,9 +144,10 @@
             this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBuscar.Location = new System.Drawing.Point(122, 209);
+            this.btnBuscar.Location = new System.Drawing.Point(163, 257);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(95, 36);
+            this.btnBuscar.Size = new System.Drawing.Size(127, 44);
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -138,17 +167,19 @@
             "Estado",
             "Cantidad",
             "Codigo de Barra"});
-            this.cmbFiltro.Location = new System.Drawing.Point(6, 135);
+            this.cmbFiltro.Location = new System.Drawing.Point(8, 166);
+            this.cmbFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbFiltro.Name = "cmbFiltro";
-            this.cmbFiltro.Size = new System.Drawing.Size(211, 21);
+            this.cmbFiltro.Size = new System.Drawing.Size(280, 24);
             this.cmbFiltro.TabIndex = 6;
             this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(6, 183);
+            this.txtBuscar.Location = new System.Drawing.Point(8, 225);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(211, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(280, 22);
             this.txtBuscar.TabIndex = 5;
             this.txtBuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txtBuscar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
@@ -161,9 +192,10 @@
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNuevo.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNuevo.Location = new System.Drawing.Point(6, 209);
+            this.btnNuevo.Location = new System.Drawing.Point(8, 257);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(95, 36);
+            this.btnNuevo.Size = new System.Drawing.Size(127, 44);
             this.btnNuevo.TabIndex = 4;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
@@ -175,9 +207,10 @@
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCerrar.Location = new System.Drawing.Point(726, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(968, 15);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(96, 36);
+            this.btnCerrar.Size = new System.Drawing.Size(128, 44);
             this.btnCerrar.TabIndex = 8;
             this.btnCerrar.Text = "Cerrar Sesion";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -189,11 +222,12 @@
             this.dtgProductos.AllowUserToDeleteRows = false;
             this.dtgProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dtgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgProductos.Location = new System.Drawing.Point(12, 112);
+            this.dtgProductos.Location = new System.Drawing.Point(16, 138);
+            this.dtgProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgProductos.MultiSelect = false;
             this.dtgProductos.Name = "dtgProductos";
             this.dtgProductos.ReadOnly = true;
-            this.dtgProductos.Size = new System.Drawing.Size(564, 269);
+            this.dtgProductos.Size = new System.Drawing.Size(752, 331);
             this.dtgProductos.TabIndex = 1;
             this.dtgProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dtgProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -204,20 +238,21 @@
             this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbTitulo.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbTitulo.Location = new System.Drawing.Point(115, 12);
+            this.lbTitulo.Location = new System.Drawing.Point(153, 15);
+            this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(438, 36);
+            this.lbTitulo.Size = new System.Drawing.Size(563, 45);
             this.lbTitulo.TabIndex = 16;
-            this.lbTitulo.Text = "A.Beltran.Copiadora S. de R.L";
+            this.lbTitulo.Text = "A.Beltran.Copiadora S. de R.L.";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Loginç.Properties.Resources.icon_account2;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 14);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 90);
+            this.pictureBox2.Size = new System.Drawing.Size(117, 111);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -226,38 +261,19 @@
             // 
             this.epError.ContainerControl = this;
             // 
-            // lbFiltro
-            // 
-            this.lbFiltro.AutoSize = true;
-            this.lbFiltro.Location = new System.Drawing.Point(3, 119);
-            this.lbFiltro.Name = "lbFiltro";
-            this.lbFiltro.Size = new System.Drawing.Size(29, 13);
-            this.lbFiltro.TabIndex = 4;
-            this.lbFiltro.Text = "Filtro";
-            this.lbFiltro.Visible = false;
-            // 
-            // lbBuscar
-            // 
-            this.lbBuscar.AutoSize = true;
-            this.lbBuscar.Location = new System.Drawing.Point(3, 167);
-            this.lbBuscar.Name = "lbBuscar";
-            this.lbBuscar.Size = new System.Drawing.Size(40, 13);
-            this.lbBuscar.TabIndex = 9;
-            this.lbBuscar.Text = "Buscar";
-            this.lbBuscar.Visible = false;
-            // 
             // Bodega
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
-            this.ClientSize = new System.Drawing.Size(832, 393);
+            this.ClientSize = new System.Drawing.Size(1109, 484);
             this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dtgProductos);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Bodega";
             this.Text = "Bodega";

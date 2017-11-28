@@ -419,8 +419,8 @@ namespace Loginç
 
             try
             {
-                COMANDOSQL = new SqlCommand("insert into [dbo].[Inventario_Serie] values ('" + ingreso.textBox1.Text + "', '" + ingreso.txtNum.Text + "'  ) ", CONECTARSQL);
-                ingreso.textBox1.Text = Convert.ToString(COMANDOSQL.ExecuteNonQuery());
+                COMANDOSQL = new SqlCommand("insert into [dbo].[Inventario_Serie] values ('" + ingreso.txtCodigoProducto.Text + "', '" + ingreso.txtNum.Text + "'  ) ", CONECTARSQL);
+                ingreso.txtCodigoProducto.Text = Convert.ToString(COMANDOSQL.ExecuteNonQuery());
 
                 salida = "Ingresado";
             }

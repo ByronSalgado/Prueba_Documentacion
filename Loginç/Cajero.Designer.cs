@@ -29,15 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionEstadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionIdentificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.identificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDatosClientes = new System.Windows.Forms.DataGridView();
             this.cliBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this._A_Beltran_CopiadoraDataSet17 = new Loginç._A_Beltran_CopiadoraDataSet17();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +37,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblBusqueda = new System.Windows.Forms.Label();
             this.rdb_Nombre = new System.Windows.Forms.RadioButton();
             this.rdb_ID = new System.Windows.Forms.RadioButton();
             this.txtfiltro = new System.Windows.Forms.TextBox();
@@ -54,7 +46,15 @@
             this._A_Beltran_CopiadoraDataSet9 = new Loginç._A_Beltran_CopiadoraDataSet9();
             this.cliTableAdapter = new Loginç._A_Beltran_CopiadoraDataSet9TableAdapters.CliTableAdapter();
             this.cliTableAdapter1 = new Loginç._A_Beltran_CopiadoraDataSet17TableAdapters.CliTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.iDClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionEstadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionIdentificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.identificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cliBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet17)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,13 +63,13 @@
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvDatosClientes
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDatosClientes.AllowUserToAddRows = false;
+            this.dgvDatosClientes.AllowUserToDeleteRows = false;
+            this.dgvDatosClientes.AutoGenerateColumns = false;
+            this.dgvDatosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatosClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDClienteDataGridViewTextBoxColumn,
             this.descripcionEstadoDataGridViewTextBoxColumn,
             this.descripcionIdentificacionDataGridViewTextBoxColumn,
@@ -78,73 +78,17 @@
             this.direccionClienteDataGridViewTextBoxColumn,
             this.correoClienteDataGridViewTextBoxColumn,
             this.identificacionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.cliBindingSource1;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 142);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(725, 347);
-            this.dataGridView1.TabIndex = 23;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // iDClienteDataGridViewTextBoxColumn
-            // 
-            this.iDClienteDataGridViewTextBoxColumn.DataPropertyName = "ID_Cliente";
-            this.iDClienteDataGridViewTextBoxColumn.HeaderText = "ID_Cliente";
-            this.iDClienteDataGridViewTextBoxColumn.Name = "iDClienteDataGridViewTextBoxColumn";
-            this.iDClienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // descripcionEstadoDataGridViewTextBoxColumn
-            // 
-            this.descripcionEstadoDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Estado";
-            this.descripcionEstadoDataGridViewTextBoxColumn.HeaderText = "Descripcion_Estado";
-            this.descripcionEstadoDataGridViewTextBoxColumn.Name = "descripcionEstadoDataGridViewTextBoxColumn";
-            this.descripcionEstadoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // descripcionIdentificacionDataGridViewTextBoxColumn
-            // 
-            this.descripcionIdentificacionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Identificacion";
-            this.descripcionIdentificacionDataGridViewTextBoxColumn.HeaderText = "Descripcion_Identificacion";
-            this.descripcionIdentificacionDataGridViewTextBoxColumn.Name = "descripcionIdentificacionDataGridViewTextBoxColumn";
-            this.descripcionIdentificacionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreClienteDataGridViewTextBoxColumn
-            // 
-            this.nombreClienteDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Cliente";
-            this.nombreClienteDataGridViewTextBoxColumn.HeaderText = "Nombre_Cliente";
-            this.nombreClienteDataGridViewTextBoxColumn.Name = "nombreClienteDataGridViewTextBoxColumn";
-            this.nombreClienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // telefonoClienteDataGridViewTextBoxColumn
-            // 
-            this.telefonoClienteDataGridViewTextBoxColumn.DataPropertyName = "Telefono_Cliente";
-            this.telefonoClienteDataGridViewTextBoxColumn.HeaderText = "Telefono_Cliente";
-            this.telefonoClienteDataGridViewTextBoxColumn.Name = "telefonoClienteDataGridViewTextBoxColumn";
-            this.telefonoClienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // direccionClienteDataGridViewTextBoxColumn
-            // 
-            this.direccionClienteDataGridViewTextBoxColumn.DataPropertyName = "Direccion_Cliente";
-            this.direccionClienteDataGridViewTextBoxColumn.HeaderText = "Direccion_Cliente";
-            this.direccionClienteDataGridViewTextBoxColumn.Name = "direccionClienteDataGridViewTextBoxColumn";
-            this.direccionClienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // correoClienteDataGridViewTextBoxColumn
-            // 
-            this.correoClienteDataGridViewTextBoxColumn.DataPropertyName = "Correo_Cliente";
-            this.correoClienteDataGridViewTextBoxColumn.HeaderText = "Correo_Cliente";
-            this.correoClienteDataGridViewTextBoxColumn.Name = "correoClienteDataGridViewTextBoxColumn";
-            this.correoClienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // identificacionDataGridViewTextBoxColumn
-            // 
-            this.identificacionDataGridViewTextBoxColumn.DataPropertyName = "Identificacion";
-            this.identificacionDataGridViewTextBoxColumn.HeaderText = "Identificacion";
-            this.identificacionDataGridViewTextBoxColumn.Name = "identificacionDataGridViewTextBoxColumn";
-            this.identificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dgvDatosClientes.DataSource = this.cliBindingSource1;
+            this.dgvDatosClientes.EnableHeadersVisualStyles = false;
+            this.dgvDatosClientes.Location = new System.Drawing.Point(16, 142);
+            this.dgvDatosClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatosClientes.MultiSelect = false;
+            this.dgvDatosClientes.Name = "dgvDatosClientes";
+            this.dgvDatosClientes.ReadOnly = true;
+            this.dgvDatosClientes.Size = new System.Drawing.Size(725, 347);
+            this.dgvDatosClientes.TabIndex = 23;
+            this.dgvDatosClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvDatosClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // cliBindingSource1
             // 
@@ -165,9 +109,9 @@
             this.label2.Location = new System.Drawing.Point(155, 16);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(552, 45);
+            this.label2.Size = new System.Drawing.Size(563, 45);
             this.label2.TabIndex = 22;
-            this.label2.Text = "A.Beltran.Copiadora S. de R.L";
+            this.label2.Text = "A.Beltran.Copiadora S. de R.L.";
             // 
             // btnCerrar
             // 
@@ -190,7 +134,7 @@
             this.groupBox1.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblBusqueda);
             this.groupBox1.Controls.Add(this.rdb_Nombre);
             this.groupBox1.Controls.Add(this.rdb_ID);
             this.groupBox1.Controls.Add(this.txtfiltro);
@@ -235,16 +179,16 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // label1
+            // lblBusqueda
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 126);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            this.label1.Visible = false;
+            this.lblBusqueda.AutoSize = true;
+            this.lblBusqueda.Location = new System.Drawing.Point(41, 126);
+            this.lblBusqueda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBusqueda.Name = "lblBusqueda";
+            this.lblBusqueda.Size = new System.Drawing.Size(74, 17);
+            this.lblBusqueda.TabIndex = 3;
+            this.lblBusqueda.Text = "ID Usuario";
+            this.lblBusqueda.Visible = false;
             // 
             // rdb_Nombre
             // 
@@ -317,6 +261,62 @@
             // 
             this.cliTableAdapter1.ClearBeforeFill = true;
             // 
+            // iDClienteDataGridViewTextBoxColumn
+            // 
+            this.iDClienteDataGridViewTextBoxColumn.DataPropertyName = "ID_Cliente";
+            this.iDClienteDataGridViewTextBoxColumn.HeaderText = "ID Cliente";
+            this.iDClienteDataGridViewTextBoxColumn.Name = "iDClienteDataGridViewTextBoxColumn";
+            this.iDClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionEstadoDataGridViewTextBoxColumn
+            // 
+            this.descripcionEstadoDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Estado";
+            this.descripcionEstadoDataGridViewTextBoxColumn.HeaderText = "Estado";
+            this.descripcionEstadoDataGridViewTextBoxColumn.Name = "descripcionEstadoDataGridViewTextBoxColumn";
+            this.descripcionEstadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionIdentificacionDataGridViewTextBoxColumn
+            // 
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion_Identificacion";
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.HeaderText = "Tipo de Identificacion";
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.Name = "descripcionIdentificacionDataGridViewTextBoxColumn";
+            this.descripcionIdentificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreClienteDataGridViewTextBoxColumn
+            // 
+            this.nombreClienteDataGridViewTextBoxColumn.DataPropertyName = "Nombre_Cliente";
+            this.nombreClienteDataGridViewTextBoxColumn.HeaderText = "Nombre Cliente";
+            this.nombreClienteDataGridViewTextBoxColumn.Name = "nombreClienteDataGridViewTextBoxColumn";
+            this.nombreClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonoClienteDataGridViewTextBoxColumn
+            // 
+            this.telefonoClienteDataGridViewTextBoxColumn.DataPropertyName = "Telefono_Cliente";
+            this.telefonoClienteDataGridViewTextBoxColumn.HeaderText = "Telefono Cliente";
+            this.telefonoClienteDataGridViewTextBoxColumn.Name = "telefonoClienteDataGridViewTextBoxColumn";
+            this.telefonoClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // direccionClienteDataGridViewTextBoxColumn
+            // 
+            this.direccionClienteDataGridViewTextBoxColumn.DataPropertyName = "Direccion_Cliente";
+            this.direccionClienteDataGridViewTextBoxColumn.HeaderText = "Direccion Cliente";
+            this.direccionClienteDataGridViewTextBoxColumn.Name = "direccionClienteDataGridViewTextBoxColumn";
+            this.direccionClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // correoClienteDataGridViewTextBoxColumn
+            // 
+            this.correoClienteDataGridViewTextBoxColumn.DataPropertyName = "Correo_Cliente";
+            this.correoClienteDataGridViewTextBoxColumn.HeaderText = "Correo Cliente";
+            this.correoClienteDataGridViewTextBoxColumn.Name = "correoClienteDataGridViewTextBoxColumn";
+            this.correoClienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // identificacionDataGridViewTextBoxColumn
+            // 
+            this.identificacionDataGridViewTextBoxColumn.DataPropertyName = "Identificacion";
+            this.identificacionDataGridViewTextBoxColumn.HeaderText = "Identificacion";
+            this.identificacionDataGridViewTextBoxColumn.Name = "identificacionDataGridViewTextBoxColumn";
+            this.identificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // Cajero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -324,7 +324,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Loginç.Properties.Resources.black_difuminado;
             this.ClientSize = new System.Drawing.Size(1105, 503);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDatosClientes);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
@@ -335,7 +335,7 @@
             this.Text = "Cajero";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cajero_FormClosed);
             this.Load += new System.EventHandler(this.Cajero_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cliBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._A_Beltran_CopiadoraDataSet17)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -350,20 +350,23 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDatosClientes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblBusqueda;
         private System.Windows.Forms.RadioButton rdb_Nombre;
         private System.Windows.Forms.RadioButton rdb_ID;
         private System.Windows.Forms.TextBox txtfiltro;
         private _A_Beltran_CopiadoraDataSet9 _A_Beltran_CopiadoraDataSet9;
         private System.Windows.Forms.BindingSource cliBindingSource;
         private _A_Beltran_CopiadoraDataSet9TableAdapters.CliTableAdapter cliTableAdapter;
+        private _A_Beltran_CopiadoraDataSet17 _A_Beltran_CopiadoraDataSet17;
+        private System.Windows.Forms.BindingSource cliBindingSource1;
+        private _A_Beltran_CopiadoraDataSet17TableAdapters.CliTableAdapter cliTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDClienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionEstadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionIdentificacionDataGridViewTextBoxColumn;
@@ -372,8 +375,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionClienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoClienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn identificacionDataGridViewTextBoxColumn;
-        private _A_Beltran_CopiadoraDataSet17 _A_Beltran_CopiadoraDataSet17;
-        private System.Windows.Forms.BindingSource cliBindingSource1;
-        private _A_Beltran_CopiadoraDataSet17TableAdapters.CliTableAdapter cliTableAdapter1;
     }
 }

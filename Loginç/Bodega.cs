@@ -37,7 +37,7 @@ namespace Loginç
             In.Show();
             this.Close();
             In.button1.Visible = true;
-            In.button3.Visible = false;
+            In.btnModificar.Visible = false;
             In.Visible = true;
         }
 
@@ -336,7 +336,7 @@ namespace Loginç
             try
             {
 
-                modificar.textBox1.Text = dtgProductos.Rows[e.RowIndex].Cells[0].Value.ToString();
+                modificar.txtCodigoProducto.Text = dtgProductos.Rows[e.RowIndex].Cells[0].Value.ToString();
                 modificar.txtCodigo.Text = dtgProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
                 modificar.txtNomProducto.Text = dtgProductos.Rows[e.RowIndex].Cells[2].Value.ToString();
                 modificar.txtDescripcion.Text = dtgProductos.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -346,10 +346,10 @@ namespace Loginç
 
                 modificar.Show();
                 modificar.button1.Visible = false;
-                modificar.button3.Visible = true;
+                modificar.btnModificar.Visible = true;
                 modificar.Visible = true;
                 Visible = false;
-                modificar.comboBox2.Visible = true;
+                modificar.cmbEstado.Visible = true;
                 modificar.label9.Visible = true;
             }
             catch

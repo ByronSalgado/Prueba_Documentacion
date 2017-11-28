@@ -40,8 +40,8 @@ namespace Loginç
         {
             if (rdb_ID.Checked == true)
             {
-                label1.Visible = true;
-                label1.Text = "ID Usuario";
+                lblBusqueda.Visible = true;
+                lblBusqueda.Text = "ID Usuario";
                 txtfiltro.Clear();
                 txtfiltro.Focus();
             }
@@ -51,8 +51,8 @@ namespace Loginç
         {
             if (rdb_Nombre.Checked == true)
             {
-                label1.Visible = true;
-                label1.Text = "Nombre Usuario";
+                lblBusqueda.Visible = true;
+                lblBusqueda.Text = "Nombre Usuario";
                 txtfiltro.Clear();
                 txtfiltro.Focus();
             }
@@ -78,18 +78,18 @@ namespace Loginç
             try
             {
 
-                fact.txtID_CLIENTE.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                fact.txt_Identificacion.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                fact.txtNombre.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                fact.txtTelefono.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                fact.txtDireccion.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                fact.txtCorreo.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                fact.txtID.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                fact.txtId_Cliente.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[0].Value.ToString();
+                fact.txt_Identificacion.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[7].Value.ToString();
+                fact.txtNombre.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
+                fact.txtTelefono.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
+                fact.txtDireccion.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[5].Value.ToString();
+                fact.txtCorreo.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[6].Value.ToString();
+                fact.txtID.Text = dgvDatosClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
 
                 string seleccion;
-                seleccion = Convert.ToString(dataGridView1.SelectedRows);
+                seleccion = Convert.ToString(dgvDatosClientes.SelectedRows);
 
-                if (seleccion == Convert.ToString(dataGridView1.SelectedRows))
+                if (seleccion == Convert.ToString(dgvDatosClientes.SelectedRows))
                 {
                     fact.Show();
                     this.Hide();
@@ -150,7 +150,7 @@ namespace Loginç
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                dgvDatosClientes.DataSource = dt;
 
             }
 

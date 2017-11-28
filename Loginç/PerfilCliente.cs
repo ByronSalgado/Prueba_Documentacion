@@ -34,7 +34,7 @@ namespace Loginç
             //fact.txtID_CLIENTE.Text=
 
 
-            num = Convert.ToInt32(txtID_CLIENTE.Text);
+            num = Convert.ToInt32(txtId_Cliente.Text);
 
             SqlCommand cmd = con.CONECTARSQL.CreateCommand();
 
@@ -48,7 +48,7 @@ namespace Loginç
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            dgvFacturas.DataSource = dt;
            
         }
 
@@ -80,7 +80,7 @@ namespace Loginç
                         if (numero == 6)
                         {
                             Facturar fac = new Facturar();
-                            fac.txtId_Cliente.Text = txtID_CLIENTE.Text;
+                            fac.txtId_Cliente.Text = txtId_Cliente.Text;
                             fac.Show();
                             this.Hide();
                         }
@@ -100,7 +100,7 @@ namespace Loginç
 
         private void txtID_CLIENTE_TextChanged(object sender, EventArgs e)
         {
-            txtID_CLIENTE.MaxLength = 20;
+            txtId_Cliente.MaxLength = 20;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -119,7 +119,7 @@ namespace Loginç
             }
             else
             {
-                con.actualizar(txtTelefono.Text, txtCorreo.Text, txtDireccion.Text, txtID_CLIENTE.Text);
+                con.actualizar(txtTelefono.Text, txtCorreo.Text, txtDireccion.Text, txtId_Cliente.Text);
                 Cajero cjr = new Cajero();
                 cjr.Show();
                 cjr.Visible = true;

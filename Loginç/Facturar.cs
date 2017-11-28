@@ -27,8 +27,8 @@ namespace Loginç
         }  
         private void Facturar_Load(object sender, EventArgs e)
         {
-            dataGridView1.ForeColor = Color.Black;
-            dataGridView2.ForeColor = Color.Black;
+            dgvInventario.ForeColor = Color.Black;
+            dgvCarrito.ForeColor = Color.Black;
             this.proTableAdapter1.Fill(this._A_Beltran_CopiadoraDataSet15.Pro);
             this.detalleTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet14.detalle);
             this.proTableAdapter.Fill(this._A_Beltran_CopiadoraDataSet13.Pro);
@@ -38,7 +38,7 @@ namespace Loginç
             table.Columns.Add("Precio Total", typeof(string));
             table.Columns.Add("Cantidad", typeof(string));
 
-            dataGridView2.DataSource = table;
+            dgvCarrito.DataSource = table;
             cnx.IDCai(txtCAI);
             cnx.IDArqueo(txtArqueo);
             cnx.IDUsuario(txtUser);
@@ -58,9 +58,9 @@ namespace Loginç
         {
             try
             {
-                txtNomP.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txtPrecio.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                textBox9.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtNomP.Text = dgvInventario.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtPrecio.Text = dgvInventario.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtn1.Text = dgvInventario.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txtCant.Focus();
 
             }
@@ -99,25 +99,25 @@ namespace Loginç
             else
             {
                 cnx.nuevaFactura(txtId_Cliente, txtUser, txtArqueo, txtCAI);
-                cnx.obtenerIdFactura(idFactura);
+                cnx.obtenerIdFactura(txtidFactura);
                 int numeroDeFilas, contadorDeFilas;
                 int numeroColumnas, contadorColumnas;
-                numeroColumnas = dataGridView2.Rows[0].Cells.Count;
-                numeroDeFilas = dataGridView2.Rows.Count;
+                numeroColumnas = dgvCarrito.Rows[0].Cells.Count;
+                numeroDeFilas = dgvCarrito.Rows.Count;
                 String nombreProducto;
 
                 for (contadorDeFilas = 0; contadorDeFilas < numeroDeFilas; contadorDeFilas++)
                 {
                     for (contadorColumnas = 0; contadorColumnas < numeroColumnas; contadorColumnas++)
                     {
-                        dataGridView2.Rows[contadorDeFilas].Cells[contadorColumnas].Value.ToString();
-                        nombreProducto = dataGridView2.Rows[contadorDeFilas].Cells[0].Value.ToString();
+                        dgvCarrito.Rows[contadorDeFilas].Cells[contadorColumnas].Value.ToString();
+                        nombreProducto = dgvCarrito.Rows[contadorDeFilas].Cells[0].Value.ToString();
 
-                        cnx.obtenerDetalleProducto(nombreProducto, InventrioSerie, idProducto, precioUni);
+                        cnx.obtenerDetalleProducto(nombreProducto, txtInventrioSerie, txtidProducto, txtprecioUni);
 
                         if (contadorColumnas == 3)
                         {
-                            cnx.insertarDetalleFactura(Convert.ToInt32(InventrioSerie.Text), Convert.ToInt32(idProducto.Text), Convert.ToInt32(idFactura.Text), Convert.ToInt32(dataGridView2.Rows[contadorDeFilas].Cells[contadorColumnas].Value.ToString()), Convert.ToDouble(precioUni.Text));
+                            cnx.insertarDetalleFactura(Convert.ToInt32(txtInventrioSerie.Text), Convert.ToInt32(txtidProducto.Text), Convert.ToInt32(txtidFactura.Text), Convert.ToInt32(dgvCarrito.Rows[contadorDeFilas].Cells[contadorColumnas].Value.ToString()), Convert.ToDouble(txtprecioUni.Text));
                         }
                     }
 
@@ -147,12 +147,12 @@ namespace Loginç
 
             }
             else
-             if (txtNomP.Text == "" && txtPrecio.Text == "" && textBox9.Text == "")
+             if (txtNomP.Text == "" && txtPrecio.Text == "" && txtn1.Text == "")
             {
                 MessageBox.Show("Error Seleccione un Producto");
                 try
                 {
-                    if (Convert.ToInt32(txtCant.Text) > Convert.ToInt32(textBox9.Text))
+                    if (Convert.ToInt32(txtCant.Text) > Convert.ToInt32(txtn1.Text))
                     {
                         MessageBox.Show("Error Cantidad Insuficiente");
                     }
@@ -166,17 +166,17 @@ namespace Loginç
             else
             {
                 int numeroDeCeldas, contadorDeCeldas;
-                numeroDeCeldas = dataGridView2.Rows.Count;
+                numeroDeCeldas = dgvCarrito.Rows.Count;
                 bool exist;
-                exist = dataGridView2.Rows.Cast<DataGridViewRow>().Any(row => Convert.ToString(row.Cells["Nombre Producto"].Value) == txtNomP.Text);
+                exist = dgvCarrito.Rows.Cast<DataGridViewRow>().Any(row => Convert.ToString(row.Cells["Nombre Producto"].Value) == txtNomP.Text);
                 if (!exist)
                 {
                     cant = Convert.ToInt32(txtCant.Text) * Convert.ToInt32(txtPrecio.Text);
-                    textBox1.Text = Convert.ToString(cant);
-                    table.Rows.Add(txtNomP.Text, txtPrecio.Text, textBox1.Text, txtCant.Text);
-                    dataGridView2.DataSource = table;
+                    txtn2.Text = Convert.ToString(cant);
+                    table.Rows.Add(txtNomP.Text, txtPrecio.Text, txtn2.Text, txtCant.Text);
+                    dgvCarrito.DataSource = table;
                     txtCant.Clear();
-                    acum = acum + Convert.ToDouble(textBox1.Text);
+                    acum = acum + Convert.ToDouble(txtn2.Text);
                     txtSubT.Text = Convert.ToString(acum);
                     imp = acum * 0.15d;
                     txtImp.Text = Convert.ToString(imp);
@@ -190,14 +190,14 @@ namespace Loginç
                     {
                         int celdaParaActualizar;
                         String nomp;
-                        nomp = dataGridView2.Rows[contadorDeCeldas].Cells[0].Value.ToString();
+                        nomp = dgvCarrito.Rows[contadorDeCeldas].Cells[0].Value.ToString();
                         celdaParaActualizar = contadorDeCeldas;
                         if (txtNomP.Text == nomp)
                         {
-                            dataGridView2[0, celdaParaActualizar].Value = txtNomP.Text;
-                            dataGridView2[1, celdaParaActualizar].Value = txtPrecio.Text;
-                            dataGridView2[2, celdaParaActualizar].Value = textBox1.Text;
-                            dataGridView2[3, celdaParaActualizar].Value = txtCant.Text;
+                            dgvCarrito[0, celdaParaActualizar].Value = txtNomP.Text;
+                            dgvCarrito[1, celdaParaActualizar].Value = txtPrecio.Text;
+                            dgvCarrito[2, celdaParaActualizar].Value = txtn2.Text;
+                            dgvCarrito[3, celdaParaActualizar].Value = txtCant.Text;
 
                             contadorDeCeldas = numeroDeCeldas;
 
@@ -206,9 +206,9 @@ namespace Loginç
                     }
 
                     cant = Convert.ToInt32(txtCant.Text) * Convert.ToInt32(txtPrecio.Text);
-                    textBox1.Text = Convert.ToString(cant);
+                    txtn2.Text = Convert.ToString(cant);
                     txtCant.Clear();
-                    acum = acum + Convert.ToDouble(textBox1.Text);
+                    acum = acum + Convert.ToDouble(txtn2.Text);
                     txtSubT.Text = Convert.ToString(acum);
                     imp = acum * 0.15d;
                     txtImp.Text = Convert.ToString(imp);
@@ -271,10 +271,10 @@ namespace Loginç
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            dataGridView2.Rows.RemoveAt(dataGridView2.CurrentRow.Index);
+            dgvCarrito.Rows.RemoveAt(dgvCarrito.CurrentRow.Index);
             if (table.Rows.Count == 0)
             {
-                textBox2.Text = "0";
+                txtn3.Text = "0";
             }
                 acum = acum - precioBorrar;
                 imp = imp - impBorrar;
@@ -294,10 +294,10 @@ namespace Loginç
         {
             if (table.Rows.Count <= 1)
             {
-                textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtn3.Text = dgvInventario.Rows[e.RowIndex].Cells[2].Value.ToString();
             }
-            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            precioBorrar = Convert.ToDouble(textBox2.Text);
+            txtn3.Text = dgvInventario.Rows[e.RowIndex].Cells[2].Value.ToString();
+            precioBorrar = Convert.ToDouble(txtn3.Text);
             impBorrar = precioBorrar * 0.15d;
 
         }
