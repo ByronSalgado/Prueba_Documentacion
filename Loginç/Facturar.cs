@@ -271,18 +271,23 @@ namespace Loginç
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            dgvCarrito.Rows.RemoveAt(dgvCarrito.CurrentRow.Index);
-            if (table.Rows.Count == 0)
+            try
             {
-                txtn3.Text = "0";
-            }
+                dgvCarrito.Rows.RemoveAt(dgvCarrito.CurrentRow.Index);
+                if (table.Rows.Count == 0)
+                {
+                    txtn3.Text = "0";
+                }
                 acum = acum - precioBorrar;
                 imp = imp - impBorrar;
                 total = total - (precioBorrar + impBorrar);
                 txtSubT.Text = Convert.ToString(acum);
                 txtImp.Text = Convert.ToString(imp);
                 txtTotal.Text = Convert.ToString(total);
-        
+            }
+            catch
+            { }
+
         }
 
         private void Facturar_FormClosing(object sender, FormClosingEventArgs e)
